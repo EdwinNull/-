@@ -1,0 +1,41 @@
+{
+  "id": "M3.1",
+  "title": "向量范数",
+  "read_book_pages": [81, 83],
+  "read_pdf_pages": [92, 94],
+  "hires_pdf_pages": [],
+  "extra_pages_consulted": [
+    {"book_page": 5, "why": "第1章内积与Cauchy-Schwarz不等式，用于式(3.1-3)和习题3.1第4题"},
+    {"book_page": 84, "why": "第3.2节开头把矩阵视作向量，核对F-范数衔接"}
+  ],
+  "notation": [
+    {"symbol": "‖α‖", "latex": "\\|\\boldsymbol\\alpha\\|", "meaning": "向量范数", "book_page": 81},
+    {"symbol": "‖x‖₁", "latex": "\\|\\boldsymbol x\\|_1", "meaning": "向量1-范数，分量模之和", "book_page": 81},
+    {"symbol": "‖x‖∞", "latex": "\\|\\boldsymbol x\\|_\\infty", "meaning": "向量无穷范数，分量模的最大值", "book_page": 81},
+    {"symbol": "‖x‖p", "latex": "\\|\\boldsymbol x\\|_p", "meaning": "向量p-范数，1≤p≤+∞", "book_page": 81},
+    {"symbol": "‖x‖A", "latex": "\\|\\boldsymbol x\\|_{\\boldsymbol A}", "meaning": "正定矩阵A诱导的加权范数", "book_page": 82},
+    {"symbol": "‖A‖F", "latex": "\\|\\boldsymbol A\\|_F", "meaning": "把矩阵按元素排列成向量所得的Frobenius范数", "book_page": 83}
+  ],
+  "items": [
+    {"type": "定义", "no": "3.1-1", "book_page": 81, "summary": "向量范数的正定性、齐次性、三角不等式", "kp": "M3.1.K1"},
+    {"type": "式", "no": "3.1-1", "book_page": 81, "summary": "向量1-范数为各分量模之和", "kp": "M3.1.K2"},
+    {"type": "式", "no": "3.1-2", "book_page": 81, "summary": "向量无穷范数为各分量模的最大值", "kp": "M3.1.K2"},
+    {"type": "式", "no": "3.1-3", "book_page": 81, "summary": "范数差的绝对值不超过向量差的范数", "kp": "M3.1.K2"},
+    {"type": "定理", "no": "", "book_page": 82, "summary": "C^n上任意两种范数等价，存在与向量无关的正常数K1、K2", "kp": "M3.1.K3"},
+    {"type": "式", "no": "3.1-4", "book_page": 82, "summary": "K1‖x‖b≤‖x‖a≤K2‖x‖b", "kp": "M3.1.K3"},
+    {"type": "式", "no": "3.1-5", "book_page": 82, "summary": "单位球面上两范数比值的上下界", "kp": "M3.1.K3"},
+    {"type": "例", "no": "1", "book_page": 82, "summary": "正定矩阵A定义加权范数‖x‖A=(x^T A x)^(1/2)", "kp": "M3.1.K4"},
+    {"type": "式", "no": "3.1-6", "book_page": 82, "summary": "加权范数公式", "kp": "M3.1.K4"},
+    {"type": "例", "no": "2", "book_page": 82, "summary": "0<p<1时的p次幂平均不满足三角不等式", "kp": "M3.1.K5"},
+    {"type": "例", "no": "3", "book_page": 83, "summary": "矩阵按元素视为向量，Frobenius范数", "kp": "M3.1.K6"},
+    {"type": "式", "no": "3.1-7", "book_page": 83, "summary": "Frobenius范数平方和及tr(AᴴA)表达式", "kp": "M3.1.K6"}
+  ],
+  "errata": [],
+  "exercises": [
+    {"set": "习题 3.1", "no": "1", "kp": ["M3.1.K2"], "method": "将三种范数不等式改写为平面区域"},
+    {"set": "习题 3.1", "no": "2", "kp": ["M3.1.K1"], "method": "逐条验证最大值范数与正系数线性组合满足三条公理"},
+    {"set": "习题 3.1", "no": "3", "kp": ["M3.1.K1"], "method": "用列满秩等价于齐次方程只有零解判断正定性"},
+    {"set": "习题 3.1", "no": "4", "kp": ["M3.1.K2"], "method": "逐项放缩与Cauchy-Schwarz证明三组范数不等式"}
+  ],
+  "verify_script": ".work/kp/verify/M3.1.py"
+}

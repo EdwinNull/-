@@ -1,0 +1,44 @@
+{
+  "id": "S3.3",
+  "title": "非正态总体大样本参数检验",
+  "read_book_pages": [
+    380,
+    382
+  ],
+  "read_pdf_pages": [
+    391,
+    393
+  ],
+  "hires_pdf_pages": [],
+  "extra_pages_consulted": [],
+  "notation": [],
+  "items": [],
+  "errata": [],
+  "exercises": [
+    {
+      "set": "习题 3.3",
+      "no": 3,
+      "kp": [
+        "S3.3.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 3.3",
+      "no": 7,
+      "kp": [
+        "S3.3.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 3.3",
+      "no": 11,
+      "kp": [
+        "S3.3.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    }
+  ],
+  "verify_script": ".work/kp/verify/S3.3.py"
+}

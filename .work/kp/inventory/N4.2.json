@@ -1,0 +1,44 @@
+{
+  "id": "N4.2",
+  "title": "Newton 迭代法及其变形",
+  "read_book_pages": [
+    217,
+    221
+  ],
+  "read_pdf_pages": [
+    228,
+    232
+  ],
+  "hires_pdf_pages": [],
+  "extra_pages_consulted": [],
+  "notation": [],
+  "items": [],
+  "errata": [],
+  "exercises": [
+    {
+      "set": "习题 4.2",
+      "no": 2,
+      "kp": [
+        "N4.2.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 4.2",
+      "no": 5,
+      "kp": [
+        "N4.2.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 4.2",
+      "no": 8,
+      "kp": [
+        "N4.2.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    }
+  ],
+  "verify_script": ".work/kp/verify/N4.2.py"
+}

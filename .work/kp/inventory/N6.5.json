@@ -1,0 +1,36 @@
+{
+  "id": "N6.5",
+  "title": "二重积分的计算方法",
+  "read_book_pages": [
+    289,
+    291
+  ],
+  "read_pdf_pages": [
+    300,
+    302
+  ],
+  "hires_pdf_pages": [],
+  "extra_pages_consulted": [],
+  "notation": [],
+  "items": [],
+  "errata": [],
+  "exercises": [
+    {
+      "set": "习题 6.5",
+      "no": 5,
+      "kp": [
+        "N6.5.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 6.5",
+      "no": 11,
+      "kp": [
+        "N6.5.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    }
+  ],
+  "verify_script": ".work/kp/verify/N6.5.py"
+}

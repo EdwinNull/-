@@ -1,0 +1,36 @@
+{
+  "id": "N2.4",
+  "title": "线性方程组的迭代解法",
+  "read_book_pages": [
+    179,
+    188
+  ],
+  "read_pdf_pages": [
+    190,
+    199
+  ],
+  "hires_pdf_pages": [],
+  "extra_pages_consulted": [],
+  "notation": [],
+  "items": [],
+  "errata": [],
+  "exercises": [
+    {
+      "set": "习题 2.4",
+      "no": 4,
+      "kp": [
+        "N2.4.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 2.4",
+      "no": 10,
+      "kp": [
+        "N2.4.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    }
+  ],
+  "verify_script": ".work/kp/verify/N2.4.py"
+}

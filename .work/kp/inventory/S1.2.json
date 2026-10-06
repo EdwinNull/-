@@ -1,0 +1,44 @@
+{
+  "id": "S1.2",
+  "title": "统计量与样本矩",
+  "read_book_pages": [
+    327,
+    329
+  ],
+  "read_pdf_pages": [
+    338,
+    340
+  ],
+  "hires_pdf_pages": [],
+  "extra_pages_consulted": [],
+  "notation": [],
+  "items": [],
+  "errata": [],
+  "exercises": [
+    {
+      "set": "习题 1.2",
+      "no": 2,
+      "kp": [
+        "S1.2.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 1.2",
+      "no": 7,
+      "kp": [
+        "S1.2.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 1.2",
+      "no": 12,
+      "kp": [
+        "S1.2.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    }
+  ],
+  "verify_script": ".work/kp/verify/S1.2.py"
+}

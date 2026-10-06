@@ -1,0 +1,44 @@
+{
+  "id": "N1.1",
+  "title": "绝对误差、相对误差及有效数字",
+  "read_book_pages": [
+    157,
+    159
+  ],
+  "read_pdf_pages": [
+    168,
+    170
+  ],
+  "hires_pdf_pages": [],
+  "extra_pages_consulted": [],
+  "notation": [],
+  "items": [],
+  "errata": [],
+  "exercises": [
+    {
+      "set": "习题 1.1",
+      "no": 1,
+      "kp": [
+        "N1.1.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 1.1",
+      "no": 4,
+      "kp": [
+        "N1.1.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 1.1",
+      "no": 7,
+      "kp": [
+        "N1.1.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    }
+  ],
+  "verify_script": ".work/kp/verify/N1.1.py"
+}

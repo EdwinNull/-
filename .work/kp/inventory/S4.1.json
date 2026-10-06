@@ -1,0 +1,36 @@
+{
+  "id": "S4.1",
+  "title": "线性统计模型",
+  "read_book_pages": [
+    391,
+    393
+  ],
+  "read_pdf_pages": [
+    402,
+    404
+  ],
+  "hires_pdf_pages": [],
+  "extra_pages_consulted": [],
+  "notation": [],
+  "items": [],
+  "errata": [],
+  "exercises": [
+    {
+      "set": "习题 4.1",
+      "no": 1,
+      "kp": [
+        "S4.1.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 4.1",
+      "no": 6,
+      "kp": [
+        "S4.1.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    }
+  ],
+  "verify_script": ".work/kp/verify/S4.1.py"
+}

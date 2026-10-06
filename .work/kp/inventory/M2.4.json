@@ -1,0 +1,52 @@
+{
+  "id": "M2.4",
+  "title": "实方阵的正交相似化简",
+  "read_book_pages": [
+    75,
+    79
+  ],
+  "read_pdf_pages": [
+    86,
+    90
+  ],
+  "hires_pdf_pages": [],
+  "extra_pages_consulted": [],
+  "notation": [],
+  "items": [],
+  "errata": [],
+  "exercises": [
+    {
+      "set": "习题 2.4",
+      "no": 1,
+      "kp": [
+        "M2.4.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 2.4",
+      "no": 2,
+      "kp": [
+        "M2.4.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 2.4",
+      "no": 3,
+      "kp": [
+        "M2.4.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 2.4",
+      "no": 4,
+      "kp": [
+        "M2.4.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    }
+  ],
+  "verify_script": ".work/kp/verify/M2.4.py"
+}

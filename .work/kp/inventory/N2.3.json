@@ -1,0 +1,36 @@
+{
+  "id": "N2.3",
+  "title": "直接法的误差分析",
+  "read_book_pages": [
+    176,
+    179
+  ],
+  "read_pdf_pages": [
+    187,
+    190
+  ],
+  "hires_pdf_pages": [],
+  "extra_pages_consulted": [],
+  "notation": [],
+  "items": [],
+  "errata": [],
+  "exercises": [
+    {
+      "set": "习题 2.3",
+      "no": 3,
+      "kp": [
+        "N2.3.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 2.3",
+      "no": 9,
+      "kp": [
+        "N2.3.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    }
+  ],
+  "verify_script": ".work/kp/verify/N2.3.py"
+}

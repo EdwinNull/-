@@ -1,0 +1,52 @@
+{
+  "id": "S1.1",
+  "title": "总体与样本",
+  "read_book_pages": [
+    325,
+    327
+  ],
+  "read_pdf_pages": [
+    336,
+    338
+  ],
+  "hires_pdf_pages": [],
+  "extra_pages_consulted": [],
+  "notation": [],
+  "items": [],
+  "errata": [],
+  "exercises": [
+    {
+      "set": "习题 1.1",
+      "no": 1,
+      "kp": [
+        "S1.1.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 1.1",
+      "no": 6,
+      "kp": [
+        "S1.1.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 1.1",
+      "no": 11,
+      "kp": [
+        "S1.1.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 1.1",
+      "no": 16,
+      "kp": [
+        "S1.1.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    }
+  ],
+  "verify_script": ".work/kp/verify/S1.1.py"
+}

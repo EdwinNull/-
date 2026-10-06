@@ -1,0 +1,36 @@
+{
+  "id": "N2.1",
+  "title": "Gauss 主元消去法",
+  "read_book_pages": [
+    168,
+    172
+  ],
+  "read_pdf_pages": [
+    179,
+    183
+  ],
+  "hires_pdf_pages": [],
+  "extra_pages_consulted": [],
+  "notation": [],
+  "items": [],
+  "errata": [],
+  "exercises": [
+    {
+      "set": "习题 2.1",
+      "no": 1,
+      "kp": [
+        "N2.1.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 2.1",
+      "no": 7,
+      "kp": [
+        "N2.1.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    }
+  ],
+  "verify_script": ".work/kp/verify/N2.1.py"
+}

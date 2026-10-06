@@ -1,0 +1,46 @@
+{
+  "id": "M3.3",
+  "title": "方阵的谱半径",
+  "read_book_pages": [89, 91],
+  "read_pdf_pages": [100, 102],
+  "hires_pdf_pages": [],
+  "extra_pages_consulted": [
+    {"book_page": 84, "why": "定义 3.2-1 矩阵范数四条（K2 对照）"},
+    {"book_page": 85, "why": "式 (3.2-2)(3.2-3)(3.2-4)(3.2-5)(3.2-6)"},
+    {"book_page": 87, "why": "式 (3.2-8)(3.2-9) 条件数定义"},
+    {"book_page": 88, "why": "书页 88 定理（印作“定理 2.3-2”）：矩阵范数存在协调的向量范数；习题 3.2 第 4 题"},
+    {"book_page": 93, "why": "定理 4.1-1、4.1-2 及 Jordan 块例子（K5 后续应用、典型例题 2）"},
+    {"book_page": 176, "why": "第二部分 2.3 节使用 Cond(A)（前向链接核实）"},
+    {"book_page": 183, "why": "第二部分 2.4 节用 ρ(B)<1 判定迭代收敛（前向链接核实）"},
+    {"book_page": 195, "why": "第二部分 3.1 节：ρ(A)≤‖A‖ 与盖氏圆定理 3.1-1（前向链接核实）"}
+  ],
+  "notation": [
+    {"symbol": "Sp(A)", "latex": "\\mathrm{Sp}(\\boldsymbol A)", "meaning": "A 的谱：全部不同特征值组成的集合", "book_page": 89},
+    {"symbol": "ρ(A)", "latex": "\\rho(\\boldsymbol A)", "meaning": "谱半径：特征值模的最大值", "book_page": 89},
+    {"symbol": "‖·‖_*", "latex": "\\|\\cdot\\|_*", "meaning": "定理 3.3-2 中构造的、依赖于 A 与 ε 的矩阵范数", "book_page": 90},
+    {"symbol": "Cond(A)", "latex": "\\mathrm{Cond}(\\boldsymbol A)", "meaning": "条件数 ‖A‖‖A⁻¹‖，式 (3.2-9)", "book_page": 87}
+  ],
+  "items": [
+    {"type": "定义", "no": "3.3-1", "book_page": 89, "summary": "谱 Sp(A)、谱半径 ρ(A)", "kp": "M3.3.K1"},
+    {"type": "正文例", "no": "", "book_page": 89, "summary": "A=[[1-i,3],[-1,1+i]]，特征值 1±2i，ρ=√5", "kp": "M3.3.K1"},
+    {"type": "正文例", "no": "", "book_page": 89, "summary": "A=[[0,0],[3,0]]、B=[[2,3],[0,2]]：谱半径无正定性、三角不等式、相容性", "kp": "M3.3.K2"},
+    {"type": "定理", "no": "3.3-1", "book_page": 89, "summary": "ρ(A) 不大于任一诱导范数；脚注：对任一矩阵范数成立", "kp": "M3.3.K3"},
+    {"type": "式", "no": "3.3-1", "book_page": 89, "summary": "ρ(A) ≤ ‖A‖", "kp": "M3.3.K3"},
+    {"type": "例", "no": "1", "book_page": 89, "summary": "A 可逆时 ‖A‖₂=√ρ(AᴴA)=√ρ(AAᴴ)；Hermite 时 ‖A‖₂=ρ(A)", "kp": "M3.3.K4"},
+    {"type": "式", "no": "3.3-2", "book_page": 89, "summary": "‖A‖₂=√ρ(AᴴA)=√ρ(AAᴴ)", "kp": "M3.3.K4"},
+    {"type": "定理", "no": "3.3-2", "book_page": 90, "summary": "∀ε>0 存在矩阵范数 ‖·‖_* 使 ‖A‖_* ≤ ρ(A)+ε；证明用 Jordan 形与 D=diag(1,ε,…)", "kp": "M3.3.K5"},
+    {"type": "式", "no": "3.3-3", "book_page": 90, "summary": "‖A‖_* ≤ ρ(A)+ε", "kp": "M3.3.K5"},
+    {"type": "例", "no": "2", "book_page": 90, "summary": "A 可逆时 Cond(A) ≥ ρ(A)ρ(A⁻¹) = max|λ|/min|λ|", "kp": "M3.3.K6"},
+    {"type": "式", "no": "3.3-4", "book_page": 91, "summary": "按行严格对角占优条件（出现在习题 3.3 第 3 题题面中）", "kp": "", "skip_reason": "属于习题题面而非正文，已在习题导航第 3 题处体现"}
+  ],
+  "errata": [
+    {"book_page": 88, "text": "该页定理印作“定理 2.3-2”，按所在小节（3.2 节）与编号顺序应为“定理 3.2-2”；与第 2.3 节真正的定理 2.3-2（正规矩阵酉对角化）同号，易混淆。讲解中写作“书页 88 的定理（教材印作“定理 2.3-2”，……应为定理 3.2-2）”。"},
+    {"book_page": 90, "text": "定理 3.3-2 证明中 ‖D⁻¹JD‖∞ = max(|λj|+ε) 严格说应为“≤”（当最大模特征值所在 Jordan 块为 1 阶时取不到 +ε），不影响结论；讲解中以括注说明，未列入 README 勘误表。"}
+  ],
+  "exercises": [
+    {"set": "习题 3.3", "no": "1", "kp": ["M3.3.K1", "M3.3.K3"], "method": "特征多项式 λ²-2λ-4，λ=1±√5，ρ=1+√5"},
+    {"set": "习题 3.3", "no": "2", "kp": ["M3.3.K4"], "method": "正规矩阵酉对角化 ⇒ AᴴA 特征值为 |λi|² ⇒ ‖A‖₂=ρ(A)（需第 2.3 节）"},
+    {"set": "习题 3.3", "no": "3", "kp": ["M3.3.K3"], "method": "ρ(A) ≤ ‖A‖∞ < max 2|aii|；另解盖氏圆"}
+  ],
+  "verify_script": ".work/kp/verify/M3.3.py"
+}

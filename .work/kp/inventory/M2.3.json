@@ -1,0 +1,60 @@
+{
+  "id": "M2.3",
+  "title": "方阵的酉相似化简",
+  "read_book_pages": [
+    71,
+    75
+  ],
+  "read_pdf_pages": [
+    82,
+    86
+  ],
+  "hires_pdf_pages": [],
+  "extra_pages_consulted": [],
+  "notation": [],
+  "items": [
+    {
+      "type": "定理",
+      "no": "2.3-2",
+      "book_page": 71,
+      "summary": "本节教材定理，供相邻章节引用核对",
+      "kp": "M2.3.K1"
+    }
+  ],
+  "errata": [],
+  "exercises": [
+    {
+      "set": "习题 2.3",
+      "no": 1,
+      "kp": [
+        "M2.3.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 2.3",
+      "no": 2,
+      "kp": [
+        "M2.3.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 2.3",
+      "no": 3,
+      "kp": [
+        "M2.3.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 2.3",
+      "no": 4,
+      "kp": [
+        "M2.3.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    }
+  ],
+  "verify_script": ".work/kp/verify/M2.3.py"
+}

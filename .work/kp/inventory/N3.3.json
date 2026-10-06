@@ -1,0 +1,36 @@
+{
+  "id": "N3.3",
+  "title": "QR 方法",
+  "read_book_pages": [
+    204,
+    207
+  ],
+  "read_pdf_pages": [
+    215,
+    218
+  ],
+  "hires_pdf_pages": [],
+  "extra_pages_consulted": [],
+  "notation": [],
+  "items": [],
+  "errata": [],
+  "exercises": [
+    {
+      "set": "习题 3.3",
+      "no": 3,
+      "kp": [
+        "N3.3.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 3.3",
+      "no": 6,
+      "kp": [
+        "N3.3.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    }
+  ],
+  "verify_script": ".work/kp/verify/N3.3.py"
+}

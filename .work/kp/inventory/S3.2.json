@@ -1,0 +1,44 @@
+{
+  "id": "S3.2",
+  "title": "正态总体下参数的假设检验",
+  "read_book_pages": [
+    371,
+    380
+  ],
+  "read_pdf_pages": [
+    382,
+    391
+  ],
+  "hires_pdf_pages": [],
+  "extra_pages_consulted": [],
+  "notation": [],
+  "items": [],
+  "errata": [],
+  "exercises": [
+    {
+      "set": "习题 3.2",
+      "no": 2,
+      "kp": [
+        "S3.2.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 3.2",
+      "no": 6,
+      "kp": [
+        "S3.2.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 3.2",
+      "no": 10,
+      "kp": [
+        "S3.2.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    }
+  ],
+  "verify_script": ".work/kp/verify/S3.2.py"
+}

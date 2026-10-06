@@ -1,0 +1,36 @@
+{
+  "id": "S3.4",
+  "title": "检验的优劣",
+  "read_book_pages": [
+    382,
+    389
+  ],
+  "read_pdf_pages": [
+    393,
+    400
+  ],
+  "hires_pdf_pages": [],
+  "extra_pages_consulted": [],
+  "notation": [],
+  "items": [],
+  "errata": [],
+  "exercises": [
+    {
+      "set": "习题 3.4",
+      "no": 4,
+      "kp": [
+        "S3.4.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 3.4",
+      "no": 8,
+      "kp": [
+        "S3.4.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    }
+  ],
+  "verify_script": ".work/kp/verify/S3.4.py"
+}

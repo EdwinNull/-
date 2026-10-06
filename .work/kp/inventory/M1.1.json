@@ -1,0 +1,52 @@
+{
+  "id": "M1.1",
+  "title": "向量和向量空间",
+  "read_book_pages": [
+    3,
+    10
+  ],
+  "read_pdf_pages": [
+    14,
+    21
+  ],
+  "hires_pdf_pages": [],
+  "extra_pages_consulted": [],
+  "notation": [],
+  "items": [],
+  "errata": [],
+  "exercises": [
+    {
+      "set": "习题 1.1",
+      "no": 1,
+      "kp": [
+        "M1.1.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 1.1",
+      "no": 2,
+      "kp": [
+        "M1.1.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 1.1",
+      "no": 3,
+      "kp": [
+        "M1.1.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 1.1",
+      "no": 4,
+      "kp": [
+        "M1.1.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    }
+  ],
+  "verify_script": ".work/kp/verify/M1.1.py"
+}

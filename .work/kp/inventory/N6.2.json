@@ -1,0 +1,44 @@
+{
+  "id": "N6.2",
+  "title": "复化求积公式及其余项表达式",
+  "read_book_pages": [
+    274,
+    279
+  ],
+  "read_pdf_pages": [
+    285,
+    290
+  ],
+  "hires_pdf_pages": [],
+  "extra_pages_consulted": [],
+  "notation": [],
+  "items": [],
+  "errata": [],
+  "exercises": [
+    {
+      "set": "习题 6.2",
+      "no": 2,
+      "kp": [
+        "N6.2.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 6.2",
+      "no": 8,
+      "kp": [
+        "N6.2.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 6.2",
+      "no": 14,
+      "kp": [
+        "N6.2.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    }
+  ],
+  "verify_script": ".work/kp/verify/N6.2.py"
+}

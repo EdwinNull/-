@@ -1,0 +1,44 @@
+{
+  "id": "S1.5",
+  "title": "分位数",
+  "read_book_pages": [
+    337,
+    338
+  ],
+  "read_pdf_pages": [
+    348,
+    349
+  ],
+  "hires_pdf_pages": [],
+  "extra_pages_consulted": [],
+  "notation": [],
+  "items": [],
+  "errata": [],
+  "exercises": [
+    {
+      "set": "习题 1.5",
+      "no": 5,
+      "kp": [
+        "S1.5.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 1.5",
+      "no": 10,
+      "kp": [
+        "S1.5.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 1.5",
+      "no": 15,
+      "kp": [
+        "S1.5.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    }
+  ],
+  "verify_script": ".work/kp/verify/S1.5.py"
+}

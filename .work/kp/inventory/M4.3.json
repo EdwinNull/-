@@ -1,0 +1,36 @@
+{
+  "id": "M4.3",
+  "title": "函数矩阵及其应用",
+  "read_book_pages": [
+    102,
+    107
+  ],
+  "read_pdf_pages": [
+    113,
+    118
+  ],
+  "hires_pdf_pages": [],
+  "extra_pages_consulted": [],
+  "notation": [],
+  "items": [],
+  "errata": [],
+  "exercises": [
+    {
+      "set": "习题 4.3",
+      "no": 1,
+      "kp": [
+        "M4.3.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 4.3",
+      "no": 2,
+      "kp": [
+        "M4.3.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    }
+  ],
+  "verify_script": ".work/kp/verify/M4.3.py"
+}

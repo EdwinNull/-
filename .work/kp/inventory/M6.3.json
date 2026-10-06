@@ -1,0 +1,60 @@
+{
+  "id": "M6.3",
+  "title": "内积空间及两类特殊的线性变换",
+  "read_book_pages": [
+    149,
+    152
+  ],
+  "read_pdf_pages": [
+    160,
+    163
+  ],
+  "hires_pdf_pages": [],
+  "extra_pages_consulted": [],
+  "notation": [],
+  "items": [],
+  "errata": [],
+  "exercises": [
+    {
+      "set": "习题 6.3",
+      "no": 1,
+      "kp": [
+        "M6.3.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 6.3",
+      "no": 2,
+      "kp": [
+        "M6.3.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 6.3",
+      "no": 3,
+      "kp": [
+        "M6.3.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 6.3",
+      "no": 4,
+      "kp": [
+        "M6.3.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 6.3",
+      "no": 5,
+      "kp": [
+        "M6.3.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    }
+  ],
+  "verify_script": ".work/kp/verify/M6.3.py"
+}

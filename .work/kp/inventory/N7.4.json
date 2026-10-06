@@ -1,0 +1,36 @@
+{
+  "id": "N7.4",
+  "title": "预估-校正公式",
+  "read_book_pages": [
+    314,
+    316
+  ],
+  "read_pdf_pages": [
+    325,
+    327
+  ],
+  "hires_pdf_pages": [],
+  "extra_pages_consulted": [],
+  "notation": [],
+  "items": [],
+  "errata": [],
+  "exercises": [
+    {
+      "set": "习题 7.4",
+      "no": 4,
+      "kp": [
+        "N7.4.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 7.4",
+      "no": 9,
+      "kp": [
+        "N7.4.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    }
+  ],
+  "verify_script": ".work/kp/verify/N7.4.py"
+}

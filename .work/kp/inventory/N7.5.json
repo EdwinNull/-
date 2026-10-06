@@ -1,0 +1,36 @@
+{
+  "id": "N7.5",
+  "title": "边值问题的差分法",
+  "read_book_pages": [
+    316,
+    320
+  ],
+  "read_pdf_pages": [
+    327,
+    331
+  ],
+  "hires_pdf_pages": [],
+  "extra_pages_consulted": [],
+  "notation": [],
+  "items": [],
+  "errata": [],
+  "exercises": [
+    {
+      "set": "习题 7.5",
+      "no": 5,
+      "kp": [
+        "N7.5.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 7.5",
+      "no": 10,
+      "kp": [
+        "N7.5.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    }
+  ],
+  "verify_script": ".work/kp/verify/N7.5.py"
+}

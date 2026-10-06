@@ -1,0 +1,36 @@
+{
+  "id": "S4.3",
+  "title": "线性模型的假设检验和统计推断",
+  "read_book_pages": [
+    401,
+    407
+  ],
+  "read_pdf_pages": [
+    412,
+    418
+  ],
+  "hires_pdf_pages": [],
+  "extra_pages_consulted": [],
+  "notation": [],
+  "items": [],
+  "errata": [],
+  "exercises": [
+    {
+      "set": "习题 4.3",
+      "no": 3,
+      "kp": [
+        "S4.3.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 4.3",
+      "no": 8,
+      "kp": [
+        "S4.3.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    }
+  ],
+  "verify_script": ".work/kp/verify/S4.3.py"
+}

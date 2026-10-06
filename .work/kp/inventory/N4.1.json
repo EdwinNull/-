@@ -1,0 +1,52 @@
+{
+  "id": "N4.1",
+  "title": "不动点迭代法及其收敛性",
+  "read_book_pages": [
+    208,
+    217
+  ],
+  "read_pdf_pages": [
+    219,
+    228
+  ],
+  "hires_pdf_pages": [],
+  "extra_pages_consulted": [],
+  "notation": [],
+  "items": [],
+  "errata": [],
+  "exercises": [
+    {
+      "set": "习题 4.1",
+      "no": 1,
+      "kp": [
+        "N4.1.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 4.1",
+      "no": 4,
+      "kp": [
+        "N4.1.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 4.1",
+      "no": 7,
+      "kp": [
+        "N4.1.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 4.1",
+      "no": 10,
+      "kp": [
+        "N4.1.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    }
+  ],
+  "verify_script": ".work/kp/verify/N4.1.py"
+}

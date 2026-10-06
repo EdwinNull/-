@@ -1,0 +1,36 @@
+{
+  "id": "N2.5",
+  "title": "逐次超松弛迭代法和块迭代法",
+  "read_book_pages": [
+    188,
+    192
+  ],
+  "read_pdf_pages": [
+    199,
+    203
+  ],
+  "hires_pdf_pages": [],
+  "extra_pages_consulted": [],
+  "notation": [],
+  "items": [],
+  "errata": [],
+  "exercises": [
+    {
+      "set": "习题 2.5",
+      "no": 5,
+      "kp": [
+        "N2.5.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 2.5",
+      "no": 11,
+      "kp": [
+        "N2.5.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    }
+  ],
+  "verify_script": ".work/kp/verify/N2.5.py"
+}

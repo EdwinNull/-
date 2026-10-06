@@ -1,0 +1,44 @@
+{
+  "id": "N6.1",
+  "title": "Newton-Cotes 求积公式",
+  "read_book_pages": [
+    267,
+    274
+  ],
+  "read_pdf_pages": [
+    278,
+    285
+  ],
+  "hires_pdf_pages": [],
+  "extra_pages_consulted": [],
+  "notation": [],
+  "items": [],
+  "errata": [],
+  "exercises": [
+    {
+      "set": "习题 6.1",
+      "no": 1,
+      "kp": [
+        "N6.1.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 6.1",
+      "no": 7,
+      "kp": [
+        "N6.1.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 6.1",
+      "no": 13,
+      "kp": [
+        "N6.1.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    }
+  ],
+  "verify_script": ".work/kp/verify/N6.1.py"
+}

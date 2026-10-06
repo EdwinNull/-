@@ -1,0 +1,44 @@
+{
+  "id": "N3.1",
+  "title": "特征值的估计",
+  "read_book_pages": [
+    195,
+    197
+  ],
+  "read_pdf_pages": [
+    206,
+    208
+  ],
+  "hires_pdf_pages": [],
+  "extra_pages_consulted": [],
+  "notation": [],
+  "items": [
+    {
+      "type": "定理",
+      "no": "3.1-1",
+      "book_page": 195,
+      "summary": "本节教材定理，供相邻章节引用核对",
+      "kp": "N3.1.K1"
+    }
+  ],
+  "errata": [],
+  "exercises": [
+    {
+      "set": "习题 3.1",
+      "no": 1,
+      "kp": [
+        "N3.1.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 3.1",
+      "no": 4,
+      "kp": [
+        "N3.1.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    }
+  ],
+  "verify_script": ".work/kp/verify/N3.1.py"
+}

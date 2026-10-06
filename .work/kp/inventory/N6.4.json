@@ -1,0 +1,44 @@
+{
+  "id": "N6.4",
+  "title": "Gauss 型求积公式",
+  "read_book_pages": [
+    282,
+    289
+  ],
+  "read_pdf_pages": [
+    293,
+    300
+  ],
+  "hires_pdf_pages": [],
+  "extra_pages_consulted": [],
+  "notation": [],
+  "items": [],
+  "errata": [],
+  "exercises": [
+    {
+      "set": "习题 6.4",
+      "no": 4,
+      "kp": [
+        "N6.4.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 6.4",
+      "no": 10,
+      "kp": [
+        "N6.4.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 6.4",
+      "no": 16,
+      "kp": [
+        "N6.4.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    }
+  ],
+  "verify_script": ".work/kp/verify/N6.4.py"
+}

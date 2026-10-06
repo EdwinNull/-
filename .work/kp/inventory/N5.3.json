@@ -1,0 +1,44 @@
+{
+  "id": "N5.3",
+  "title": "数据的最小二乘拟合",
+  "read_book_pages": [
+    247,
+    251
+  ],
+  "read_pdf_pages": [
+    258,
+    262
+  ],
+  "hires_pdf_pages": [],
+  "extra_pages_consulted": [],
+  "notation": [],
+  "items": [],
+  "errata": [],
+  "exercises": [
+    {
+      "set": "习题 5.3",
+      "no": 3,
+      "kp": [
+        "N5.3.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 5.3",
+      "no": 8,
+      "kp": [
+        "N5.3.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 5.3",
+      "no": 13,
+      "kp": [
+        "N5.3.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    }
+  ],
+  "verify_script": ".work/kp/verify/N5.3.py"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "N6.6",
+  "title": "数值微分",
+  "read_book_pages": [
+    291,
+    295
+  ],
+  "read_pdf_pages": [
+    302,
+    306
+  ],
+  "hires_pdf_pages": [],
+  "extra_pages_consulted": [],
+  "notation": [],
+  "items": [],
+  "errata": [],
+  "exercises": [
+    {
+      "set": "习题 6.6",
+      "no": 6,
+      "kp": [
+        "N6.6.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 6.6",
+      "no": 12,
+      "kp": [
+        "N6.6.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    }
+  ],
+  "verify_script": ".work/kp/verify/N6.6.py"
+}

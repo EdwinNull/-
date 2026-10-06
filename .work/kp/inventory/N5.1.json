@@ -1,0 +1,52 @@
+{
+  "id": "N5.1",
+  "title": "多项式插值",
+  "read_book_pages": [
+    230,
+    241
+  ],
+  "read_pdf_pages": [
+    241,
+    252
+  ],
+  "hires_pdf_pages": [],
+  "extra_pages_consulted": [],
+  "notation": [],
+  "items": [],
+  "errata": [],
+  "exercises": [
+    {
+      "set": "习题 5.1",
+      "no": 1,
+      "kp": [
+        "N5.1.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 5.1",
+      "no": 6,
+      "kp": [
+        "N5.1.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 5.1",
+      "no": 11,
+      "kp": [
+        "N5.1.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 5.1",
+      "no": 16,
+      "kp": [
+        "N5.1.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    }
+  ],
+  "verify_script": ".work/kp/verify/N5.1.py"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "S4.2",
+  "title": "最小二乘估计及其性质",
+  "read_book_pages": [
+    393,
+    401
+  ],
+  "read_pdf_pages": [
+    404,
+    412
+  ],
+  "hires_pdf_pages": [],
+  "extra_pages_consulted": [],
+  "notation": [],
+  "items": [],
+  "errata": [],
+  "exercises": [
+    {
+      "set": "习题 4.2",
+      "no": 2,
+      "kp": [
+        "S4.2.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 4.2",
+      "no": 7,
+      "kp": [
+        "S4.2.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    }
+  ],
+  "verify_script": ".work/kp/verify/S4.2.py"
+}

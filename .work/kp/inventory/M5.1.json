@@ -1,0 +1,60 @@
+{
+  "id": "M5.1",
+  "title": "方阵的三角分解",
+  "read_book_pages": [
+    108,
+    115
+  ],
+  "read_pdf_pages": [
+    119,
+    126
+  ],
+  "hires_pdf_pages": [],
+  "extra_pages_consulted": [],
+  "notation": [],
+  "items": [],
+  "errata": [],
+  "exercises": [
+    {
+      "set": "习题 5.1",
+      "no": 1,
+      "kp": [
+        "M5.1.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 5.1",
+      "no": 2,
+      "kp": [
+        "M5.1.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 5.1",
+      "no": 3,
+      "kp": [
+        "M5.1.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 5.1",
+      "no": 4,
+      "kp": [
+        "M5.1.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 5.1",
+      "no": 5,
+      "kp": [
+        "M5.1.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    }
+  ],
+  "verify_script": ".work/kp/verify/M5.1.py"
+}

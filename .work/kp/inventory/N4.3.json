@@ -1,0 +1,44 @@
+{
+  "id": "N4.3",
+  "title": "无约束优化问题的下降迭代法",
+  "read_book_pages": [
+    221,
+    228
+  ],
+  "read_pdf_pages": [
+    232,
+    239
+  ],
+  "hires_pdf_pages": [],
+  "extra_pages_consulted": [],
+  "notation": [],
+  "items": [],
+  "errata": [],
+  "exercises": [
+    {
+      "set": "习题 4.3",
+      "no": 3,
+      "kp": [
+        "N4.3.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 4.3",
+      "no": 6,
+      "kp": [
+        "N4.3.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 4.3",
+      "no": 9,
+      "kp": [
+        "N4.3.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    }
+  ],
+  "verify_script": ".work/kp/verify/N4.3.py"
+}

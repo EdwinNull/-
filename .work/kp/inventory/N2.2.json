@@ -1,0 +1,36 @@
+{
+  "id": "N2.2",
+  "title": "矩阵分解在解线性方程组中的应用",
+  "read_book_pages": [
+    172,
+    176
+  ],
+  "read_pdf_pages": [
+    183,
+    187
+  ],
+  "hires_pdf_pages": [],
+  "extra_pages_consulted": [],
+  "notation": [],
+  "items": [],
+  "errata": [],
+  "exercises": [
+    {
+      "set": "习题 2.2",
+      "no": 2,
+      "kp": [
+        "N2.2.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 2.2",
+      "no": 8,
+      "kp": [
+        "N2.2.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    }
+  ],
+  "verify_script": ".work/kp/verify/N2.2.py"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "N1.2",
+  "title": "数值计算的误差估计及算法稳定性",
+  "read_book_pages": [
+    159,
+    164
+  ],
+  "read_pdf_pages": [
+    170,
+    175
+  ],
+  "hires_pdf_pages": [],
+  "extra_pages_consulted": [],
+  "notation": [],
+  "items": [],
+  "errata": [],
+  "exercises": [
+    {
+      "set": "习题 1.2",
+      "no": 2,
+      "kp": [
+        "N1.2.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 1.2",
+      "no": 5,
+      "kp": [
+        "N1.2.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    }
+  ],
+  "verify_script": ".work/kp/verify/N1.2.py"
+}

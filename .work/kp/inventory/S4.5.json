@@ -1,0 +1,36 @@
+{
+  "id": "S4.5",
+  "title": "正交试验设计及其应用",
+  "read_book_pages": [
+    418,
+    429
+  ],
+  "read_pdf_pages": [
+    429,
+    440
+  ],
+  "hires_pdf_pages": [],
+  "extra_pages_consulted": [],
+  "notation": [],
+  "items": [],
+  "errata": [],
+  "exercises": [
+    {
+      "set": "习题 4.5",
+      "no": 5,
+      "kp": [
+        "S4.5.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 4.5",
+      "no": 10,
+      "kp": [
+        "S4.5.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    }
+  ],
+  "verify_script": ".work/kp/verify/S4.5.py"
+}

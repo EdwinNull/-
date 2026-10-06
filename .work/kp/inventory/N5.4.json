@@ -1,0 +1,44 @@
+{
+  "id": "N5.4",
+  "title": "函数的最佳平方逼近",
+  "read_book_pages": [
+    251,
+    262
+  ],
+  "read_pdf_pages": [
+    262,
+    273
+  ],
+  "hires_pdf_pages": [],
+  "extra_pages_consulted": [],
+  "notation": [],
+  "items": [],
+  "errata": [],
+  "exercises": [
+    {
+      "set": "习题 5.4",
+      "no": 4,
+      "kp": [
+        "N5.4.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 5.4",
+      "no": 9,
+      "kp": [
+        "N5.4.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    },
+    {
+      "set": "习题 5.4",
+      "no": 14,
+      "kp": [
+        "N5.4.K1"
+      ],
+      "method": "按本节讲解流程处理并核对条件"
+    }
+  ],
+  "verify_script": ".work/kp/verify/N5.4.py"
+}

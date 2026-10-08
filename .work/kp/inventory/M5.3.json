@@ -1,68 +1,51 @@
 {
   "id": "M5.3",
   "title": "矩阵的奇异值分解",
-  "read_book_pages": [
-    123,
-    129
-  ],
-  "read_pdf_pages": [
-    134,
-    140
-  ],
-  "hires_pdf_pages": [],
+  "read_book_pages": [123, 129],
+  "read_pdf_pages": [134, 140],
+  "hires_pdf_pages": [136],
   "extra_pages_consulted": [],
-  "notation": [],
-  "items": [],
-  "errata": [],
+  "notation": [
+    {"symbol": "σ_i", "latex": "\\sigma_i", "meaning": "奇异值，A^H A 非负特征值的算术平方根", "book_page": 124},
+    {"symbol": "Σ_r", "latex": "\\boldsymbol\\Sigma_r", "meaning": "由正奇异值组成的 r 阶对角矩阵", "book_page": 123},
+    {"symbol": "U,V", "latex": "\\boldsymbol U,\\boldsymbol V", "meaning": "左、右奇异向量组成的酉矩阵", "book_page": 126}
+  ],
+  "items": [
+    {"type": "式", "no": "5.3-1", "book_page": 123, "summary": "U^H A V 为含 Σ_r 的分块对角阵", "kp": "M5.3.K4"},
+    {"type": "式", "no": "5.3-1'", "book_page": 123, "summary": "A=U diag(Σ_r, O) V^H，称为奇异值分解", "kp": "M5.3.K4"},
+    {"type": "定理", "no": "5.3-1", "book_page": 123, "summary": "A^H A 与 AA^H 半正定 Hermite，正特征值相同，秩都等于 r(A)", "kp": "M5.3.K1"},
+    {"type": "定义", "no": "5.3-1", "book_page": 124, "summary": "奇异值 σ_i=√λ_i，λ_i 为 A^H A 的特征值", "kp": "M5.3.K1"},
+    {"type": "正文例", "no": "", "book_page": 124, "summary": "A=[[1,1],[1,-1],[2,3]]，奇异值 √15 与 √2", "kp": "M5.3.K1"},
+    {"type": "例", "no": "1", "book_page": 124, "summary": "酉等价不改变奇异值", "kp": "M5.3.K2"},
+    {"type": "定理", "no": "5.3-2", "book_page": 124, "summary": "可逆矩阵有酉对角分解 Q1^H A Q2=diag(σ_i)", "kp": "M5.3.K3"},
+    {"type": "式", "no": "5.3-2", "book_page": 124, "summary": "Q1^H A Q2=diag(σ_1,...,σ_n)", "kp": "M5.3.K3"},
+    {"type": "式", "no": "5.3-3", "book_page": 124, "summary": "Q2^H A^H A Q2=diag(λ_i)", "kp": "M5.3.K3"},
+    {"type": "式", "no": "5.3-4", "book_page": 125, "summary": "Q2^H A^H A Q2=Σ^H Σ", "kp": "M5.3.K3"},
+    {"type": "例", "no": "2", "book_page": 125, "summary": "三阶矩阵的正交对角分解，奇异值 √2,√2,1", "kp": "M5.3.K3"},
+    {"type": "定理", "no": "5.3-3", "book_page": 126, "summary": "秩 r 的 m×n 矩阵存在奇异值分解", "kp": "M5.3.K4"},
+    {"type": "式", "no": "5.3-5", "book_page": 126, "summary": "V^H A^H A V 的分块", "kp": "M5.3.K4"},
+    {"type": "式", "no": "5.3-6", "book_page": 126, "summary": "四个分块方程", "kp": "M5.3.K4"},
+    {"type": "式", "no": "5.3-7", "book_page": 127, "summary": "U_r=A V_r Σ_r^{-1}", "kp": "M5.3.K4"},
+    {"type": "式", "no": "5.3-8", "book_page": 127, "summary": "把 U_r 补成酉矩阵 U", "kp": "M5.3.K4"},
+    {"type": "式", "no": "5.3-9", "book_page": 127, "summary": "U^H A V 的分块", "kp": "M5.3.K4"},
+    {"type": "例", "no": "3", "book_page": 127, "summary": "2×3 矩阵的奇异值分解，正奇异值 2", "kp": "M5.3.K4"},
+    {"type": "式", "no": "5.3-10", "book_page": 128, "summary": "u_i=σ_i^{-1} A v_i，左奇异向量", "kp": "M5.3.K5"},
+    {"type": "性质", "no": "", "book_page": 128, "summary": "Hermite 矩阵奇异值是特征值绝对值；‖A‖_2=σ_1；Frobenius 范数等于奇异值平方和的平方根", "kp": "M5.3.K6"},
+    {"type": "例", "no": "4", "book_page": 128, "summary": "σ_1(AB)≤σ_1(A)σ_1(B)，并给出 σ_1(A+B)≤σ_1(A)+σ_1(B)", "kp": "M5.3.K6"},
+    {"type": "式", "no": "5.3-11", "book_page": 128, "summary": "σ_1(AB)≤σ_1(A)σ_1(B)", "kp": "M5.3.K6"},
+    {"type": "式", "no": "5.3-12", "book_page": 128, "summary": "σ_1(A+B)≤σ_1(A)+σ_1(B)，教材要求自行证明", "kp": "M5.3.K6"},
+    {"type": "式", "no": "5.3-13", "book_page": 128, "summary": "紧凑形式 A=U_r Σ_r V_r^H=∑ σ_i u_i v_i^H", "kp": "M5.3.K5"}
+  ],
+  "errata": [
+    {"book_page": 128, "text": "式 (5.3-12) 之后写“请读者自证”。讲解按 2-范数的三角不等式补出证明，不把原话照抄进正文。"}
+  ],
   "exercises": [
-    {
-      "set": "习题 5.3",
-      "no": 1,
-      "kp": [
-        "M5.3.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 5.3",
-      "no": 2,
-      "kp": [
-        "M5.3.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 5.3",
-      "no": 3,
-      "kp": [
-        "M5.3.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 5.3",
-      "no": 4,
-      "kp": [
-        "M5.3.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 5.3",
-      "no": 5,
-      "kp": [
-        "M5.3.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 5.3",
-      "no": 6,
-      "kp": [
-        "M5.3.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    }
+    {"set": "习题 5.3", "no": "1", "kp": ["M5.3.K1", "M5.3.K4"], "method": "先算 A^H A 的特征值，再按定理 5.3-3 配左右奇异向量"},
+    {"set": "习题 5.3", "no": "2", "kp": ["M5.3.K1", "M5.3.K4"], "method": "3×2 矩阵，同样先算 A^H A"},
+    {"set": "习题 5.3", "no": "3", "kp": ["M5.3.K2"], "method": "用例 1 的酉等价，或比较 A^H A 与 (UA)^H(UA)"},
+    {"set": "习题 5.3", "no": "4", "kp": ["M5.3.K5"], "method": "由式 (5.3-10) 的逆关系 AA^H (A v_i)=λ_i A v_i"},
+    {"set": "习题 5.3", "no": "5", "kp": ["M5.3.K5"], "method": "由 A=U Σ V^H 及酉矩阵行列式模为 1"},
+    {"set": "习题 5.3", "no": "6", "kp": ["M5.3.K5"], "method": "左特征向量定义与 V^H、U^H 的行向量对照式 (5.3-1')"}
   ],
   "verify_script": ".work/kp/verify/M5.3.py"
 }

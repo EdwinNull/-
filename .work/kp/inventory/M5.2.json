@@ -1,68 +1,44 @@
 {
   "id": "M5.2",
   "title": "方阵的正交（酉）三角分解",
-  "read_book_pages": [
-    115,
-    122
-  ],
-  "read_pdf_pages": [
-    126,
-    133
-  ],
-  "hires_pdf_pages": [],
+  "read_book_pages": [115, 122],
+  "read_pdf_pages": [126, 133],
+  "hires_pdf_pages": [131],
   "extra_pages_consulted": [],
-  "notation": [],
-  "items": [],
-  "errata": [],
+  "notation": [
+    {"symbol": "Q", "latex": "\\boldsymbol Q", "meaning": "正交或酉矩阵因子", "book_page": 116},
+    {"symbol": "R", "latex": "\\boldsymbol R", "meaning": "上三角因子，对角元在 Schmidt 算法中常取正", "book_page": 116},
+    {"symbol": "β_i", "latex": "\\boldsymbol\\beta_i", "meaning": "Schmidt 正交化中尚未单位化的向量", "book_page": 116},
+    {"symbol": "H", "latex": "\\boldsymbol H", "meaning": "Householder 矩阵，式 (5.2-7)", "book_page": 120}
+  ],
+  "items": [
+    {"type": "式", "no": "5.2-1", "book_page": 116, "summary": "列向量的 Schmidt 过程写成 A=QR 的矩阵形式", "kp": "M5.2.K1"},
+    {"type": "定义", "no": "5.2-1", "book_page": 116, "summary": "可逆矩阵的正交（酉）三角分解 A=QR", "kp": "M5.2.K1"},
+    {"type": "式", "no": "5.2-2", "book_page": 116, "summary": "A=QR", "kp": "M5.2.K1"},
+    {"type": "定理", "no": "5.2-1", "book_page": 116, "summary": "可逆矩阵必有 QR 分解，除去对角符号因子外唯一", "kp": "M5.2.K2"},
+    {"type": "式", "no": "5.2-3", "book_page": 116, "summary": "两个分解相差的上三角因子 G", "kp": "M5.2.K2"},
+    {"type": "式", "no": "5.2-4", "book_page": 117, "summary": "三阶情形逐列确定 q_i 与 r_ij 的方程", "kp": "M5.2.K3"},
+    {"type": "正文例", "no": "", "book_page": 117, "summary": "A=[[1,2,2],[2,1,2],[1,2,1]] 取正对角元的 QR", "kp": "M5.2.K3"},
+    {"type": "定理", "no": "5.2-2", "book_page": 118, "summary": "列满秩 n×r 矩阵的 QR 分解，R 下方为零块", "kp": "M5.2.K4"},
+    {"type": "式", "no": "5.2-5", "book_page": 119, "summary": "A=Q [R_r; O]", "kp": "M5.2.K4"},
+    {"type": "式", "no": "5.2-6", "book_page": 119, "summary": "紧凑形式 A=Q_r R_r，Q_r 为 n×r 列正交", "kp": "M5.2.K4"},
+    {"type": "例", "no": "1", "book_page": 119, "summary": "4×3 矩阵的列满秩 QR", "kp": "M5.2.K4"},
+    {"type": "式", "no": "5.2-7", "book_page": 120, "summary": "把等长向量 x 变为 y 的 Householder 矩阵", "kp": "M5.2.K5"},
+    {"type": "例", "no": "2", "book_page": 120, "summary": "把 [0,3,0,4] 变为 [5,0,0,0]；结果 (2,4) 元印作 -12/15", "kp": "M5.2.K5"},
+    {"type": "定理", "no": "5.2-3", "book_page": 120, "summary": "实可逆矩阵可用一系列 Householder 变换化为上三角", "kp": "M5.2.K6"},
+    {"type": "例", "no": "3", "book_page": 121, "summary": "用两次 Householder 变换求 [[2,2,1],[1,2,2],[2,1,2]] 的 QR", "kp": "M5.2.K6"},
+    {"type": "式", "no": "5.2-8", "book_page": 122, "summary": "Ax=b 化为 Qy=b 与 Rx=y", "kp": "M5.2.K7"}
+  ],
+  "errata": [
+    {"book_page": 120, "text": "例 2 结果矩阵 (2,4) 元印作 -12/15。由 I-(1/25)(x-y)(x-y)^T 应为 -12/25，且与 (4,2) 元应对称。"}
+  ],
   "exercises": [
-    {
-      "set": "习题 5.2",
-      "no": 1,
-      "kp": [
-        "M5.2.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 5.2",
-      "no": 2,
-      "kp": [
-        "M5.2.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 5.2",
-      "no": 3,
-      "kp": [
-        "M5.2.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 5.2",
-      "no": 4,
-      "kp": [
-        "M5.2.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 5.2",
-      "no": 5,
-      "kp": [
-        "M5.2.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 5.2",
-      "no": 6,
-      "kp": [
-        "M5.2.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    }
+    {"set": "习题 5.2", "no": "1", "kp": ["M5.2.K3"], "method": "对三列作 Schmidt 正交化，对角元取正"},
+    {"set": "习题 5.2", "no": "2", "kp": ["M5.2.K5"], "method": "先核对长度都是 3，再用式 (5.2-7)"},
+    {"set": "习题 5.2", "no": "3", "kp": ["M5.2.K4", "M5.2.K7"], "method": "4×3 列满秩 QR，比较秩后用式 (5.2-8) 回代"},
+    {"set": "习题 5.2", "no": "4", "kp": ["M5.2.K5"], "method": "H=I-a ωω^T，正交当且仅当 a=0 或 a=2"},
+    {"set": "习题 5.2", "no": "5", "kp": ["M5.2.K2"], "method": "三角且正交则非对角元必须为零，对角元模为 1"},
+    {"set": "习题 5.2", "no": "6", "kp": ["M5.2.K6"], "method": "按定理 5.2-3，σ=-sign(a11)，逐列作 Householder"}
   ],
   "verify_script": ".work/kp/verify/M5.2.py"
 }

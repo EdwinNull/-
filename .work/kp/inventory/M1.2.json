@@ -1,68 +1,403 @@
 {
-  "id": "M1.2",
-  "title": "矩阵及其运算",
-  "read_book_pages": [
-    10,
-    14
-  ],
-  "read_pdf_pages": [
-    21,
-    25
-  ],
-  "hires_pdf_pages": [],
-  "extra_pages_consulted": [],
-  "notation": [],
-  "items": [],
-  "errata": [],
-  "exercises": [
-    {
-      "set": "习题 1.2",
-      "no": 1,
-      "kp": [
-        "M1.2.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 1.2",
-      "no": 2,
-      "kp": [
-        "M1.2.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 1.2",
-      "no": 3,
-      "kp": [
-        "M1.2.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 1.2",
-      "no": 4,
-      "kp": [
-        "M1.2.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 1.2",
-      "no": 5,
-      "kp": [
-        "M1.2.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 1.2",
-      "no": 6,
-      "kp": [
-        "M1.2.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    }
-  ],
-  "verify_script": ".work/kp/verify/M1.2.py"
+ "id": "M1.2",
+ "title": "矩阵及其运算",
+ "read_book_pages": [
+  10,
+  14
+ ],
+ "read_pdf_pages": [
+  21,
+  25
+ ],
+ "hires_pdf_pages": [
+  21,
+  22,
+  23,
+  24,
+  25
+ ],
+ "extra_pages_consulted": [
+  {
+   "book_page": 3,
+   "why": "第 1.1 节：数域 F、向量的线性运算（八条规则）与转置记号 T（前置知识核实）"
+  },
+  {
+   "book_page": 15,
+   "why": "习题 1.2 第 2 题续页（第 2–6 题题面）及 1.3 节开头（初等矩阵，核实后续应用）"
+  },
+  {
+   "book_page": 93,
+   "why": "第 4.1 节：Jordan 块的幂 [[(0.8)^k, k(0.8)^{k-1}],[0,(0.8)^k]]、diag(J_1,…,J_s) 记号（核实后续应用）"
+  },
+  {
+   "book_page": 89,
+   "why": "第 3.3 节式 (3.3-2) 含 AᴴA（样章 M3.3，K6 关联）"
+  }
+ ],
+ "notation": [
+  {
+   "symbol": "A=[a_ij]_{m×n}",
+   "latex": "\\boldsymbol A=[a_{ij}]_{m\\times n}",
+   "meaning": "m×n 矩阵，a_ij 为第 i 行第 j 列元素",
+   "book_page": 10
+  },
+  {
+   "symbol": "I",
+   "latex": "\\boldsymbol I",
+   "meaning": "单位矩阵",
+   "book_page": 10
+  },
+  {
+   "symbol": "O",
+   "latex": "\\boldsymbol O",
+   "meaning": "零矩阵",
+   "book_page": 10
+  },
+  {
+   "symbol": "Aᵀ",
+   "latex": "\\boldsymbol A^{\\mathrm T}",
+   "meaning": "转置",
+   "book_page": 10
+  },
+  {
+   "symbol": "Aᴴ",
+   "latex": "\\boldsymbol A^{\\mathrm H}",
+   "meaning": "共轭转置，Aᴴ=(Ā)ᵀ",
+   "book_page": 10
+  },
+  {
+   "symbol": "A^k",
+   "latex": "\\boldsymbol A^{k}",
+   "meaning": "方阵的 k 次幂，A^0=I",
+   "book_page": 12
+  },
+  {
+   "symbol": "C_k^i",
+   "latex": "\\mathrm{C}_k^i",
+   "meaning": "二项式系数（教材例 3 中写作 C_k^1 等）",
+   "book_page": 12
+  },
+  {
+   "symbol": "A_ij",
+   "latex": "A_{ij}",
+   "meaning": "元素 a_ij 的代数余子式",
+   "book_page": 13
+  },
+  {
+   "symbol": "adjA",
+   "latex": "\\operatorname{adj}\\boldsymbol A",
+   "meaning": "伴随矩阵，[A_ij]ᵀ",
+   "book_page": 13
+  },
+  {
+   "symbol": "|A|、detA",
+   "latex": "\\lvert\\boldsymbol A\\rvert",
+   "meaning": "方阵的行列式（教材：有时也记 detA）",
+   "book_page": 13
+  },
+  {
+   "symbol": "A⁻¹",
+   "latex": "\\boldsymbol A^{-1}",
+   "meaning": "逆矩阵",
+   "book_page": 13
+  },
+  {
+   "symbol": "diag(A_1,…,A_p)",
+   "latex": "\\operatorname{diag}(\\boldsymbol A_1,\\cdots,\\boldsymbol A_p)",
+   "meaning": "分块对角矩阵（本页写作形如对角排列的分块矩阵；diag 记号见书页 93）",
+   "book_page": 14
+  }
+ ],
+ "items": [
+  {
+   "type": "定义",
+   "no": "",
+   "book_page": 10,
+   "summary": "F 上的 m×n 矩阵、元素 a_ij；实矩阵、复矩阵；默认讨论实矩阵；记号 A=[a_ij]_{m×n}",
+   "kp": "M1.2.K1"
+  },
+  {
+   "type": "定义",
+   "no": "",
+   "book_page": 10,
+   "summary": "n 阶方阵、主对角线、主对角线元素",
+   "kp": "M1.2.K1"
+  },
+  {
+   "type": "定义",
+   "no": "",
+   "book_page": 10,
+   "summary": "单位矩阵 I、对角矩阵",
+   "kp": "M1.2.K1"
+  },
+  {
+   "type": "定义",
+   "no": "",
+   "book_page": 10,
+   "summary": "实对称矩阵（Aᵀ=A）、Hermite 矩阵（A 的共轭转置=A，记 Aᴴ，Aᴴ=(Ā)ᵀ）",
+   "kp": "M1.2.K1"
+  },
+  {
+   "type": "定义",
+   "no": "",
+   "book_page": 10,
+   "summary": "零矩阵 O；矩阵相等 A=B（同型且对应元素相等）",
+   "kp": "M1.2.K1"
+  },
+  {
+   "type": "注",
+   "no": "",
+   "book_page": 10,
+   "summary": "Aᴴ 表示 A 的转置再取共轭，显然 Aᴴ=(Ā)ᵀ，即共轭转置",
+   "kp": "M1.2.K1"
+  },
+  {
+   "type": "定义",
+   "no": "",
+   "book_page": 11,
+   "summary": "矩阵加法 A+B=[a_ij+b_ij]（同为 m×n）",
+   "kp": "M1.2.K2"
+  },
+  {
+   "type": "定义",
+   "no": "",
+   "book_page": 11,
+   "summary": "数乘 kA=Ak=[k a_ij]",
+   "kp": "M1.2.K2"
+  },
+  {
+   "type": "定义",
+   "no": "",
+   "book_page": 11,
+   "summary": "矩阵乘法：A 为 m×s，B 为 s×n，C=AB=[c_ij]，c_ij=Σ_{k=1}^{s} a_ik b_kj",
+   "kp": "M1.2.K3"
+  },
+  {
+   "type": "例",
+   "no": "1",
+   "book_page": 11,
+   "summary": "A(2×3)、B(3×2)：AB=[[0,2],[-2,1]]，BA 为 3 阶 [[1,4,4],[-3,-2,-7],[1,0,2]]；说明乘法不满足交换律",
+   "kp": "M1.2.K3"
+  },
+  {
+   "type": "注",
+   "no": "",
+   "book_page": 11,
+   "summary": "矩阵乘法不满足交换律，一般 AB≠BA",
+   "kp": "M1.2.K3"
+  },
+  {
+   "type": "定义",
+   "no": "",
+   "book_page": 11,
+   "summary": "可交换：满足 AB=BA 的 B 称为与 A 可交换；可交换的 A、B 必为同阶方阵",
+   "kp": "M1.2.K4"
+  },
+  {
+   "type": "例",
+   "no": "2",
+   "book_page": 11,
+   "summary": "A=[[2,1],[0,3]]：与 A 可交换的全体矩阵为 [[b11,b12],[0,b11+b12]]（解跨书页 11–12）",
+   "kp": "M1.2.K4"
+  },
+  {
+   "type": "定义",
+   "no": "",
+   "book_page": 12,
+   "summary": "方阵的 k 次幂 A^k；规定 A^0=I",
+   "kp": "M1.2.K5"
+  },
+  {
+   "type": "式",
+   "no": "",
+   "book_page": 12,
+   "summary": "A^k A^l=A^{k+l}，(A^k)^l=A^{kl}（k,l 为非负整数）",
+   "kp": "M1.2.K5"
+  },
+  {
+   "type": "注",
+   "no": "",
+   "book_page": 12,
+   "summary": "一般 (A+B)²≠A²+2AB+B²，(AB)^k≠A^kB^k",
+   "kp": "M1.2.K4"
+  },
+  {
+   "type": "例",
+   "no": "3",
+   "book_page": 12,
+   "summary": "四阶 Jordan 块 J=(-2)I+U：J²、J³ 及 J^k（k≥4）的二项式展开",
+   "kp": "M1.2.K5"
+  },
+  {
+   "type": "例",
+   "no": "4",
+   "book_page": 13,
+   "summary": "A 为 m×n 复矩阵：AᴴA=O 当且仅当 A=O（Aᴴ A 对角元为 Σ_i|a_ij|²）",
+   "kp": "M1.2.K6"
+  },
+  {
+   "type": "定义",
+   "no": "",
+   "book_page": 13,
+   "summary": "可逆矩阵与逆矩阵：n 阶方阵 A，存在 n 阶 G 使 AG=GA=I，G=A⁻¹",
+   "kp": "M1.2.K7"
+  },
+  {
+   "type": "定义",
+   "no": "",
+   "book_page": 13,
+   "summary": "代数余子式 A_ij 与伴随矩阵 adjA",
+   "kp": "M1.2.K7"
+  },
+  {
+   "type": "式",
+   "no": "1.2-1",
+   "book_page": 13,
+   "summary": "adjA=[A_ij]ᵀ",
+   "kp": "M1.2.K7"
+  },
+  {
+   "type": "式",
+   "no": "1.2-2",
+   "book_page": 13,
+   "summary": "A·adjA=adjA·A=|A|I（|A| 也记 detA）",
+   "kp": "M1.2.K7"
+  },
+  {
+   "type": "注",
+   "no": "",
+   "book_page": 13,
+   "summary": "由式 (1.2-2)：A 可逆的充要条件是 |A|≠0",
+   "kp": "M1.2.K7"
+  },
+  {
+   "type": "式",
+   "no": "",
+   "book_page": 13,
+   "summary": "A 可逆时 A⁻¹=(1/|A|) adjA",
+   "kp": "M1.2.K7"
+  },
+  {
+   "type": "例",
+   "no": "5",
+   "book_page": 13,
+   "summary": "A=[[4,3,2],[3,2,1],[2,1,1]]：|A|=-1，A⁻¹=[[-1,1,1],[1,0,-2],[1,-2,1]]（解跨书页 13–14）",
+   "kp": "M1.2.K7"
+  },
+  {
+   "type": "性质",
+   "no": "",
+   "book_page": 14,
+   "summary": "(1) A 可逆、k≠0：(kA)⁻¹=(1/k)A⁻¹",
+   "kp": "M1.2.K8"
+  },
+  {
+   "type": "性质",
+   "no": "",
+   "book_page": 14,
+   "summary": "(2) A、B 同阶可逆：AB 可逆，(AB)⁻¹=B⁻¹A⁻¹",
+   "kp": "M1.2.K8"
+  },
+  {
+   "type": "性质",
+   "no": "",
+   "book_page": 14,
+   "summary": "(3) A 可逆：Aᴴ 可逆，(Aᴴ)⁻¹=(A⁻¹)ᴴ",
+   "kp": "M1.2.K8"
+  },
+  {
+   "type": "注",
+   "no": "",
+   "book_page": 14,
+   "summary": "高阶矩阵用伴随矩阵求逆麻烦，较好方法是利用矩阵的初等变换（见 1.3 节）",
+   "kp": "M1.2.K8"
+  },
+  {
+   "type": "定义",
+   "no": "",
+   "book_page": 14,
+   "summary": "子块与分块矩阵；分块矩阵的加法、数乘、乘法规则（前者列分块方式与后者行分块方式一致）",
+   "kp": "M1.2.K9"
+  },
+  {
+   "type": "定义",
+   "no": "",
+   "book_page": 14,
+   "summary": "分块对角矩阵（准对角矩阵）：非对角子块全为零矩阵，对角子块均为方阵；各 A_i 为一阶时即对角矩阵",
+   "kp": "M1.2.K9"
+  }
+ ],
+ "errata": [
+  {
+   "book_page": 11,
+   "text": "例 1 的结论“矩阵乘法不满足交换律”所用的 AB（2 阶）与 BA（3 阶）连型都不同，只能说明 AB 与 BA 不一定同型；同阶方阵的不可交换性需另举例（讲解 K3 补充）。属不严密，不影响结论。"
+  },
+  {
+   "book_page": 12,
+   "text": "例 3 写 J^k（k≥4）；展开式对一切非负整数 k 均成立（k<3 时多出的二项式系数 C_k^j 自动为 0）。属不严密，不影响结论。"
+  },
+  {
+   "book_page": 15,
+   "text": "习题 1.2 第 6 题题面“求 |A| 和 |A|^{-1}”：|A|^{-1} 字面为数 1/|A|；现有解答按字面作答并另给 A^{-1} 验算。题面可能意在求 A^{-1}，已在习题导航中提示，不作勘误。"
+  }
+ ],
+ "exercises": [
+  {
+   "set": "习题 1.2",
+   "no": 1,
+   "kp": [
+    "M1.2.K3",
+    "M1.2.K1"
+   ],
+   "method": "三矩阵连乘：先算 1×3 乘 3×3 再乘 3×1，结果为 1×1，合并同类项得二次型 Σ a_ij x_i x_j"
+  },
+  {
+   "set": "习题 1.2",
+   "no": 2,
+   "kp": [
+    "M1.2.K4",
+    "M1.2.K5"
+   ],
+   "method": "(1) 展开 (A+B)(A−B)，交叉项为 BA−AB；(2) 对 k 归纳，用 AB=BA 与 C_k^{j-1}+C_k^j=C_{k+1}^j"
+  },
+  {
+   "set": "习题 1.2",
+   "no": 3,
+   "kp": [
+    "M1.2.K7",
+    "M1.2.K8",
+    "M1.2.K3"
+   ],
+   "method": "(1) X=A⁻¹B；(2) 两侧都是交换行/列的初等矩阵，逆为自身，X=ABC"
+  },
+  {
+   "set": "习题 1.2",
+   "no": 4,
+   "kp": [
+    "M1.2.K7",
+    "M1.2.K5",
+    "M1.2.K8"
+   ],
+   "method": "P 可逆，A=PBP⁻¹，A^8=PB^8P⁻¹，B^8=I；P⁻¹ 用伴随矩阵法"
+  },
+  {
+   "set": "习题 1.2",
+   "no": 5,
+   "kp": [
+    "M1.2.K5",
+    "M1.2.K4"
+   ],
+   "method": "A=λ₀I+J，J³=O，二项式展开只剩三项，再把系数写成 (λ^k)′、(λ^k)″/2! 在 λ₀ 处的值"
+  },
+  {
+   "set": "习题 1.2",
+   "no": 6,
+   "kp": [
+    "M1.2.K9",
+    "M1.2.K7"
+   ],
+   "method": "分块对角矩阵的行列式等于对角子块行列式之积（或按行展开）；|A|=2≠0，|A|^{-1}=1/2"
+  }
+ ],
+ "verify_script": ".work/kp/verify/M1.2.py"
 }

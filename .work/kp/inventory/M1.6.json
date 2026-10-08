@@ -9,51 +9,345 @@
     54,
     60
   ],
-  "hires_pdf_pages": [],
-  "extra_pages_consulted": [],
-  "notation": [],
-  "items": [],
-  "errata": [],
+  "hires_pdf_pages": [
+    56,
+    57,
+    58,
+    59
+  ],
+  "extra_pages_consulted": [
+    {
+      "book_page": 32,
+      "why": "1.5 节例 2（可逆矩阵 A 的特征值 λ≠0 且 λ⁻¹ 是 A⁻¹ 的特征值），1.6 节例 3 引用"
+    },
+    {
+      "book_page": 35,
+      "why": "定理 1.5-5（相似矩阵有相同的特征多项式）、相似的定义，1.6 节例 4 引用"
+    },
+    {
+      "book_page": 38,
+      "why": "定义 1.5-5 酉（正交）矩阵，正交变换的前置知识"
+    },
+    {
+      "book_page": 39,
+      "why": "定理 1.5-8 的推论、定理 1.5-9，定理 1.6-1 的证明引用"
+    },
+    {
+      "book_page": 40,
+      "why": "定理 1.5-9 之后的推论：实对称矩阵必可正交相似对角化（定理 1.6-1 证明所引）"
+    },
+    {
+      "book_page": 82,
+      "why": "第3.1节例 1：正定矩阵 A=PᵀP 产生加权范数（后续应用核实）"
+    },
+    {
+      "book_page": 114,
+      "why": "第5.1节例 3、定义 5.1-2：正定矩阵的 LDLᵀ 与 Cholesky 分解（后续应用核实）"
+    },
+    {
+      "book_page": 124,
+      "why": "第5.3节：AᴴA 为半正定 Hermite 矩阵、定理 5.3-2 中 A 可逆时 AᴴA 正定（后续应用核实）"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "f(x₁,…,xₙ)",
+      "latex": "f(x_1,\\cdots,x_n)",
+      "meaning": "n 元实二次型（二次齐次多项式）",
+      "book_page": 43
+    },
+    {
+      "symbol": "A=[aᵢⱼ]",
+      "latex": "\\boldsymbol A=[a_{ij}]",
+      "meaning": "二次型的矩阵，n 阶实对称矩阵，aᵢⱼ=aⱼᵢ",
+      "book_page": 43
+    },
+    {
+      "symbol": "f=xᵀAx",
+      "latex": "f=\\boldsymbol x^{\\mathrm T}\\boldsymbol{Ax}",
+      "meaning": "二次型的矩阵表示（式 (1.6-2')）",
+      "book_page": 43
+    },
+    {
+      "symbol": "x=Cy",
+      "latex": "\\boldsymbol x=\\boldsymbol{Cy}",
+      "meaning": "可逆线性变换（式 (1.6-3)）",
+      "book_page": 44
+    },
+    {
+      "symbol": "A≃B",
+      "latex": "\\boldsymbol A\\simeq\\boldsymbol B",
+      "meaning": "A 与 B 合同：存在可逆 P 使 PᵀAP=B（定义 1.6-1）",
+      "book_page": 44
+    },
+    {
+      "symbol": "A>0 (A<0)",
+      "latex": "\\boldsymbol A>\\boldsymbol 0\\ (\\boldsymbol A<\\boldsymbol 0)",
+      "meaning": "正定（负定）矩阵（定义 1.6-2）",
+      "book_page": 46
+    },
+    {
+      "symbol": "A≥0 (A≤0)",
+      "latex": "\\boldsymbol A\\geqslant\\boldsymbol 0\\ (\\boldsymbol A\\leqslant\\boldsymbol 0)",
+      "meaning": "半正定（半负定）矩阵（定义 1.6-2）",
+      "book_page": 46
+    },
+    {
+      "symbol": "|α|",
+      "latex": "|\\boldsymbol\\alpha|",
+      "meaning": "向量长度（第1章记号，教材书页 47 推论 1 的证明中使用）",
+      "book_page": 47
+    },
+    {
+      "symbol": "Aₖ",
+      "latex": "\\boldsymbol A_k",
+      "meaning": "A 的 k 阶顺序主子矩阵，|Aₖ| 为 k 阶顺序主子式",
+      "book_page": 47
+    },
+    {
+      "symbol": "adj A",
+      "latex": "\\operatorname{adj}\\boldsymbol A",
+      "meaning": "伴随矩阵（教材写作 adjA）",
+      "book_page": 48
+    }
+  ],
+  "items": [
+    {
+      "type": "式",
+      "no": "1.6-1",
+      "book_page": 43,
+      "summary": "n 元实二次型 f 的一般展开式（交叉项系数写作 2aᵢⱼ）",
+      "kp": "M1.6.K1"
+    },
+    {
+      "type": "式",
+      "no": "1.6-2",
+      "book_page": 43,
+      "summary": "取 aⱼᵢ=aᵢⱼ，f=ΣΣ aᵢⱼ xᵢxⱼ",
+      "kp": "M1.6.K1"
+    },
+    {
+      "type": "式",
+      "no": "1.6-2'",
+      "book_page": 43,
+      "summary": "f=xᵀAx，A 为实对称矩阵",
+      "kp": "M1.6.K1"
+    },
+    {
+      "type": "注",
+      "no": "",
+      "book_page": 43,
+      "summary": "二次型与 n 阶实对称矩阵一一对应（正文叙述）",
+      "kp": "M1.6.K1"
+    },
+    {
+      "type": "例",
+      "no": "1",
+      "book_page": 43,
+      "summary": "f=3x₁²+2x₂²−x₃²−2x₁x₃+4x₂x₃ 的矩阵 A=[[3,0,−1],[0,2,2],[−1,2,−1]]",
+      "kp": "M1.6.K1"
+    },
+    {
+      "type": "注",
+      "no": "",
+      "book_page": 44,
+      "summary": "线性变换的定义（数域 F 上向量空间 V 的变换，保持加法与数乘）；Tα=Cα 是 Rⁿ 上的线性变换；C 可逆时有逆变换 α=C⁻¹β，称可逆线性变换",
+      "kp": "M1.6.K2"
+    },
+    {
+      "type": "式",
+      "no": "1.6-3",
+      "book_page": 44,
+      "summary": "可逆线性变换 x=Cy",
+      "kp": "M1.6.K2"
+    },
+    {
+      "type": "式",
+      "no": "1.6-4",
+      "book_page": 44,
+      "summary": "标准形（法式）f=d₁y₁²+…+dₙyₙ²=yᵀdiag(d₁,…,dₙ)y；化标准形等价于对实对称 A 求可逆实 C 使 CᵀAC 为对角阵",
+      "kp": "M1.6.K2"
+    },
+    {
+      "type": "定义",
+      "no": "1.6-1",
+      "book_page": 44,
+      "summary": "合同：PᵀAP=B，A≃B；合同变换、合同变换矩阵",
+      "kp": "M1.6.K3"
+    },
+    {
+      "type": "式",
+      "no": "1.6-5",
+      "book_page": 44,
+      "summary": "PᵀAP=B",
+      "kp": "M1.6.K3"
+    },
+    {
+      "type": "性质",
+      "no": "",
+      "book_page": 44,
+      "summary": "合同的自反性、对称性、传递性；P 为正交矩阵时合同变换也是相似变换",
+      "kp": "M1.6.K3"
+    },
+    {
+      "type": "定理",
+      "no": "1.6-1",
+      "book_page": 44,
+      "summary": "任意实二次型 f=xᵀAx 存在正交线性变换 x=Qy 化为标准形 λ₁y₁²+…+λₙyₙ²（λᵢ 为 A 的特征值）",
+      "kp": "M1.6.K4"
+    },
+    {
+      "type": "式",
+      "no": "1.6-6",
+      "book_page": 45,
+      "summary": "f=λ₁y₁²+…+λₙyₙ²",
+      "kp": "M1.6.K4"
+    },
+    {
+      "type": "例",
+      "no": "2",
+      "book_page": 45,
+      "summary": "四元二次型 f=2x₁x₂+2x₁x₃−2x₁x₄−2x₂x₃+2x₂x₄+2x₃x₄ 的正交变换，特征值 −3,1,1,1，标准形 −3y₁²+y₂²+y₃²+y₄²",
+      "kp": "M1.6.K4"
+    },
+    {
+      "type": "定义",
+      "no": "1.6-2",
+      "book_page": 46,
+      "summary": "正定（负定）、半正定（半负定）二次型与矩阵，记号 A>0(<0)、A≥0(≤0)",
+      "kp": "M1.6.K5"
+    },
+    {
+      "type": "定理",
+      "no": "1.6-2",
+      "book_page": 46,
+      "summary": "f=xᵀAx 正定（负定）当且仅当 A 的特征值全大于（小于）零",
+      "kp": "M1.6.K5"
+    },
+    {
+      "type": "推论",
+      "no": "",
+      "book_page": 46,
+      "summary": "定理 1.6-2 的推论 1：f 正定（负定）当且仅当存在可逆实矩阵 P 使 A=PᵀP（A=−PᵀP）",
+      "kp": "M1.6.K6"
+    },
+    {
+      "type": "推论",
+      "no": "",
+      "book_page": 47,
+      "summary": "定理 1.6-2 的推论 2：A 正定则 |A|>0",
+      "kp": "M1.6.K6"
+    },
+    {
+      "type": "定理",
+      "no": "1.6-3",
+      "book_page": 47,
+      "summary": "f 正定（负定）当且仅当 A 的各阶顺序主子式都大于零（奇数阶小于零而偶数阶大于零）",
+      "kp": "M1.6.K7"
+    },
+    {
+      "type": "式",
+      "no": "1.6-7",
+      "book_page": 48,
+      "summary": "分块合同：[[I,0],[−βᵀA⁻¹,1]]·[[A,β],[βᵀ,aₙₙ]]·[[I,−A⁻¹β],[0,1]]=diag(Aₙ₋₁, aₙₙ−βᵀAₙ₋₁⁻¹β)",
+      "kp": "M1.6.K7"
+    },
+    {
+      "type": "例",
+      "no": "5",
+      "book_page": 49,
+      "summary": "f=x₁²+x₂²+5x₃²+2tx₁x₂−2x₁x₃+4x₂x₃ 正定当且仅当 −4/5<t<0",
+      "kp": "M1.6.K7"
+    },
+    {
+      "type": "定理",
+      "no": "1.6-4",
+      "book_page": 48,
+      "summary": "f 半正定（半负定）当且仅当 A 的特征值全非负（非正）",
+      "kp": "M1.6.K8"
+    },
+    {
+      "type": "推论",
+      "no": "",
+      "book_page": 48,
+      "summary": "定理 1.6-4 的推论 1：f 半正定（半负定）当且仅当存在实矩阵 P 使 A=PᵀP（A=−PᵀP）",
+      "kp": "M1.6.K8"
+    },
+    {
+      "type": "推论",
+      "no": "",
+      "book_page": 48,
+      "summary": "定理 1.6-4 的推论 2：A 半正定则 |A|≥0",
+      "kp": "M1.6.K8"
+    },
+    {
+      "type": "例",
+      "no": "3",
+      "book_page": 48,
+      "summary": "A 正定 ⇒ A⁻¹、adjA 正定（用 1.5 节例 2；教材写 adjA=A⁻¹/|A|，应为 |A|·A⁻¹）",
+      "kp": "M1.6.K9"
+    },
+    {
+      "type": "例",
+      "no": "4",
+      "book_page": 48,
+      "summary": "A、B 正定 ⇒ AB 的特征值全为正，但 AB 未必正定；AB=BA 时 AB 正定",
+      "kp": "M1.6.K9"
+    }
+  ],
+  "errata": [
+    {
+      "book_page": 49,
+      "text": "习题 1.6 第 1 题题面印作 f=x₁²+2x₂²+3x₃²+4x₁₂−4x₂x₃，其中“4x₁₂”应为交叉项 4x₁x₂（与 README 勘误一致）。"
+    },
+    {
+      "book_page": 48,
+      "text": "例 3 的证明写 adjA=A⁻¹/|A|，严格应为 adjA=|A|·A⁻¹；教材最后的论断（adjA 对称且为正定矩阵的正数倍）结论正确，讲解中改写为 adjA=|A|A⁻¹。"
+    }
+  ],
   "exercises": [
     {
       "set": "习题 1.6",
-      "no": 1,
+      "no": "1",
       "kp": [
-        "M1.6.K1"
+        "M1.6.K1",
+        "M1.6.K4"
       ],
-      "method": "按本节讲解流程处理并核对条件"
+      "method": "写出矩阵 [[1,2,0],[2,2,−2],[0,−2,3]]，特征值 −1,2,5，正交化后 x=Qy，标准形 −y₁²+2y₂²+5y₃²；题面 4x₁₂ 应为 4x₁x₂"
     },
     {
       "set": "习题 1.6",
-      "no": 2,
+      "no": "2",
       "kp": [
-        "M1.6.K1"
+        "M1.6.K7"
       ],
-      "method": "按本节讲解流程处理并核对条件"
+      "method": "顺序主子式 D₁=1，D₂=2−t²，D₃=t(t−2)(t+1)，取交集得 −1<t<0"
     },
     {
       "set": "习题 1.6",
-      "no": 3,
+      "no": "3",
       "kp": [
-        "M1.6.K1"
+        "M1.6.K5"
       ],
-      "method": "按本节讲解流程处理并核对条件"
+      "method": "A 正定则特征值 λᵢ>0（定理 1.6-2），A+I 的特征值 λᵢ+1>1，行列式为其积"
     },
     {
       "set": "习题 1.6",
-      "no": 4,
+      "no": "4",
       "kp": [
-        "M1.6.K1"
+        "M1.6.K6",
+        "M1.6.K8"
       ],
-      "method": "按本节讲解流程处理并核对条件"
+      "method": "xᵀ(AᵀA)x=|Ax|²，列满秩使 Ax≠0（x≠0），故严格大于零"
     },
     {
       "set": "习题 1.6",
-      "no": 5,
+      "no": "5",
       "kp": [
-        "M1.6.K1"
+        "M1.6.K4",
+        "M1.6.K6"
       ],
-      "method": "按本节讲解流程处理并核对条件"
+      "method": "B 正定得可逆 C 使 CᵀBC=I（推论 1），再对实对称的 CᵀAC 作正交对角化（定理 1.6-1），取 P=CQ"
     }
   ],
   "verify_script": ".work/kp/verify/M1.6.py"

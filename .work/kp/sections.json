@@ -1,0 +1,3558 @@
+{
+ "meta": {
+  "description": "《高等工程数学》第4版 知识点讲解——全书节索引（机器可读，唯一权威路径表）",
+  "pdf_page_offset": 11,
+  "pdf_page_rule": "PDF 页 = 书页 + 11",
+  "pages_dir": "/Users/edwinnull/Documents/.work/pages",
+  "page_image_pattern": "book-{pdf:03d}.png",
+  "pdf_file": "高等工程数学 第4版 (于寅) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+  "kp_dir_name": "知识点讲解",
+  "root_index": "知识点讲解总目录.md",
+  "appendix_tables_book_pages": [
+   432,
+   442
+  ],
+  "counts": {
+   "parts": 3,
+   "chapters": 17,
+   "sections": 70
+  }
+ },
+ "parts": [
+  {
+   "code": "M",
+   "cn": "第一部分",
+   "name": "矩阵论",
+   "dir": "第一部分_矩阵论",
+   "intro_book_pages": [
+    1,
+    1
+   ],
+   "intro_pdf_pages": [
+    12,
+    12
+   ],
+   "guide_file": "第一部分_矩阵论/00_第一部分导读.md",
+   "guide_title": "第一部分　矩阵论（导读）",
+   "chapters": [
+    {
+     "id": "M1",
+     "no": 1,
+     "name": "线性代数基本知识",
+     "dir": "第一部分_矩阵论/第1章_线性代数基本知识",
+     "book_pages": [
+      3,
+      49
+     ],
+     "pdf_pages": [
+      14,
+      60
+     ],
+     "intro_book_pages": [
+      3,
+      3
+     ],
+     "guide_file": "第一部分_矩阵论/第1章_线性代数基本知识/知识点讲解/00_本章导读.md",
+     "guide_title": "第一部分-第1章　线性代数基本知识（本章导读）",
+     "sections": [
+      {
+       "id": "M1.1",
+       "no": "1.1",
+       "title": "向量和向量空间",
+       "book_pages": [
+        3,
+        10
+       ],
+       "pdf_pages": [
+        14,
+        21
+       ],
+       "read_book_pages": [
+        3,
+        10
+       ],
+       "read_pdf_pages": [
+        14,
+        21
+       ],
+       "subsections": [
+        {
+         "no": "1.1.1",
+         "title": "向量的运算",
+         "book_page": 3
+        },
+        {
+         "no": "1.1.2",
+         "title": "向量组的线性相关性和向量组的秩",
+         "book_page": 5
+        },
+        {
+         "no": "1.1.3",
+         "title": "向量空间",
+         "book_page": 7
+        }
+       ],
+       "file": "第一部分_矩阵论/第1章_线性代数基本知识/知识点讲解/第1.1节_向量和向量空间.md",
+       "h1": "第一部分-第1章-第1.1节　向量和向量空间",
+       "exercises": [
+        {
+         "label": "习题 1.1",
+         "file": "第一部分_矩阵论/第1章_线性代数基本知识/习题1.1解答.md",
+         "book_page_start": 10,
+         "pdf_page_start": 21,
+         "scope": "全部"
+        }
+       ],
+       "package": "P01"
+      },
+      {
+       "id": "M1.2",
+       "no": "1.2",
+       "title": "矩阵及其运算",
+       "book_pages": [
+        10,
+        14
+       ],
+       "pdf_pages": [
+        21,
+        25
+       ],
+       "read_book_pages": [
+        10,
+        14
+       ],
+       "read_pdf_pages": [
+        21,
+        25
+       ],
+       "subsections": [
+        {
+         "no": "1.2.1",
+         "title": "矩阵的运算",
+         "book_page": 11
+        },
+        {
+         "no": "1.2.2",
+         "title": "可逆矩阵与逆矩阵",
+         "book_page": 13
+        },
+        {
+         "no": "1.2.3",
+         "title": "分块矩阵",
+         "book_page": 14
+        }
+       ],
+       "file": "第一部分_矩阵论/第1章_线性代数基本知识/知识点讲解/第1.2节_矩阵及其运算.md",
+       "h1": "第一部分-第1章-第1.2节　矩阵及其运算",
+       "exercises": [
+        {
+         "label": "习题 1.2",
+         "file": "第一部分_矩阵论/第1章_线性代数基本知识/习题1.2解答.md",
+         "book_page_start": 14,
+         "pdf_page_start": 25,
+         "scope": "全部"
+        }
+       ],
+       "package": "P01"
+      },
+      {
+       "id": "M1.3",
+       "no": "1.3",
+       "title": "矩阵的初等变换及其应用",
+       "book_pages": [
+        15,
+        25
+       ],
+       "pdf_pages": [
+        26,
+        36
+       ],
+       "read_book_pages": [
+        15,
+        25
+       ],
+       "read_pdf_pages": [
+        26,
+        36
+       ],
+       "subsections": [
+        {
+         "no": "1.3.1",
+         "title": "矩阵的等价",
+         "book_page": 16
+        },
+        {
+         "no": "1.3.2",
+         "title": "矩阵的秩",
+         "book_page": 18
+        },
+        {
+         "no": "1.3.3",
+         "title": "应用举例",
+         "book_page": 22
+        }
+       ],
+       "file": "第一部分_矩阵论/第1章_线性代数基本知识/知识点讲解/第1.3节_矩阵的初等变换及其应用.md",
+       "h1": "第一部分-第1章-第1.3节　矩阵的初等变换及其应用",
+       "exercises": [
+        {
+         "label": "习题 1.3",
+         "file": "第一部分_矩阵论/第1章_线性代数基本知识/习题1.3解答.md",
+         "book_page_start": 25,
+         "pdf_page_start": 36,
+         "scope": "全部"
+        }
+       ],
+       "package": "P01"
+      },
+      {
+       "id": "M1.4",
+       "no": "1.4",
+       "title": "线性方程组",
+       "book_pages": [
+        26,
+        30
+       ],
+       "pdf_pages": [
+        37,
+        41
+       ],
+       "read_book_pages": [
+        26,
+        30
+       ],
+       "read_pdf_pages": [
+        37,
+        41
+       ],
+       "subsections": [
+        {
+         "no": "1.4.1",
+         "title": "线性方程组解的存在定理",
+         "book_page": 27
+        },
+        {
+         "no": "1.4.2",
+         "title": "线性方程组解的结构",
+         "book_page": 28
+        }
+       ],
+       "file": "第一部分_矩阵论/第1章_线性代数基本知识/知识点讲解/第1.4节_线性方程组.md",
+       "h1": "第一部分-第1章-第1.4节　线性方程组",
+       "exercises": [
+        {
+         "label": "习题 1.4",
+         "file": "第一部分_矩阵论/第1章_线性代数基本知识/习题1.4解答.md",
+         "book_page_start": 30,
+         "pdf_page_start": 41,
+         "scope": "全部"
+        }
+       ],
+       "package": "P02"
+      },
+      {
+       "id": "M1.5",
+       "no": "1.5",
+       "title": "特征值与特征向量",
+       "book_pages": [
+        30,
+        42
+       ],
+       "pdf_pages": [
+        41,
+        53
+       ],
+       "read_book_pages": [
+        30,
+        42
+       ],
+       "read_pdf_pages": [
+        41,
+        53
+       ],
+       "subsections": [
+        {
+         "no": "1.5.1",
+         "title": "特征值与特征向量的性质",
+         "book_page": 32
+        },
+        {
+         "no": "1.5.2",
+         "title": "方阵的相似变换和相似对角化",
+         "book_page": 34
+        },
+        {
+         "no": "1.5.3",
+         "title": "Hermite 矩阵和实对称矩阵的特征值与特征向量",
+         "book_page": 38
+        }
+       ],
+       "file": "第一部分_矩阵论/第1章_线性代数基本知识/知识点讲解/第1.5节_特征值与特征向量.md",
+       "h1": "第一部分-第1章-第1.5节　特征值与特征向量",
+       "exercises": [
+        {
+         "label": "习题 1.5",
+         "file": "第一部分_矩阵论/第1章_线性代数基本知识/习题1.5解答.md",
+         "book_page_start": 42,
+         "pdf_page_start": 53,
+         "scope": "全部"
+        }
+       ],
+       "package": "P02"
+      },
+      {
+       "id": "M1.6",
+       "no": "1.6",
+       "title": "实二次型",
+       "book_pages": [
+        43,
+        49
+       ],
+       "pdf_pages": [
+        54,
+        60
+       ],
+       "read_book_pages": [
+        43,
+        49
+       ],
+       "read_pdf_pages": [
+        54,
+        60
+       ],
+       "subsections": [],
+       "file": "第一部分_矩阵论/第1章_线性代数基本知识/知识点讲解/第1.6节_实二次型.md",
+       "h1": "第一部分-第1章-第1.6节　实二次型",
+       "exercises": [
+        {
+         "label": "习题 1.6",
+         "file": "第一部分_矩阵论/第1章_线性代数基本知识/习题1.6解答.md",
+         "book_page_start": 49,
+         "pdf_page_start": 60,
+         "scope": "全部"
+        }
+       ],
+       "package": "P02"
+      }
+     ]
+    },
+    {
+     "id": "M2",
+     "no": 2,
+     "name": "方阵的相似化简",
+     "dir": "第一部分_矩阵论/第2章_方阵的相似化简",
+     "book_pages": [
+      50,
+      79
+     ],
+     "pdf_pages": [
+      61,
+      90
+     ],
+     "intro_book_pages": [
+      50,
+      50
+     ],
+     "guide_file": "第一部分_矩阵论/第2章_方阵的相似化简/知识点讲解/00_本章导读.md",
+     "guide_title": "第一部分-第2章　方阵的相似化简（本章导读）",
+     "sections": [
+      {
+       "id": "M2.1",
+       "no": "2.1",
+       "title": "Jordan 标准形",
+       "book_pages": [
+        50,
+        62
+       ],
+       "pdf_pages": [
+        61,
+        73
+       ],
+       "read_book_pages": [
+        50,
+        62
+       ],
+       "read_pdf_pages": [
+        61,
+        73
+       ],
+       "subsections": [],
+       "file": "第一部分_矩阵论/第2章_方阵的相似化简/知识点讲解/第2.1节_Jordan标准形.md",
+       "h1": "第一部分-第2章-第2.1节　Jordan 标准形",
+       "exercises": [
+        {
+         "label": "习题 2.1",
+         "file": "第一部分_矩阵论/第2章_方阵的相似化简/习题2.1解答.md",
+         "book_page_start": 62,
+         "pdf_page_start": 73,
+         "scope": "全部"
+        }
+       ],
+       "package": "P03"
+      },
+      {
+       "id": "M2.2",
+       "no": "2.2",
+       "title": "Cayley-Hamilton 定理",
+       "book_pages": [
+        62,
+        70
+       ],
+       "pdf_pages": [
+        73,
+        81
+       ],
+       "read_book_pages": [
+        62,
+        70
+       ],
+       "read_pdf_pages": [
+        73,
+        81
+       ],
+       "subsections": [],
+       "file": "第一部分_矩阵论/第2章_方阵的相似化简/知识点讲解/第2.2节_Cayley-Hamilton定理.md",
+       "h1": "第一部分-第2章-第2.2节　Cayley-Hamilton 定理",
+       "exercises": [
+        {
+         "label": "习题 2.2",
+         "file": "第一部分_矩阵论/第2章_方阵的相似化简/习题2.2解答.md",
+         "book_page_start": 70,
+         "pdf_page_start": 81,
+         "scope": "全部"
+        }
+       ],
+       "package": "P03"
+      },
+      {
+       "id": "M2.3",
+       "no": "2.3",
+       "title": "方阵的酉相似化简",
+       "book_pages": [
+        71,
+        75
+       ],
+       "pdf_pages": [
+        82,
+        86
+       ],
+       "read_book_pages": [
+        71,
+        75
+       ],
+       "read_pdf_pages": [
+        82,
+        86
+       ],
+       "subsections": [],
+       "file": "第一部分_矩阵论/第2章_方阵的相似化简/知识点讲解/第2.3节_方阵的酉相似化简.md",
+       "h1": "第一部分-第2章-第2.3节　方阵的酉相似化简",
+       "exercises": [
+        {
+         "label": "习题 2.3",
+         "file": "第一部分_矩阵论/第2章_方阵的相似化简/习题2.3解答.md",
+         "book_page_start": 75,
+         "pdf_page_start": 86,
+         "scope": "全部"
+        }
+       ],
+       "package": "P04"
+      },
+      {
+       "id": "M2.4",
+       "no": "2.4",
+       "title": "实方阵的正交相似化简",
+       "book_pages": [
+        75,
+        79
+       ],
+       "pdf_pages": [
+        86,
+        90
+       ],
+       "read_book_pages": [
+        75,
+        79
+       ],
+       "read_pdf_pages": [
+        86,
+        90
+       ],
+       "subsections": [],
+       "file": "第一部分_矩阵论/第2章_方阵的相似化简/知识点讲解/第2.4节_实方阵的正交相似化简.md",
+       "h1": "第一部分-第2章-第2.4节　实方阵的正交相似化简",
+       "exercises": [
+        {
+         "label": "习题 2.4",
+         "file": "第一部分_矩阵论/第2章_方阵的相似化简/习题2.4解答.md",
+         "book_page_start": 79,
+         "pdf_page_start": 90,
+         "scope": "全部"
+        }
+       ],
+       "package": "P04"
+      }
+     ]
+    },
+    {
+     "id": "M3",
+     "no": 3,
+     "name": "向量范数和矩阵范数",
+     "dir": "第一部分_矩阵论/第3章_向量范数和矩阵范数",
+     "book_pages": [
+      81,
+      91
+     ],
+     "pdf_pages": [
+      92,
+      102
+     ],
+     "intro_book_pages": [
+      81,
+      81
+     ],
+     "guide_file": "第一部分_矩阵论/第3章_向量范数和矩阵范数/知识点讲解/00_本章导读.md",
+     "guide_title": "第一部分-第3章　向量范数和矩阵范数（本章导读）",
+     "sections": [
+      {
+       "id": "M3.1",
+       "no": "3.1",
+       "title": "向量范数",
+       "book_pages": [
+        81,
+        83
+       ],
+       "pdf_pages": [
+        92,
+        94
+       ],
+       "read_book_pages": [
+        81,
+        83
+       ],
+       "read_pdf_pages": [
+        92,
+        94
+       ],
+       "subsections": [],
+       "file": "第一部分_矩阵论/第3章_向量范数和矩阵范数/知识点讲解/第3.1节_向量范数.md",
+       "h1": "第一部分-第3章-第3.1节　向量范数",
+       "exercises": [
+        {
+         "label": "习题 3.1",
+         "file": "第一部分_矩阵论/第3章_向量范数和矩阵范数/习题3.1解答.md",
+         "book_page_start": 83,
+         "pdf_page_start": 94,
+         "scope": "全部"
+        }
+       ],
+       "package": "T1"
+      },
+      {
+       "id": "M3.2",
+       "no": "3.2",
+       "title": "矩阵范数",
+       "book_pages": [
+        83,
+        88
+       ],
+       "pdf_pages": [
+        94,
+        99
+       ],
+       "read_book_pages": [
+        83,
+        88
+       ],
+       "read_pdf_pages": [
+        94,
+        99
+       ],
+       "subsections": [],
+       "file": "第一部分_矩阵论/第3章_向量范数和矩阵范数/知识点讲解/第3.2节_矩阵范数.md",
+       "h1": "第一部分-第3章-第3.2节　矩阵范数",
+       "exercises": [
+        {
+         "label": "习题 3.2",
+         "file": "第一部分_矩阵论/第3章_向量范数和矩阵范数/习题3.2解答.md",
+         "book_page_start": 88,
+         "pdf_page_start": 99,
+         "scope": "全部"
+        }
+       ],
+       "package": "T1"
+      },
+      {
+       "id": "M3.3",
+       "no": "3.3",
+       "title": "方阵的谱半径",
+       "book_pages": [
+        89,
+        91
+       ],
+       "pdf_pages": [
+        100,
+        102
+       ],
+       "read_book_pages": [
+        89,
+        91
+       ],
+       "read_pdf_pages": [
+        100,
+        102
+       ],
+       "subsections": [],
+       "file": "第一部分_矩阵论/第3章_向量范数和矩阵范数/知识点讲解/第3.3节_方阵的谱半径.md",
+       "h1": "第一部分-第3章-第3.3节　方阵的谱半径",
+       "exercises": [
+        {
+         "label": "习题 3.3",
+         "file": "第一部分_矩阵论/第3章_向量范数和矩阵范数/习题3.3解答.md",
+         "book_page_start": 91,
+         "pdf_page_start": 102,
+         "scope": "全部"
+        }
+       ],
+       "package": "样章"
+      }
+     ]
+    },
+    {
+     "id": "M4",
+     "no": 4,
+     "name": "方阵函数与函数矩阵",
+     "dir": "第一部分_矩阵论/第4章_方阵函数与函数矩阵",
+     "book_pages": [
+      92,
+      107
+     ],
+     "pdf_pages": [
+      103,
+      118
+     ],
+     "intro_book_pages": [
+      92,
+      92
+     ],
+     "guide_file": "第一部分_矩阵论/第4章_方阵函数与函数矩阵/知识点讲解/00_本章导读.md",
+     "guide_title": "第一部分-第4章　方阵函数与函数矩阵（本章导读）",
+     "sections": [
+      {
+       "id": "M4.1",
+       "no": "4.1",
+       "title": "矩阵序列与矩阵级数",
+       "book_pages": [
+        92,
+        95
+       ],
+       "pdf_pages": [
+        103,
+        106
+       ],
+       "read_book_pages": [
+        92,
+        95
+       ],
+       "read_pdf_pages": [
+        103,
+        106
+       ],
+       "subsections": [],
+       "file": "第一部分_矩阵论/第4章_方阵函数与函数矩阵/知识点讲解/第4.1节_矩阵序列与矩阵级数.md",
+       "h1": "第一部分-第4章-第4.1节　矩阵序列与矩阵级数",
+       "exercises": [
+        {
+         "label": "习题 4.1",
+         "file": "第一部分_矩阵论/第4章_方阵函数与函数矩阵/习题4.1解答.md",
+         "book_page_start": 95,
+         "pdf_page_start": 106,
+         "scope": "全部"
+        }
+       ],
+       "package": "P05"
+      },
+      {
+       "id": "M4.2",
+       "no": "4.2",
+       "title": "方阵函数及其计算",
+       "book_pages": [
+        96,
+        102
+       ],
+       "pdf_pages": [
+        107,
+        113
+       ],
+       "read_book_pages": [
+        96,
+        102
+       ],
+       "read_pdf_pages": [
+        107,
+        113
+       ],
+       "subsections": [],
+       "file": "第一部分_矩阵论/第4章_方阵函数与函数矩阵/知识点讲解/第4.2节_方阵函数及其计算.md",
+       "h1": "第一部分-第4章-第4.2节　方阵函数及其计算",
+       "exercises": [
+        {
+         "label": "习题 4.2",
+         "file": "第一部分_矩阵论/第4章_方阵函数与函数矩阵/习题4.2解答.md",
+         "book_page_start": 102,
+         "pdf_page_start": 113,
+         "scope": "全部"
+        }
+       ],
+       "package": "P05"
+      },
+      {
+       "id": "M4.3",
+       "no": "4.3",
+       "title": "函数矩阵及其应用",
+       "book_pages": [
+        102,
+        107
+       ],
+       "pdf_pages": [
+        113,
+        118
+       ],
+       "read_book_pages": [
+        102,
+        107
+       ],
+       "read_pdf_pages": [
+        113,
+        118
+       ],
+       "subsections": [],
+       "file": "第一部分_矩阵论/第4章_方阵函数与函数矩阵/知识点讲解/第4.3节_函数矩阵及其应用.md",
+       "h1": "第一部分-第4章-第4.3节　函数矩阵及其应用",
+       "exercises": [
+        {
+         "label": "习题 4.3",
+         "file": "第一部分_矩阵论/第4章_方阵函数与函数矩阵/习题4.3解答.md",
+         "book_page_start": 107,
+         "pdf_page_start": 118,
+         "scope": "全部"
+        }
+       ],
+       "package": "P05"
+      }
+     ]
+    },
+    {
+     "id": "M5",
+     "no": 5,
+     "name": "矩阵分解",
+     "dir": "第一部分_矩阵论/第5章_矩阵分解",
+     "book_pages": [
+      108,
+      129
+     ],
+     "pdf_pages": [
+      119,
+      140
+     ],
+     "intro_book_pages": [
+      108,
+      108
+     ],
+     "guide_file": "第一部分_矩阵论/第5章_矩阵分解/知识点讲解/00_本章导读.md",
+     "guide_title": "第一部分-第5章　矩阵分解（本章导读）",
+     "sections": [
+      {
+       "id": "M5.1",
+       "no": "5.1",
+       "title": "方阵的三角分解",
+       "book_pages": [
+        108,
+        115
+       ],
+       "pdf_pages": [
+        119,
+        126
+       ],
+       "read_book_pages": [
+        108,
+        115
+       ],
+       "read_pdf_pages": [
+        119,
+        126
+       ],
+       "subsections": [],
+       "file": "第一部分_矩阵论/第5章_矩阵分解/知识点讲解/第5.1节_方阵的三角分解.md",
+       "h1": "第一部分-第5章-第5.1节　方阵的三角分解",
+       "exercises": [
+        {
+         "label": "习题 5.1",
+         "file": "第一部分_矩阵论/第5章_矩阵分解/习题5.1解答.md",
+         "book_page_start": 115,
+         "pdf_page_start": 126,
+         "scope": "全部"
+        }
+       ],
+       "package": "P06"
+      },
+      {
+       "id": "M5.2",
+       "no": "5.2",
+       "title": "方阵的正交（酉）三角分解",
+       "book_pages": [
+        115,
+        122
+       ],
+       "pdf_pages": [
+        126,
+        133
+       ],
+       "read_book_pages": [
+        115,
+        122
+       ],
+       "read_pdf_pages": [
+        126,
+        133
+       ],
+       "subsections": [],
+       "file": "第一部分_矩阵论/第5章_矩阵分解/知识点讲解/第5.2节_方阵的正交（酉）三角分解.md",
+       "h1": "第一部分-第5章-第5.2节　方阵的正交（酉）三角分解",
+       "exercises": [
+        {
+         "label": "习题 5.2",
+         "file": "第一部分_矩阵论/第5章_矩阵分解/习题5.2解答.md",
+         "book_page_start": 122,
+         "pdf_page_start": 133,
+         "scope": "全部"
+        }
+       ],
+       "package": "P06"
+      },
+      {
+       "id": "M5.3",
+       "no": "5.3",
+       "title": "矩阵的奇异值分解",
+       "book_pages": [
+        123,
+        129
+       ],
+       "pdf_pages": [
+        134,
+        140
+       ],
+       "read_book_pages": [
+        123,
+        129
+       ],
+       "read_pdf_pages": [
+        134,
+        140
+       ],
+       "subsections": [],
+       "file": "第一部分_矩阵论/第5章_矩阵分解/知识点讲解/第5.3节_矩阵的奇异值分解.md",
+       "h1": "第一部分-第5章-第5.3节　矩阵的奇异值分解",
+       "exercises": [
+        {
+         "label": "习题 5.3",
+         "file": "第一部分_矩阵论/第5章_矩阵分解/习题5.3解答.md",
+         "book_page_start": 129,
+         "pdf_page_start": 140,
+         "scope": "全部"
+        }
+       ],
+       "package": "P06"
+      }
+     ]
+    },
+    {
+     "id": "M6",
+     "no": 6,
+     "name": "线性空间和线性变换",
+     "dir": "第一部分_矩阵论/第6章_线性空间和线性变换",
+     "book_pages": [
+      130,
+      152
+     ],
+     "pdf_pages": [
+      141,
+      163
+     ],
+     "intro_book_pages": [
+      130,
+      130
+     ],
+     "guide_file": "第一部分_矩阵论/第6章_线性空间和线性变换/知识点讲解/00_本章导读.md",
+     "guide_title": "第一部分-第6章　线性空间和线性变换（本章导读）",
+     "sections": [
+      {
+       "id": "M6.1",
+       "no": "6.1",
+       "title": "线性空间",
+       "book_pages": [
+        130,
+        138
+       ],
+       "pdf_pages": [
+        141,
+        149
+       ],
+       "read_book_pages": [
+        130,
+        138
+       ],
+       "read_pdf_pages": [
+        141,
+        149
+       ],
+       "subsections": [
+        {
+         "no": "6.1.1",
+         "title": "线性空间的定义及例子",
+         "book_page": 130
+        },
+        {
+         "no": "6.1.2",
+         "title": "基与维数",
+         "book_page": 132
+        },
+        {
+         "no": "6.1.3",
+         "title": "基变换与坐标变换",
+         "book_page": 134
+        },
+        {
+         "no": "6.1.4",
+         "title": "子空间和维数定理",
+         "book_page": 136
+        }
+       ],
+       "file": "第一部分_矩阵论/第6章_线性空间和线性变换/知识点讲解/第6.1节_线性空间.md",
+       "h1": "第一部分-第6章-第6.1节　线性空间",
+       "exercises": [
+        {
+         "label": "习题 6.1",
+         "file": "第一部分_矩阵论/第6章_线性空间和线性变换/习题6.1解答.md",
+         "book_page_start": 138,
+         "pdf_page_start": 149,
+         "scope": "全部"
+        }
+       ],
+       "package": "P07"
+      },
+      {
+       "id": "M6.2",
+       "no": "6.2",
+       "title": "线性变换",
+       "book_pages": [
+        139,
+        148
+       ],
+       "pdf_pages": [
+        150,
+        159
+       ],
+       "read_book_pages": [
+        139,
+        148
+       ],
+       "read_pdf_pages": [
+        150,
+        159
+       ],
+       "subsections": [
+        {
+         "no": "6.2.1",
+         "title": "线性变换的定义及矩阵表示",
+         "book_page": 139
+        },
+        {
+         "no": "6.2.2",
+         "title": "线性变换的零空间和值空间",
+         "book_page": 142
+        },
+        {
+         "no": "6.2.3",
+         "title": "线性变换的最简矩阵表示及不变子空间",
+         "book_page": 144
+        }
+       ],
+       "file": "第一部分_矩阵论/第6章_线性空间和线性变换/知识点讲解/第6.2节_线性变换.md",
+       "h1": "第一部分-第6章-第6.2节　线性变换",
+       "exercises": [
+        {
+         "label": "习题 6.2",
+         "file": "第一部分_矩阵论/第6章_线性空间和线性变换/习题6.2解答.md",
+         "book_page_start": 148,
+         "pdf_page_start": 159,
+         "scope": "全部"
+        }
+       ],
+       "package": "P07"
+      },
+      {
+       "id": "M6.3",
+       "no": "6.3",
+       "title": "内积空间及两类特殊的线性变换",
+       "book_pages": [
+        149,
+        152
+       ],
+       "pdf_pages": [
+        160,
+        163
+       ],
+       "read_book_pages": [
+        149,
+        152
+       ],
+       "read_pdf_pages": [
+        160,
+        163
+       ],
+       "subsections": [],
+       "file": "第一部分_矩阵论/第6章_线性空间和线性变换/知识点讲解/第6.3节_内积空间及两类特殊的线性变换.md",
+       "h1": "第一部分-第6章-第6.3节　内积空间及两类特殊的线性变换",
+       "exercises": [
+        {
+         "label": "习题 6.3",
+         "file": "第一部分_矩阵论/第6章_线性空间和线性变换/习题6.3解答.md",
+         "book_page_start": 152,
+         "pdf_page_start": 163,
+         "scope": "全部"
+        }
+       ],
+       "package": "P07"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "code": "N",
+   "cn": "第二部分",
+   "name": "数值计算方法",
+   "dir": "第二部分_数值计算方法",
+   "intro_book_pages": [
+    155,
+    155
+   ],
+   "intro_pdf_pages": [
+    166,
+    166
+   ],
+   "guide_file": "第二部分_数值计算方法/00_第二部分导读.md",
+   "guide_title": "第二部分　数值计算方法（导读）",
+   "chapters": [
+    {
+     "id": "N1",
+     "no": 1,
+     "name": "误差的基本知识",
+     "dir": "第二部分_数值计算方法/第1章_误差的基本知识",
+     "book_pages": [
+      157,
+      166
+     ],
+     "pdf_pages": [
+      168,
+      177
+     ],
+     "intro_book_pages": [
+      157,
+      157
+     ],
+     "guide_file": "第二部分_数值计算方法/第1章_误差的基本知识/知识点讲解/00_本章导读.md",
+     "guide_title": "第二部分-第1章　误差的基本知识（本章导读）",
+     "sections": [
+      {
+       "id": "N1.1",
+       "no": "1.1",
+       "title": "绝对误差、相对误差及有效数字",
+       "book_pages": [
+        157,
+        159
+       ],
+       "pdf_pages": [
+        168,
+        170
+       ],
+       "read_book_pages": [
+        157,
+        159
+       ],
+       "read_pdf_pages": [
+        168,
+        170
+       ],
+       "subsections": [],
+       "file": "第二部分_数值计算方法/第1章_误差的基本知识/知识点讲解/第1.1节_绝对误差、相对误差及有效数字.md",
+       "h1": "第二部分-第1章-第1.1节　绝对误差、相对误差及有效数字",
+       "exercises": [
+        {
+         "label": "习题 1",
+         "file": "第二部分_数值计算方法/第1章_误差的基本知识/习题1解答.md",
+         "book_page_start": 166,
+         "pdf_page_start": 177,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P08"
+      },
+      {
+       "id": "N1.2",
+       "no": "1.2",
+       "title": "数值计算的误差估计及算法稳定性",
+       "book_pages": [
+        159,
+        164
+       ],
+       "pdf_pages": [
+        170,
+        175
+       ],
+       "read_book_pages": [
+        159,
+        164
+       ],
+       "read_pdf_pages": [
+        170,
+        175
+       ],
+       "subsections": [],
+       "file": "第二部分_数值计算方法/第1章_误差的基本知识/知识点讲解/第1.2节_数值计算的误差估计及算法稳定性.md",
+       "h1": "第二部分-第1章-第1.2节　数值计算的误差估计及算法稳定性",
+       "exercises": [
+        {
+         "label": "习题 1",
+         "file": "第二部分_数值计算方法/第1章_误差的基本知识/习题1解答.md",
+         "book_page_start": 166,
+         "pdf_page_start": 177,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P08"
+      },
+      {
+       "id": "N1.3",
+       "no": "1.3",
+       "title": "数值计算中应注意的一些原则",
+       "book_pages": [
+        164,
+        166
+       ],
+       "pdf_pages": [
+        175,
+        177
+       ],
+       "read_book_pages": [
+        164,
+        166
+       ],
+       "read_pdf_pages": [
+        175,
+        177
+       ],
+       "subsections": [],
+       "file": "第二部分_数值计算方法/第1章_误差的基本知识/知识点讲解/第1.3节_数值计算中应注意的一些原则.md",
+       "h1": "第二部分-第1章-第1.3节　数值计算中应注意的一些原则",
+       "exercises": [
+        {
+         "label": "习题 1",
+         "file": "第二部分_数值计算方法/第1章_误差的基本知识/习题1解答.md",
+         "book_page_start": 166,
+         "pdf_page_start": 177,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P08"
+      }
+     ],
+     "exercise_set": {
+      "label": "习题 1",
+      "file": "第二部分_数值计算方法/第1章_误差的基本知识/习题1解答.md",
+      "book_pages": [
+       166,
+       167
+      ],
+      "pdf_pages": [
+       177,
+       178
+      ]
+     }
+    },
+    {
+     "id": "N2",
+     "no": 2,
+     "name": "线性方程组的数值解法",
+     "dir": "第二部分_数值计算方法/第2章_线性方程组的数值解法",
+     "book_pages": [
+      168,
+      193
+     ],
+     "pdf_pages": [
+      179,
+      204
+     ],
+     "intro_book_pages": [
+      168,
+      168
+     ],
+     "guide_file": "第二部分_数值计算方法/第2章_线性方程组的数值解法/知识点讲解/00_本章导读.md",
+     "guide_title": "第二部分-第2章　线性方程组的数值解法（本章导读）",
+     "sections": [
+      {
+       "id": "N2.1",
+       "no": "2.1",
+       "title": "Gauss 主元消去法",
+       "book_pages": [
+        168,
+        172
+       ],
+       "pdf_pages": [
+        179,
+        183
+       ],
+       "read_book_pages": [
+        168,
+        172
+       ],
+       "read_pdf_pages": [
+        179,
+        183
+       ],
+       "subsections": [],
+       "file": "第二部分_数值计算方法/第2章_线性方程组的数值解法/知识点讲解/第2.1节_Gauss主元消去法.md",
+       "h1": "第二部分-第2章-第2.1节　Gauss 主元消去法",
+       "exercises": [
+        {
+         "label": "习题 2",
+         "file": "第二部分_数值计算方法/第2章_线性方程组的数值解法/习题2解答.md",
+         "book_page_start": 193,
+         "pdf_page_start": 204,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P09"
+      },
+      {
+       "id": "N2.2",
+       "no": "2.2",
+       "title": "矩阵分解在解线性方程组中的应用",
+       "book_pages": [
+        172,
+        176
+       ],
+       "pdf_pages": [
+        183,
+        187
+       ],
+       "read_book_pages": [
+        172,
+        176
+       ],
+       "read_pdf_pages": [
+        183,
+        187
+       ],
+       "subsections": [],
+       "file": "第二部分_数值计算方法/第2章_线性方程组的数值解法/知识点讲解/第2.2节_矩阵分解在解线性方程组中的应用.md",
+       "h1": "第二部分-第2章-第2.2节　矩阵分解在解线性方程组中的应用",
+       "exercises": [
+        {
+         "label": "习题 2",
+         "file": "第二部分_数值计算方法/第2章_线性方程组的数值解法/习题2解答.md",
+         "book_page_start": 193,
+         "pdf_page_start": 204,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P09"
+      },
+      {
+       "id": "N2.3",
+       "no": "2.3",
+       "title": "直接法的误差分析",
+       "book_pages": [
+        176,
+        179
+       ],
+       "pdf_pages": [
+        187,
+        190
+       ],
+       "read_book_pages": [
+        176,
+        179
+       ],
+       "read_pdf_pages": [
+        187,
+        190
+       ],
+       "subsections": [],
+       "file": "第二部分_数值计算方法/第2章_线性方程组的数值解法/知识点讲解/第2.3节_直接法的误差分析.md",
+       "h1": "第二部分-第2章-第2.3节　直接法的误差分析",
+       "exercises": [
+        {
+         "label": "习题 2",
+         "file": "第二部分_数值计算方法/第2章_线性方程组的数值解法/习题2解答.md",
+         "book_page_start": 193,
+         "pdf_page_start": 204,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P09"
+      },
+      {
+       "id": "N2.4",
+       "no": "2.4",
+       "title": "线性方程组的迭代解法",
+       "book_pages": [
+        179,
+        188
+       ],
+       "pdf_pages": [
+        190,
+        199
+       ],
+       "read_book_pages": [
+        179,
+        188
+       ],
+       "read_pdf_pages": [
+        190,
+        199
+       ],
+       "subsections": [],
+       "file": "第二部分_数值计算方法/第2章_线性方程组的数值解法/知识点讲解/第2.4节_线性方程组的迭代解法.md",
+       "h1": "第二部分-第2章-第2.4节　线性方程组的迭代解法",
+       "exercises": [
+        {
+         "label": "习题 2",
+         "file": "第二部分_数值计算方法/第2章_线性方程组的数值解法/习题2解答.md",
+         "book_page_start": 193,
+         "pdf_page_start": 204,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P10"
+      },
+      {
+       "id": "N2.5",
+       "no": "2.5",
+       "title": "逐次超松弛迭代法和块迭代法",
+       "book_pages": [
+        188,
+        192
+       ],
+       "pdf_pages": [
+        199,
+        203
+       ],
+       "read_book_pages": [
+        188,
+        192
+       ],
+       "read_pdf_pages": [
+        199,
+        203
+       ],
+       "subsections": [
+        {
+         "no": "2.5.1",
+         "title": "逐次超松弛迭代法",
+         "book_page": 188
+        },
+        {
+         "no": "2.5.2",
+         "title": "块迭代法",
+         "book_page": 191
+        }
+       ],
+       "file": "第二部分_数值计算方法/第2章_线性方程组的数值解法/知识点讲解/第2.5节_逐次超松弛迭代法和块迭代法.md",
+       "h1": "第二部分-第2章-第2.5节　逐次超松弛迭代法和块迭代法",
+       "exercises": [
+        {
+         "label": "习题 2",
+         "file": "第二部分_数值计算方法/第2章_线性方程组的数值解法/习题2解答.md",
+         "book_page_start": 193,
+         "pdf_page_start": 204,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P10"
+      },
+      {
+       "id": "N2.6",
+       "no": "2.6",
+       "title": "迭代法的数值稳定性和误差分析",
+       "book_pages": [
+        192,
+        193
+       ],
+       "pdf_pages": [
+        203,
+        204
+       ],
+       "read_book_pages": [
+        192,
+        193
+       ],
+       "read_pdf_pages": [
+        203,
+        204
+       ],
+       "subsections": [],
+       "file": "第二部分_数值计算方法/第2章_线性方程组的数值解法/知识点讲解/第2.6节_迭代法的数值稳定性和误差分析.md",
+       "h1": "第二部分-第2章-第2.6节　迭代法的数值稳定性和误差分析",
+       "exercises": [
+        {
+         "label": "习题 2",
+         "file": "第二部分_数值计算方法/第2章_线性方程组的数值解法/习题2解答.md",
+         "book_page_start": 193,
+         "pdf_page_start": 204,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P10"
+      }
+     ],
+     "exercise_set": {
+      "label": "习题 2",
+      "file": "第二部分_数值计算方法/第2章_线性方程组的数值解法/习题2解答.md",
+      "book_pages": [
+       193,
+       194
+      ],
+      "pdf_pages": [
+       204,
+       205
+      ]
+     }
+    },
+    {
+     "id": "N3",
+     "no": 3,
+     "name": "方阵特征值和特征向量的数值计算",
+     "dir": "第二部分_数值计算方法/第3章_方阵特征值和特征向量的数值计算",
+     "book_pages": [
+      195,
+      207
+     ],
+     "pdf_pages": [
+      206,
+      218
+     ],
+     "intro_book_pages": [
+      195,
+      195
+     ],
+     "guide_file": "第二部分_数值计算方法/第3章_方阵特征值和特征向量的数值计算/知识点讲解/00_本章导读.md",
+     "guide_title": "第二部分-第3章　方阵特征值和特征向量的数值计算（本章导读）",
+     "sections": [
+      {
+       "id": "N3.1",
+       "no": "3.1",
+       "title": "特征值的估计",
+       "book_pages": [
+        195,
+        197
+       ],
+       "pdf_pages": [
+        206,
+        208
+       ],
+       "read_book_pages": [
+        195,
+        197
+       ],
+       "read_pdf_pages": [
+        206,
+        208
+       ],
+       "subsections": [],
+       "file": "第二部分_数值计算方法/第3章_方阵特征值和特征向量的数值计算/知识点讲解/第3.1节_特征值的估计.md",
+       "h1": "第二部分-第3章-第3.1节　特征值的估计",
+       "exercises": [
+        {
+         "label": "习题 3",
+         "file": "第二部分_数值计算方法/第3章_方阵特征值和特征向量的数值计算/习题3解答.md",
+         "book_page_start": 207,
+         "pdf_page_start": 218,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P11"
+      },
+      {
+       "id": "N3.2",
+       "no": "3.2",
+       "title": "幂法与反幂法",
+       "book_pages": [
+        197,
+        204
+       ],
+       "pdf_pages": [
+        208,
+        215
+       ],
+       "read_book_pages": [
+        197,
+        204
+       ],
+       "read_pdf_pages": [
+        208,
+        215
+       ],
+       "subsections": [
+        {
+         "no": "3.2.1",
+         "title": "幂法",
+         "book_page": 197
+        },
+        {
+         "no": "3.2.2",
+         "title": "加速方法",
+         "book_page": 199
+        },
+        {
+         "no": "3.2.3",
+         "title": "反幂法",
+         "book_page": 203
+        }
+       ],
+       "file": "第二部分_数值计算方法/第3章_方阵特征值和特征向量的数值计算/知识点讲解/第3.2节_幂法与反幂法.md",
+       "h1": "第二部分-第3章-第3.2节　幂法与反幂法",
+       "exercises": [
+        {
+         "label": "习题 3",
+         "file": "第二部分_数值计算方法/第3章_方阵特征值和特征向量的数值计算/习题3解答.md",
+         "book_page_start": 207,
+         "pdf_page_start": 218,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P11"
+      },
+      {
+       "id": "N3.3",
+       "no": "3.3",
+       "title": "QR 方法",
+       "book_pages": [
+        204,
+        207
+       ],
+       "pdf_pages": [
+        215,
+        218
+       ],
+       "read_book_pages": [
+        204,
+        207
+       ],
+       "read_pdf_pages": [
+        215,
+        218
+       ],
+       "subsections": [
+        {
+         "no": "3.3.1",
+         "title": "QR 方法的计算公式",
+         "book_page": 204
+        },
+        {
+         "no": "3.3.2",
+         "title": "上 Hessenberg 矩阵的 QR 方法及带原点平移的 QR 方法",
+         "book_page": 206
+        }
+       ],
+       "file": "第二部分_数值计算方法/第3章_方阵特征值和特征向量的数值计算/知识点讲解/第3.3节_QR方法.md",
+       "h1": "第二部分-第3章-第3.3节　QR 方法",
+       "exercises": [
+        {
+         "label": "习题 3",
+         "file": "第二部分_数值计算方法/第3章_方阵特征值和特征向量的数值计算/习题3解答.md",
+         "book_page_start": 207,
+         "pdf_page_start": 218,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P11"
+      }
+     ],
+     "exercise_set": {
+      "label": "习题 3",
+      "file": "第二部分_数值计算方法/第3章_方阵特征值和特征向量的数值计算/习题3解答.md",
+      "book_pages": [
+       207,
+       207
+      ],
+      "pdf_pages": [
+       218,
+       218
+      ]
+     }
+    },
+    {
+     "id": "N4",
+     "no": 4,
+     "name": "计算函数零点和极值点的迭代法",
+     "dir": "第二部分_数值计算方法/第4章_计算函数零点和极值点的迭代法",
+     "book_pages": [
+      208,
+      228
+     ],
+     "pdf_pages": [
+      219,
+      239
+     ],
+     "intro_book_pages": [
+      208,
+      208
+     ],
+     "guide_file": "第二部分_数值计算方法/第4章_计算函数零点和极值点的迭代法/知识点讲解/00_本章导读.md",
+     "guide_title": "第二部分-第4章　计算函数零点和极值点的迭代法（本章导读）",
+     "sections": [
+      {
+       "id": "N4.1",
+       "no": "4.1",
+       "title": "不动点迭代法及其收敛性",
+       "book_pages": [
+        208,
+        217
+       ],
+       "pdf_pages": [
+        219,
+        228
+       ],
+       "read_book_pages": [
+        208,
+        217
+       ],
+       "read_pdf_pages": [
+        219,
+        228
+       ],
+       "subsections": [
+        {
+         "no": "4.1.1",
+         "title": "解一元方程的迭代法",
+         "book_page": 209
+        },
+        {
+         "no": "4.1.2",
+         "title": "解非线性方程组的迭代法",
+         "book_page": 214
+        }
+       ],
+       "file": "第二部分_数值计算方法/第4章_计算函数零点和极值点的迭代法/知识点讲解/第4.1节_不动点迭代法及其收敛性.md",
+       "h1": "第二部分-第4章-第4.1节　不动点迭代法及其收敛性",
+       "exercises": [
+        {
+         "label": "习题 4",
+         "file": "第二部分_数值计算方法/第4章_计算函数零点和极值点的迭代法/习题4解答.md",
+         "book_page_start": 228,
+         "pdf_page_start": 239,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P12"
+      },
+      {
+       "id": "N4.2",
+       "no": "4.2",
+       "title": "Newton 迭代法及其变形",
+       "book_pages": [
+        217,
+        221
+       ],
+       "pdf_pages": [
+        228,
+        232
+       ],
+       "read_book_pages": [
+        217,
+        221
+       ],
+       "read_pdf_pages": [
+        228,
+        232
+       ],
+       "subsections": [],
+       "file": "第二部分_数值计算方法/第4章_计算函数零点和极值点的迭代法/知识点讲解/第4.2节_Newton迭代法及其变形.md",
+       "h1": "第二部分-第4章-第4.2节　Newton 迭代法及其变形",
+       "exercises": [
+        {
+         "label": "习题 4",
+         "file": "第二部分_数值计算方法/第4章_计算函数零点和极值点的迭代法/习题4解答.md",
+         "book_page_start": 228,
+         "pdf_page_start": 239,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "T2"
+      },
+      {
+       "id": "N4.3",
+       "no": "4.3",
+       "title": "无约束优化问题的下降迭代法",
+       "book_pages": [
+        221,
+        228
+       ],
+       "pdf_pages": [
+        232,
+        239
+       ],
+       "read_book_pages": [
+        221,
+        228
+       ],
+       "read_pdf_pages": [
+        232,
+        239
+       ],
+       "subsections": [
+        {
+         "no": "4.3.1",
+         "title": "最速下降法",
+         "book_page": 222
+        },
+        {
+         "no": "4.3.2",
+         "title": "变尺度法",
+         "book_page": 224
+        }
+       ],
+       "file": "第二部分_数值计算方法/第4章_计算函数零点和极值点的迭代法/知识点讲解/第4.3节_无约束优化问题的下降迭代法.md",
+       "h1": "第二部分-第4章-第4.3节　无约束优化问题的下降迭代法",
+       "exercises": [
+        {
+         "label": "习题 4",
+         "file": "第二部分_数值计算方法/第4章_计算函数零点和极值点的迭代法/习题4解答.md",
+         "book_page_start": 228,
+         "pdf_page_start": 239,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P12"
+      }
+     ],
+     "exercise_set": {
+      "label": "习题 4",
+      "file": "第二部分_数值计算方法/第4章_计算函数零点和极值点的迭代法/习题4解答.md",
+      "book_pages": [
+       228,
+       229
+      ],
+      "pdf_pages": [
+       239,
+       240
+      ]
+     }
+    },
+    {
+     "id": "N5",
+     "no": 5,
+     "name": "函数的插值与最佳平方逼近",
+     "dir": "第二部分_数值计算方法/第5章_函数的插值与最佳平方逼近",
+     "book_pages": [
+      230,
+      264
+     ],
+     "pdf_pages": [
+      241,
+      275
+     ],
+     "intro_book_pages": [
+      230,
+      231
+     ],
+     "guide_file": "第二部分_数值计算方法/第5章_函数的插值与最佳平方逼近/知识点讲解/00_本章导读.md",
+     "guide_title": "第二部分-第5章　函数的插值与最佳平方逼近（本章导读）",
+     "sections": [
+      {
+       "id": "N5.1",
+       "no": "5.1",
+       "title": "多项式插值",
+       "book_pages": [
+        231,
+        241
+       ],
+       "pdf_pages": [
+        242,
+        252
+       ],
+       "read_book_pages": [
+        230,
+        241
+       ],
+       "read_pdf_pages": [
+        241,
+        252
+       ],
+       "subsections": [],
+       "file": "第二部分_数值计算方法/第5章_函数的插值与最佳平方逼近/知识点讲解/第5.1节_多项式插值.md",
+       "h1": "第二部分-第5章-第5.1节　多项式插值",
+       "exercises": [
+        {
+         "label": "习题 5",
+         "file": "第二部分_数值计算方法/第5章_函数的插值与最佳平方逼近/习题5解答.md",
+         "book_page_start": 264,
+         "pdf_page_start": 275,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P13"
+      },
+      {
+       "id": "N5.2",
+       "no": "5.2",
+       "title": "样条插值",
+       "book_pages": [
+        241,
+        247
+       ],
+       "pdf_pages": [
+        252,
+        258
+       ],
+       "read_book_pages": [
+        241,
+        247
+       ],
+       "read_pdf_pages": [
+        252,
+        258
+       ],
+       "subsections": [],
+       "file": "第二部分_数值计算方法/第5章_函数的插值与最佳平方逼近/知识点讲解/第5.2节_样条插值.md",
+       "h1": "第二部分-第5章-第5.2节　样条插值",
+       "exercises": [
+        {
+         "label": "习题 5",
+         "file": "第二部分_数值计算方法/第5章_函数的插值与最佳平方逼近/习题5解答.md",
+         "book_page_start": 264,
+         "pdf_page_start": 275,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P13"
+      },
+      {
+       "id": "N5.3",
+       "no": "5.3",
+       "title": "数据的最小二乘拟合",
+       "book_pages": [
+        247,
+        251
+       ],
+       "pdf_pages": [
+        258,
+        262
+       ],
+       "read_book_pages": [
+        247,
+        251
+       ],
+       "read_pdf_pages": [
+        258,
+        262
+       ],
+       "subsections": [],
+       "file": "第二部分_数值计算方法/第5章_函数的插值与最佳平方逼近/知识点讲解/第5.3节_数据的最小二乘拟合.md",
+       "h1": "第二部分-第5章-第5.3节　数据的最小二乘拟合",
+       "exercises": [
+        {
+         "label": "习题 5",
+         "file": "第二部分_数值计算方法/第5章_函数的插值与最佳平方逼近/习题5解答.md",
+         "book_page_start": 264,
+         "pdf_page_start": 275,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P14"
+      },
+      {
+       "id": "N5.4",
+       "no": "5.4",
+       "title": "函数的最佳平方逼近",
+       "book_pages": [
+        251,
+        262
+       ],
+       "pdf_pages": [
+        262,
+        273
+       ],
+       "read_book_pages": [
+        251,
+        262
+       ],
+       "read_pdf_pages": [
+        262,
+        273
+       ],
+       "subsections": [],
+       "file": "第二部分_数值计算方法/第5章_函数的插值与最佳平方逼近/知识点讲解/第5.4节_函数的最佳平方逼近.md",
+       "h1": "第二部分-第5章-第5.4节　函数的最佳平方逼近",
+       "exercises": [
+        {
+         "label": "习题 5",
+         "file": "第二部分_数值计算方法/第5章_函数的插值与最佳平方逼近/习题5解答.md",
+         "book_page_start": 264,
+         "pdf_page_start": 275,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P14"
+      },
+      {
+       "id": "N5.5",
+       "no": "5.5",
+       "title": "二元插值",
+       "book_pages": [
+        262,
+        264
+       ],
+       "pdf_pages": [
+        273,
+        275
+       ],
+       "read_book_pages": [
+        262,
+        264
+       ],
+       "read_pdf_pages": [
+        273,
+        275
+       ],
+       "subsections": [],
+       "file": "第二部分_数值计算方法/第5章_函数的插值与最佳平方逼近/知识点讲解/第5.5节_二元插值.md",
+       "h1": "第二部分-第5章-第5.5节　二元插值",
+       "exercises": [
+        {
+         "label": "习题 5",
+         "file": "第二部分_数值计算方法/第5章_函数的插值与最佳平方逼近/习题5解答.md",
+         "book_page_start": 264,
+         "pdf_page_start": 275,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P14"
+      }
+     ],
+     "exercise_set": {
+      "label": "习题 5",
+      "file": "第二部分_数值计算方法/第5章_函数的插值与最佳平方逼近/习题5解答.md",
+      "book_pages": [
+       264,
+       266
+      ],
+      "pdf_pages": [
+       275,
+       277
+      ]
+     }
+    },
+    {
+     "id": "N6",
+     "no": 6,
+     "name": "数值积分与数值微分",
+     "dir": "第二部分_数值计算方法/第6章_数值积分与数值微分",
+     "book_pages": [
+      267,
+      295
+     ],
+     "pdf_pages": [
+      278,
+      306
+     ],
+     "intro_book_pages": [
+      267,
+      269
+     ],
+     "guide_file": "第二部分_数值计算方法/第6章_数值积分与数值微分/知识点讲解/00_本章导读.md",
+     "guide_title": "第二部分-第6章　数值积分与数值微分（本章导读）",
+     "sections": [
+      {
+       "id": "N6.1",
+       "no": "6.1",
+       "title": "Newton-Cotes 求积公式",
+       "book_pages": [
+        269,
+        274
+       ],
+       "pdf_pages": [
+        280,
+        285
+       ],
+       "read_book_pages": [
+        267,
+        274
+       ],
+       "read_pdf_pages": [
+        278,
+        285
+       ],
+       "subsections": [],
+       "file": "第二部分_数值计算方法/第6章_数值积分与数值微分/知识点讲解/第6.1节_Newton-Cotes求积公式.md",
+       "h1": "第二部分-第6章-第6.1节　Newton-Cotes 求积公式",
+       "exercises": [
+        {
+         "label": "习题 6",
+         "file": "第二部分_数值计算方法/第6章_数值积分与数值微分/习题6解答.md",
+         "book_page_start": 295,
+         "pdf_page_start": 306,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P15"
+      },
+      {
+       "id": "N6.2",
+       "no": "6.2",
+       "title": "复化求积公式及其余项表达式",
+       "book_pages": [
+        274,
+        279
+       ],
+       "pdf_pages": [
+        285,
+        290
+       ],
+       "read_book_pages": [
+        274,
+        279
+       ],
+       "read_pdf_pages": [
+        285,
+        290
+       ],
+       "subsections": [],
+       "file": "第二部分_数值计算方法/第6章_数值积分与数值微分/知识点讲解/第6.2节_复化求积公式及其余项表达式.md",
+       "h1": "第二部分-第6章-第6.2节　复化求积公式及其余项表达式",
+       "exercises": [
+        {
+         "label": "习题 6",
+         "file": "第二部分_数值计算方法/第6章_数值积分与数值微分/习题6解答.md",
+         "book_page_start": 295,
+         "pdf_page_start": 306,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P15"
+      },
+      {
+       "id": "N6.3",
+       "no": "6.3",
+       "title": "Richardson 外推法和数值积分的 Romberg 算法",
+       "book_pages": [
+        279,
+        282
+       ],
+       "pdf_pages": [
+        290,
+        293
+       ],
+       "read_book_pages": [
+        279,
+        282
+       ],
+       "read_pdf_pages": [
+        290,
+        293
+       ],
+       "subsections": [
+        {
+         "no": "6.3.1",
+         "title": "Richardson 外推法",
+         "book_page": 279
+        },
+        {
+         "no": "6.3.2",
+         "title": "数值积分的 Romberg 算法",
+         "book_page": 280
+        }
+       ],
+       "file": "第二部分_数值计算方法/第6章_数值积分与数值微分/知识点讲解/第6.3节_Richardson外推法和数值积分的Romberg算法.md",
+       "h1": "第二部分-第6章-第6.3节　Richardson 外推法和数值积分的 Romberg 算法",
+       "exercises": [
+        {
+         "label": "习题 6",
+         "file": "第二部分_数值计算方法/第6章_数值积分与数值微分/习题6解答.md",
+         "book_page_start": 295,
+         "pdf_page_start": 306,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P15"
+      },
+      {
+       "id": "N6.4",
+       "no": "6.4",
+       "title": "Gauss 型求积公式",
+       "book_pages": [
+        282,
+        289
+       ],
+       "pdf_pages": [
+        293,
+        300
+       ],
+       "read_book_pages": [
+        282,
+        289
+       ],
+       "read_pdf_pages": [
+        293,
+        300
+       ],
+       "subsections": [],
+       "file": "第二部分_数值计算方法/第6章_数值积分与数值微分/知识点讲解/第6.4节_Gauss型求积公式.md",
+       "h1": "第二部分-第6章-第6.4节　Gauss 型求积公式",
+       "exercises": [
+        {
+         "label": "习题 6",
+         "file": "第二部分_数值计算方法/第6章_数值积分与数值微分/习题6解答.md",
+         "book_page_start": 295,
+         "pdf_page_start": 306,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P16"
+      },
+      {
+       "id": "N6.5",
+       "no": "6.5",
+       "title": "二重积分的计算方法",
+       "book_pages": [
+        289,
+        291
+       ],
+       "pdf_pages": [
+        300,
+        302
+       ],
+       "read_book_pages": [
+        289,
+        291
+       ],
+       "read_pdf_pages": [
+        300,
+        302
+       ],
+       "subsections": [],
+       "file": "第二部分_数值计算方法/第6章_数值积分与数值微分/知识点讲解/第6.5节_二重积分的计算方法.md",
+       "h1": "第二部分-第6章-第6.5节　二重积分的计算方法",
+       "exercises": [
+        {
+         "label": "习题 6",
+         "file": "第二部分_数值计算方法/第6章_数值积分与数值微分/习题6解答.md",
+         "book_page_start": 295,
+         "pdf_page_start": 306,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P16"
+      },
+      {
+       "id": "N6.6",
+       "no": "6.6",
+       "title": "数值微分",
+       "book_pages": [
+        291,
+        295
+       ],
+       "pdf_pages": [
+        302,
+        306
+       ],
+       "read_book_pages": [
+        291,
+        295
+       ],
+       "read_pdf_pages": [
+        302,
+        306
+       ],
+       "subsections": [],
+       "file": "第二部分_数值计算方法/第6章_数值积分与数值微分/知识点讲解/第6.6节_数值微分.md",
+       "h1": "第二部分-第6章-第6.6节　数值微分",
+       "exercises": [
+        {
+         "label": "习题 6",
+         "file": "第二部分_数值计算方法/第6章_数值积分与数值微分/习题6解答.md",
+         "book_page_start": 295,
+         "pdf_page_start": 306,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P16"
+      }
+     ],
+     "exercise_set": {
+      "label": "习题 6",
+      "file": "第二部分_数值计算方法/第6章_数值积分与数值微分/习题6解答.md",
+      "book_pages": [
+       295,
+       297
+      ],
+      "pdf_pages": [
+       306,
+       308
+      ]
+     }
+    },
+    {
+     "id": "N7",
+     "no": 7,
+     "name": "常微分方程数值解法",
+     "dir": "第二部分_数值计算方法/第7章_常微分方程数值解法",
+     "book_pages": [
+      298,
+      320
+     ],
+     "pdf_pages": [
+      309,
+      331
+     ],
+     "intro_book_pages": [
+      298,
+      299
+     ],
+     "guide_file": "第二部分_数值计算方法/第7章_常微分方程数值解法/知识点讲解/00_本章导读.md",
+     "guide_title": "第二部分-第7章　常微分方程数值解法（本章导读）",
+     "sections": [
+      {
+       "id": "N7.1",
+       "no": "7.1",
+       "title": "初值问题数值解法的构造及其精度",
+       "book_pages": [
+        299,
+        304
+       ],
+       "pdf_pages": [
+        310,
+        315
+       ],
+       "read_book_pages": [
+        298,
+        304
+       ],
+       "read_pdf_pages": [
+        309,
+        315
+       ],
+       "subsections": [],
+       "file": "第二部分_数值计算方法/第7章_常微分方程数值解法/知识点讲解/第7.1节_初值问题数值解法的构造及其精度.md",
+       "h1": "第二部分-第7章-第7.1节　初值问题数值解法的构造及其精度",
+       "exercises": [
+        {
+         "label": "习题 7",
+         "file": "第二部分_数值计算方法/第7章_常微分方程数值解法/习题7解答.md",
+         "book_page_start": 320,
+         "pdf_page_start": 331,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P17"
+      },
+      {
+       "id": "N7.2",
+       "no": "7.2",
+       "title": "Runge-Kutta 方法",
+       "book_pages": [
+        304,
+        309
+       ],
+       "pdf_pages": [
+        315,
+        320
+       ],
+       "read_book_pages": [
+        304,
+        309
+       ],
+       "read_pdf_pages": [
+        315,
+        320
+       ],
+       "subsections": [],
+       "file": "第二部分_数值计算方法/第7章_常微分方程数值解法/知识点讲解/第7.2节_Runge-Kutta方法.md",
+       "h1": "第二部分-第7章-第7.2节　Runge-Kutta 方法",
+       "exercises": [
+        {
+         "label": "习题 7",
+         "file": "第二部分_数值计算方法/第7章_常微分方程数值解法/习题7解答.md",
+         "book_page_start": 320,
+         "pdf_page_start": 331,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P17"
+      },
+      {
+       "id": "N7.3",
+       "no": "7.3",
+       "title": "线性多步法",
+       "book_pages": [
+        309,
+        314
+       ],
+       "pdf_pages": [
+        320,
+        325
+       ],
+       "read_book_pages": [
+        309,
+        314
+       ],
+       "read_pdf_pages": [
+        320,
+        325
+       ],
+       "subsections": [],
+       "file": "第二部分_数值计算方法/第7章_常微分方程数值解法/知识点讲解/第7.3节_线性多步法.md",
+       "h1": "第二部分-第7章-第7.3节　线性多步法",
+       "exercises": [
+        {
+         "label": "习题 7",
+         "file": "第二部分_数值计算方法/第7章_常微分方程数值解法/习题7解答.md",
+         "book_page_start": 320,
+         "pdf_page_start": 331,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P17"
+      },
+      {
+       "id": "N7.4",
+       "no": "7.4",
+       "title": "预估-校正公式",
+       "book_pages": [
+        314,
+        316
+       ],
+       "pdf_pages": [
+        325,
+        327
+       ],
+       "read_book_pages": [
+        314,
+        316
+       ],
+       "read_pdf_pages": [
+        325,
+        327
+       ],
+       "subsections": [],
+       "file": "第二部分_数值计算方法/第7章_常微分方程数值解法/知识点讲解/第7.4节_预估-校正公式.md",
+       "h1": "第二部分-第7章-第7.4节　预估-校正公式",
+       "exercises": [
+        {
+         "label": "习题 7",
+         "file": "第二部分_数值计算方法/第7章_常微分方程数值解法/习题7解答.md",
+         "book_page_start": 320,
+         "pdf_page_start": 331,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P18"
+      },
+      {
+       "id": "N7.5",
+       "no": "7.5",
+       "title": "边值问题的差分法",
+       "book_pages": [
+        316,
+        320
+       ],
+       "pdf_pages": [
+        327,
+        331
+       ],
+       "read_book_pages": [
+        316,
+        320
+       ],
+       "read_pdf_pages": [
+        327,
+        331
+       ],
+       "subsections": [],
+       "file": "第二部分_数值计算方法/第7章_常微分方程数值解法/知识点讲解/第7.5节_边值问题的差分法.md",
+       "h1": "第二部分-第7章-第7.5节　边值问题的差分法",
+       "exercises": [
+        {
+         "label": "习题 7",
+         "file": "第二部分_数值计算方法/第7章_常微分方程数值解法/习题7解答.md",
+         "book_page_start": 320,
+         "pdf_page_start": 331,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P18"
+      }
+     ],
+     "exercise_set": {
+      "label": "习题 7",
+      "file": "第二部分_数值计算方法/第7章_常微分方程数值解法/习题7解答.md",
+      "book_pages": [
+       320,
+       321
+      ],
+      "pdf_pages": [
+       331,
+       332
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "code": "S",
+   "cn": "第三部分",
+   "name": "数理统计",
+   "dir": "第三部分_数理统计",
+   "intro_book_pages": [
+    323,
+    323
+   ],
+   "intro_pdf_pages": [
+    334,
+    334
+   ],
+   "guide_file": "第三部分_数理统计/00_第三部分导读.md",
+   "guide_title": "第三部分　数理统计（导读）",
+   "chapters": [
+    {
+     "id": "S1",
+     "no": 1,
+     "name": "数理统计的基本概念",
+     "dir": "第三部分_数理统计/第1章_数理统计的基本概念",
+     "book_pages": [
+      325,
+      338
+     ],
+     "pdf_pages": [
+      336,
+      349
+     ],
+     "intro_book_pages": [
+      325,
+      325
+     ],
+     "guide_file": "第三部分_数理统计/第1章_数理统计的基本概念/知识点讲解/00_本章导读.md",
+     "guide_title": "第三部分-第1章　数理统计的基本概念（本章导读）",
+     "sections": [
+      {
+       "id": "S1.1",
+       "no": "1.1",
+       "title": "总体与样本",
+       "book_pages": [
+        325,
+        327
+       ],
+       "pdf_pages": [
+        336,
+        338
+       ],
+       "read_book_pages": [
+        325,
+        327
+       ],
+       "read_pdf_pages": [
+        336,
+        338
+       ],
+       "subsections": [],
+       "file": "第三部分_数理统计/第1章_数理统计的基本概念/知识点讲解/第1.1节_总体与样本.md",
+       "h1": "第三部分-第1章-第1.1节　总体与样本",
+       "exercises": [
+        {
+         "label": "习题 1",
+         "file": "第三部分_数理统计/第1章_数理统计的基本概念/习题1解答.md",
+         "book_page_start": 338,
+         "pdf_page_start": 349,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P19"
+      },
+      {
+       "id": "S1.2",
+       "no": "1.2",
+       "title": "统计量与样本矩",
+       "book_pages": [
+        327,
+        329
+       ],
+       "pdf_pages": [
+        338,
+        340
+       ],
+       "read_book_pages": [
+        327,
+        329
+       ],
+       "read_pdf_pages": [
+        338,
+        340
+       ],
+       "subsections": [],
+       "file": "第三部分_数理统计/第1章_数理统计的基本概念/知识点讲解/第1.2节_统计量与样本矩.md",
+       "h1": "第三部分-第1章-第1.2节　统计量与样本矩",
+       "exercises": [
+        {
+         "label": "习题 1",
+         "file": "第三部分_数理统计/第1章_数理统计的基本概念/习题1解答.md",
+         "book_page_start": 338,
+         "pdf_page_start": 349,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P19"
+      },
+      {
+       "id": "S1.3",
+       "no": "1.3",
+       "title": "数理统计中常用的几个分布",
+       "book_pages": [
+        329,
+        333
+       ],
+       "pdf_pages": [
+        340,
+        344
+       ],
+       "read_book_pages": [
+        329,
+        333
+       ],
+       "read_pdf_pages": [
+        340,
+        344
+       ],
+       "subsections": [],
+       "file": "第三部分_数理统计/第1章_数理统计的基本概念/知识点讲解/第1.3节_数理统计中常用的几个分布.md",
+       "h1": "第三部分-第1章-第1.3节　数理统计中常用的几个分布",
+       "exercises": [
+        {
+         "label": "习题 1",
+         "file": "第三部分_数理统计/第1章_数理统计的基本概念/习题1解答.md",
+         "book_page_start": 338,
+         "pdf_page_start": 349,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P19"
+      },
+      {
+       "id": "S1.4",
+       "no": "1.4",
+       "title": "抽样分布",
+       "book_pages": [
+        333,
+        337
+       ],
+       "pdf_pages": [
+        344,
+        348
+       ],
+       "read_book_pages": [
+        333,
+        337
+       ],
+       "read_pdf_pages": [
+        344,
+        348
+       ],
+       "subsections": [],
+       "file": "第三部分_数理统计/第1章_数理统计的基本概念/知识点讲解/第1.4节_抽样分布.md",
+       "h1": "第三部分-第1章-第1.4节　抽样分布",
+       "exercises": [
+        {
+         "label": "习题 1",
+         "file": "第三部分_数理统计/第1章_数理统计的基本概念/习题1解答.md",
+         "book_page_start": 338,
+         "pdf_page_start": 349,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P19"
+      },
+      {
+       "id": "S1.5",
+       "no": "1.5",
+       "title": "分位数",
+       "book_pages": [
+        337,
+        338
+       ],
+       "pdf_pages": [
+        348,
+        349
+       ],
+       "read_book_pages": [
+        337,
+        338
+       ],
+       "read_pdf_pages": [
+        348,
+        349
+       ],
+       "subsections": [],
+       "file": "第三部分_数理统计/第1章_数理统计的基本概念/知识点讲解/第1.5节_分位数.md",
+       "h1": "第三部分-第1章-第1.5节　分位数",
+       "exercises": [
+        {
+         "label": "习题 1",
+         "file": "第三部分_数理统计/第1章_数理统计的基本概念/习题1解答.md",
+         "book_page_start": 338,
+         "pdf_page_start": 349,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P19"
+      }
+     ],
+     "exercise_set": {
+      "label": "习题 1",
+      "file": "第三部分_数理统计/第1章_数理统计的基本概念/习题1解答.md",
+      "book_pages": [
+       338,
+       339
+      ],
+      "pdf_pages": [
+       349,
+       350
+      ]
+     }
+    },
+    {
+     "id": "S2",
+     "no": 2,
+     "name": "参数估计",
+     "dir": "第三部分_数理统计/第2章_参数估计",
+     "book_pages": [
+      340,
+      366
+     ],
+     "pdf_pages": [
+      351,
+      377
+     ],
+     "intro_book_pages": [
+      340,
+      340
+     ],
+     "guide_file": "第三部分_数理统计/第2章_参数估计/知识点讲解/00_本章导读.md",
+     "guide_title": "第三部分-第2章　参数估计（本章导读）",
+     "sections": [
+      {
+       "id": "S2.1",
+       "no": "2.1",
+       "title": "点估计",
+       "book_pages": [
+        340,
+        347
+       ],
+       "pdf_pages": [
+        351,
+        358
+       ],
+       "read_book_pages": [
+        340,
+        347
+       ],
+       "read_pdf_pages": [
+        351,
+        358
+       ],
+       "subsections": [
+        {
+         "no": "2.1.1",
+         "title": "矩估计法",
+         "book_page": 341
+        },
+        {
+         "no": "2.1.2",
+         "title": "极大似然估计法",
+         "book_page": 343
+        }
+       ],
+       "file": "第三部分_数理统计/第2章_参数估计/知识点讲解/第2.1节_点估计.md",
+       "h1": "第三部分-第2章-第2.1节　点估计",
+       "exercises": [
+        {
+         "label": "习题 2",
+         "file": "第三部分_数理统计/第2章_参数估计/习题2解答.md",
+         "book_page_start": 366,
+         "pdf_page_start": 377,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P20"
+      },
+      {
+       "id": "S2.2",
+       "no": "2.2",
+       "title": "估计量的评选标准",
+       "book_pages": [
+        347,
+        357
+       ],
+       "pdf_pages": [
+        358,
+        368
+       ],
+       "read_book_pages": [
+        347,
+        357
+       ],
+       "read_pdf_pages": [
+        358,
+        368
+       ],
+       "subsections": [
+        {
+         "no": "2.2.1",
+         "title": "无偏估计",
+         "book_page": 348
+        },
+        {
+         "no": "2.2.2",
+         "title": "有效估计和最小方差估计",
+         "book_page": 350
+        },
+        {
+         "no": "2.2.3",
+         "title": "相合估计与渐近正态性",
+         "book_page": 355
+        }
+       ],
+       "file": "第三部分_数理统计/第2章_参数估计/知识点讲解/第2.2节_估计量的评选标准.md",
+       "h1": "第三部分-第2章-第2.2节　估计量的评选标准",
+       "exercises": [
+        {
+         "label": "习题 2",
+         "file": "第三部分_数理统计/第2章_参数估计/习题2解答.md",
+         "book_page_start": 366,
+         "pdf_page_start": 377,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P20"
+      },
+      {
+       "id": "S2.3",
+       "no": "2.3",
+       "title": "区间估计",
+       "book_pages": [
+        357,
+        366
+       ],
+       "pdf_pages": [
+        368,
+        377
+       ],
+       "read_book_pages": [
+        357,
+        366
+       ],
+       "read_pdf_pages": [
+        368,
+        377
+       ],
+       "subsections": [],
+       "file": "第三部分_数理统计/第2章_参数估计/知识点讲解/第2.3节_区间估计.md",
+       "h1": "第三部分-第2章-第2.3节　区间估计",
+       "exercises": [
+        {
+         "label": "习题 2",
+         "file": "第三部分_数理统计/第2章_参数估计/习题2解答.md",
+         "book_page_start": 366,
+         "pdf_page_start": 377,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P20"
+      }
+     ],
+     "exercise_set": {
+      "label": "习题 2",
+      "file": "第三部分_数理统计/第2章_参数估计/习题2解答.md",
+      "book_pages": [
+       366,
+       368
+      ],
+      "pdf_pages": [
+       377,
+       379
+      ]
+     }
+    },
+    {
+     "id": "S3",
+     "no": 3,
+     "name": "假设检验",
+     "dir": "第三部分_数理统计/第3章_假设检验",
+     "book_pages": [
+      369,
+      389
+     ],
+     "pdf_pages": [
+      380,
+      400
+     ],
+     "intro_book_pages": [
+      369,
+      369
+     ],
+     "guide_file": "第三部分_数理统计/第3章_假设检验/知识点讲解/00_本章导读.md",
+     "guide_title": "第三部分-第3章　假设检验（本章导读）",
+     "sections": [
+      {
+       "id": "S3.1",
+       "no": "3.1",
+       "title": "假设检验的基本概念",
+       "book_pages": [
+        369,
+        371
+       ],
+       "pdf_pages": [
+        380,
+        382
+       ],
+       "read_book_pages": [
+        369,
+        371
+       ],
+       "read_pdf_pages": [
+        380,
+        382
+       ],
+       "subsections": [],
+       "file": "第三部分_数理统计/第3章_假设检验/知识点讲解/第3.1节_假设检验的基本概念.md",
+       "h1": "第三部分-第3章-第3.1节　假设检验的基本概念",
+       "exercises": [
+        {
+         "label": "习题 3",
+         "file": "第三部分_数理统计/第3章_假设检验/习题3解答.md",
+         "book_page_start": 389,
+         "pdf_page_start": 400,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P21"
+      },
+      {
+       "id": "S3.2",
+       "no": "3.2",
+       "title": "正态总体下参数的假设检验",
+       "book_pages": [
+        371,
+        380
+       ],
+       "pdf_pages": [
+        382,
+        391
+       ],
+       "read_book_pages": [
+        371,
+        380
+       ],
+       "read_pdf_pages": [
+        382,
+        391
+       ],
+       "subsections": [],
+       "file": "第三部分_数理统计/第3章_假设检验/知识点讲解/第3.2节_正态总体下参数的假设检验.md",
+       "h1": "第三部分-第3章-第3.2节　正态总体下参数的假设检验",
+       "exercises": [
+        {
+         "label": "习题 3",
+         "file": "第三部分_数理统计/第3章_假设检验/习题3解答.md",
+         "book_page_start": 389,
+         "pdf_page_start": 400,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "T3"
+      },
+      {
+       "id": "S3.3",
+       "no": "3.3",
+       "title": "非正态总体大样本参数检验",
+       "book_pages": [
+        380,
+        382
+       ],
+       "pdf_pages": [
+        391,
+        393
+       ],
+       "read_book_pages": [
+        380,
+        382
+       ],
+       "read_pdf_pages": [
+        391,
+        393
+       ],
+       "subsections": [],
+       "file": "第三部分_数理统计/第3章_假设检验/知识点讲解/第3.3节_非正态总体大样本参数检验.md",
+       "h1": "第三部分-第3章-第3.3节　非正态总体大样本参数检验",
+       "exercises": [
+        {
+         "label": "习题 3",
+         "file": "第三部分_数理统计/第3章_假设检验/习题3解答.md",
+         "book_page_start": 389,
+         "pdf_page_start": 400,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P21"
+      },
+      {
+       "id": "S3.4",
+       "no": "3.4",
+       "title": "检验的优劣",
+       "book_pages": [
+        382,
+        389
+       ],
+       "pdf_pages": [
+        393,
+        400
+       ],
+       "read_book_pages": [
+        382,
+        389
+       ],
+       "read_pdf_pages": [
+        393,
+        400
+       ],
+       "subsections": [
+        {
+         "no": "3.4.1",
+         "title": "功效函数",
+         "book_page": 382
+        },
+        {
+         "no": "3.4.2",
+         "title": "最大功效检验",
+         "book_page": 386
+        }
+       ],
+       "file": "第三部分_数理统计/第3章_假设检验/知识点讲解/第3.4节_检验的优劣.md",
+       "h1": "第三部分-第3章-第3.4节　检验的优劣",
+       "exercises": [
+        {
+         "label": "习题 3",
+         "file": "第三部分_数理统计/第3章_假设检验/习题3解答.md",
+         "book_page_start": 389,
+         "pdf_page_start": 400,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P21"
+      }
+     ],
+     "exercise_set": {
+      "label": "习题 3",
+      "file": "第三部分_数理统计/第3章_假设检验/习题3解答.md",
+      "book_pages": [
+       389,
+       390
+      ],
+      "pdf_pages": [
+       400,
+       401
+      ]
+     }
+    },
+    {
+     "id": "S4",
+     "no": 4,
+     "name": "线性统计推断",
+     "dir": "第三部分_数理统计/第4章_线性统计推断",
+     "book_pages": [
+      391,
+      429
+     ],
+     "pdf_pages": [
+      402,
+      440
+     ],
+     "intro_book_pages": [
+      391,
+      391
+     ],
+     "guide_file": "第三部分_数理统计/第4章_线性统计推断/知识点讲解/00_本章导读.md",
+     "guide_title": "第三部分-第4章　线性统计推断（本章导读）",
+     "sections": [
+      {
+       "id": "S4.1",
+       "no": "4.1",
+       "title": "线性统计模型",
+       "book_pages": [
+        391,
+        393
+       ],
+       "pdf_pages": [
+        402,
+        404
+       ],
+       "read_book_pages": [
+        391,
+        393
+       ],
+       "read_pdf_pages": [
+        402,
+        404
+       ],
+       "subsections": [],
+       "file": "第三部分_数理统计/第4章_线性统计推断/知识点讲解/第4.1节_线性统计模型.md",
+       "h1": "第三部分-第4章-第4.1节　线性统计模型",
+       "exercises": [
+        {
+         "label": "习题 4",
+         "file": "第三部分_数理统计/第4章_线性统计推断/习题4解答.md",
+         "book_page_start": 429,
+         "pdf_page_start": 440,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P22"
+      },
+      {
+       "id": "S4.2",
+       "no": "4.2",
+       "title": "最小二乘估计及其性质",
+       "book_pages": [
+        393,
+        401
+       ],
+       "pdf_pages": [
+        404,
+        412
+       ],
+       "read_book_pages": [
+        393,
+        401
+       ],
+       "read_pdf_pages": [
+        404,
+        412
+       ],
+       "subsections": [],
+       "file": "第三部分_数理统计/第4章_线性统计推断/知识点讲解/第4.2节_最小二乘估计及其性质.md",
+       "h1": "第三部分-第4章-第4.2节　最小二乘估计及其性质",
+       "exercises": [
+        {
+         "label": "习题 4",
+         "file": "第三部分_数理统计/第4章_线性统计推断/习题4解答.md",
+         "book_page_start": 429,
+         "pdf_page_start": 440,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P22"
+      },
+      {
+       "id": "S4.3",
+       "no": "4.3",
+       "title": "线性模型的假设检验和统计推断",
+       "book_pages": [
+        401,
+        407
+       ],
+       "pdf_pages": [
+        412,
+        418
+       ],
+       "read_book_pages": [
+        401,
+        407
+       ],
+       "read_pdf_pages": [
+        412,
+        418
+       ],
+       "subsections": [
+        {
+         "no": "4.3.1",
+         "title": "线性模型的假设检验",
+         "book_page": 401
+        },
+        {
+         "no": "4.3.2",
+         "title": "回归系数的假设检验",
+         "book_page": 403
+        },
+        {
+         "no": "4.3.3",
+         "title": "统计推断",
+         "book_page": 406
+        }
+       ],
+       "file": "第三部分_数理统计/第4章_线性统计推断/知识点讲解/第4.3节_线性模型的假设检验和统计推断.md",
+       "h1": "第三部分-第4章-第4.3节　线性模型的假设检验和统计推断",
+       "exercises": [
+        {
+         "label": "习题 4",
+         "file": "第三部分_数理统计/第4章_线性统计推断/习题4解答.md",
+         "book_page_start": 429,
+         "pdf_page_start": 440,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P22"
+      },
+      {
+       "id": "S4.4",
+       "no": "4.4",
+       "title": "方差分析",
+       "book_pages": [
+        407,
+        418
+       ],
+       "pdf_pages": [
+        418,
+        429
+       ],
+       "read_book_pages": [
+        407,
+        418
+       ],
+       "read_pdf_pages": [
+        418,
+        429
+       ],
+       "subsections": [
+        {
+         "no": "4.4.1",
+         "title": "单因子方差分析",
+         "book_page": 409
+        },
+        {
+         "no": "4.4.2",
+         "title": "双因子方差分析",
+         "book_page": 413
+        }
+       ],
+       "file": "第三部分_数理统计/第4章_线性统计推断/知识点讲解/第4.4节_方差分析.md",
+       "h1": "第三部分-第4章-第4.4节　方差分析",
+       "exercises": [
+        {
+         "label": "习题 4",
+         "file": "第三部分_数理统计/第4章_线性统计推断/习题4解答.md",
+         "book_page_start": 429,
+         "pdf_page_start": 440,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P23"
+      },
+      {
+       "id": "S4.5",
+       "no": "4.5",
+       "title": "正交试验设计及其应用",
+       "book_pages": [
+        418,
+        429
+       ],
+       "pdf_pages": [
+        429,
+        440
+       ],
+       "read_book_pages": [
+        418,
+        429
+       ],
+       "read_pdf_pages": [
+        429,
+        440
+       ],
+       "subsections": [],
+       "file": "第三部分_数理统计/第4章_线性统计推断/知识点讲解/第4.5节_正交试验设计及其应用.md",
+       "h1": "第三部分-第4章-第4.5节　正交试验设计及其应用",
+       "exercises": [
+        {
+         "label": "习题 4",
+         "file": "第三部分_数理统计/第4章_线性统计推断/习题4解答.md",
+         "book_page_start": 429,
+         "pdf_page_start": 440,
+         "scope": "部分（按清单 exercises 字段分配到本节的题）"
+        }
+       ],
+       "package": "P23"
+      }
+     ],
+     "exercise_set": {
+      "label": "习题 4",
+      "file": "第三部分_数理统计/第4章_线性统计推断/习题4解答.md",
+      "book_pages": [
+       429,
+       431
+      ],
+      "pdf_pages": [
+       440,
+       442
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "packages": [
+  {
+   "id": "T1",
+   "phase": "阶段1 试点",
+   "sections": [
+    "M3.1",
+    "M3.2"
+   ],
+   "chapter_guides": [
+    "M3"
+   ],
+   "textbook_pages": 9,
+   "note": "矩阵论理论型；同时复核并采纳样章 M3.3；完成第一个章导读"
+  },
+  {
+   "id": "T2",
+   "phase": "阶段1 试点",
+   "sections": [
+    "N4.2"
+   ],
+   "chapter_guides": [],
+   "textbook_pages": 5,
+   "note": "数值算法型；须先完成第二部分第4章全部 10 题的习题分配"
+  },
+  {
+   "id": "T3",
+   "phase": "阶段1 试点",
+   "sections": [
+    "S3.2"
+   ],
+   "chapter_guides": [],
+   "textbook_pages": 10,
+   "note": "统计程序型（查表、拒绝域）；须先完成第三部分第3章全部 11 题的习题分配"
+  },
+  {
+   "id": "P01",
+   "phase": "阶段2 量产",
+   "sections": [
+    "M1.1",
+    "M1.2",
+    "M1.3"
+   ],
+   "chapter_guides": [],
+   "textbook_pages": 24,
+   "note": ""
+  },
+  {
+   "id": "P02",
+   "phase": "阶段2 量产",
+   "sections": [
+    "M1.4",
+    "M1.5",
+    "M1.6"
+   ],
+   "chapter_guides": [
+    "M1"
+   ],
+   "textbook_pages": 25,
+   "note": ""
+  },
+  {
+   "id": "P03",
+   "phase": "阶段2 量产",
+   "sections": [
+    "M2.1",
+    "M2.2"
+   ],
+   "chapter_guides": [],
+   "textbook_pages": 22,
+   "note": "2.1 Jordan 标准形为全书最难节之一，可单独一个会话"
+  },
+  {
+   "id": "P04",
+   "phase": "阶段2 量产",
+   "sections": [
+    "M2.3",
+    "M2.4"
+   ],
+   "chapter_guides": [
+    "M2"
+   ],
+   "textbook_pages": 10,
+   "note": ""
+  },
+  {
+   "id": "P05",
+   "phase": "阶段2 量产",
+   "sections": [
+    "M4.1",
+    "M4.2",
+    "M4.3"
+   ],
+   "chapter_guides": [
+    "M4"
+   ],
+   "textbook_pages": 17,
+   "note": ""
+  },
+  {
+   "id": "P06",
+   "phase": "阶段2 量产",
+   "sections": [
+    "M5.1",
+    "M5.2",
+    "M5.3"
+   ],
+   "chapter_guides": [
+    "M5"
+   ],
+   "textbook_pages": 23,
+   "note": ""
+  },
+  {
+   "id": "P07",
+   "phase": "阶段2 量产",
+   "sections": [
+    "M6.1",
+    "M6.2",
+    "M6.3"
+   ],
+   "chapter_guides": [
+    "M6"
+   ],
+   "textbook_pages": 23,
+   "note": ""
+  },
+  {
+   "id": "P08",
+   "phase": "阶段2 量产",
+   "sections": [
+    "N1.1",
+    "N1.2",
+    "N1.3"
+   ],
+   "chapter_guides": [
+    "N1"
+   ],
+   "textbook_pages": 12,
+   "note": "先做第1章习题分配"
+  },
+  {
+   "id": "P09",
+   "phase": "阶段2 量产",
+   "sections": [
+    "N2.1",
+    "N2.2",
+    "N2.3"
+   ],
+   "chapter_guides": [],
+   "textbook_pages": 14,
+   "note": "先做第2章（全部 12 题）习题分配"
+  },
+  {
+   "id": "P10",
+   "phase": "阶段2 量产",
+   "sections": [
+    "N2.4",
+    "N2.5",
+    "N2.6"
+   ],
+   "chapter_guides": [
+    "N2"
+   ],
+   "textbook_pages": 17,
+   "note": ""
+  },
+  {
+   "id": "P11",
+   "phase": "阶段2 量产",
+   "sections": [
+    "N3.1",
+    "N3.2",
+    "N3.3"
+   ],
+   "chapter_guides": [
+    "N3"
+   ],
+   "textbook_pages": 15,
+   "note": "先做第3章习题分配"
+  },
+  {
+   "id": "P12",
+   "phase": "阶段2 量产",
+   "sections": [
+    "N4.1",
+    "N4.3"
+   ],
+   "chapter_guides": [
+    "N4"
+   ],
+   "textbook_pages": 18,
+   "note": "N4.2 已在试点完成，按 v1.0 规范复核"
+  },
+  {
+   "id": "P13",
+   "phase": "阶段2 量产",
+   "sections": [
+    "N5.1",
+    "N5.2"
+   ],
+   "chapter_guides": [],
+   "textbook_pages": 19,
+   "note": "先做第5章（全部 16 题）习题分配；5.1 含章首引言 书页 230"
+  },
+  {
+   "id": "P14",
+   "phase": "阶段2 量产",
+   "sections": [
+    "N5.3",
+    "N5.4",
+    "N5.5"
+   ],
+   "chapter_guides": [
+    "N5"
+   ],
+   "textbook_pages": 20,
+   "note": ""
+  },
+  {
+   "id": "P15",
+   "phase": "阶段2 量产",
+   "sections": [
+    "N6.1",
+    "N6.2",
+    "N6.3"
+   ],
+   "chapter_guides": [],
+   "textbook_pages": 18,
+   "note": "先做第6章习题分配；6.1 含章首引言 书页 267–268"
+  },
+  {
+   "id": "P16",
+   "phase": "阶段2 量产",
+   "sections": [
+    "N6.4",
+    "N6.5",
+    "N6.6"
+   ],
+   "chapter_guides": [
+    "N6"
+   ],
+   "textbook_pages": 16,
+   "note": ""
+  },
+  {
+   "id": "P17",
+   "phase": "阶段2 量产",
+   "sections": [
+    "N7.1",
+    "N7.2",
+    "N7.3"
+   ],
+   "chapter_guides": [],
+   "textbook_pages": 19,
+   "note": "先做第7章习题分配；7.1 含章首引言 书页 298"
+  },
+  {
+   "id": "P18",
+   "phase": "阶段2 量产",
+   "sections": [
+    "N7.4",
+    "N7.5"
+   ],
+   "chapter_guides": [
+    "N7"
+   ],
+   "textbook_pages": 8,
+   "note": ""
+  },
+  {
+   "id": "P19",
+   "phase": "阶段2 量产",
+   "sections": [
+    "S1.1",
+    "S1.2",
+    "S1.3",
+    "S1.4",
+    "S1.5"
+   ],
+   "chapter_guides": [
+    "S1"
+   ],
+   "textbook_pages": 18,
+   "note": "先做第1章（16 题）习题分配；1.5 分位数约定影响整个第三部分"
+  },
+  {
+   "id": "P20",
+   "phase": "阶段2 量产",
+   "sections": [
+    "S2.1",
+    "S2.2",
+    "S2.3"
+   ],
+   "chapter_guides": [
+    "S2"
+   ],
+   "textbook_pages": 29,
+   "note": "先做第2章（20 题）习题分配"
+  },
+  {
+   "id": "P21",
+   "phase": "阶段2 量产",
+   "sections": [
+    "S3.1",
+    "S3.3",
+    "S3.4"
+   ],
+   "chapter_guides": [
+    "S3"
+   ],
+   "textbook_pages": 14,
+   "note": "S3.2 已在试点完成，按 v1.0 规范复核"
+  },
+  {
+   "id": "P22",
+   "phase": "阶段2 量产",
+   "sections": [
+    "S4.1",
+    "S4.2",
+    "S4.3"
+   ],
+   "chapter_guides": [],
+   "textbook_pages": 19,
+   "note": "先做第4章习题分配"
+  },
+  {
+   "id": "P23",
+   "phase": "阶段2 量产",
+   "sections": [
+    "S4.4",
+    "S4.5"
+   ],
+   "chapter_guides": [
+    "S4"
+   ],
+   "textbook_pages": 24,
+   "note": ""
+  },
+  {
+   "id": "P24",
+   "phase": "阶段3 集成",
+   "sections": [],
+   "chapter_guides": [],
+   "textbook_pages": 0,
+   "note": "3 个部分导读 + 总目录(index) + README 更新 + 习题回链(backlinks) + 全书一致性检查"
+  }
+ ]
+}

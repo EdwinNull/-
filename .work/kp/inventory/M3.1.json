@@ -10,13 +10,15 @@
   ],
   "notation": [
     {"symbol": "‖α‖", "latex": "\\|\\boldsymbol\\alpha\\|", "meaning": "向量范数", "book_page": 81},
+    {"symbol": "‖x‖₂", "latex": "\\|\\boldsymbol x\\|_2", "meaning": "欧氏范数，分量模平方和的平方根", "book_page": 81},
     {"symbol": "‖x‖₁", "latex": "\\|\\boldsymbol x\\|_1", "meaning": "向量1-范数，分量模之和", "book_page": 81},
     {"symbol": "‖x‖∞", "latex": "\\|\\boldsymbol x\\|_\\infty", "meaning": "向量无穷范数，分量模的最大值", "book_page": 81},
-    {"symbol": "‖x‖p", "latex": "\\|\\boldsymbol x\\|_p", "meaning": "向量p-范数，1≤p≤+∞", "book_page": 81},
+    {"symbol": "‖x‖p", "latex": "\\|\\boldsymbol x\\|_p", "meaning": "向量p-范数（1≤p<+∞）；p=+∞ 时另用分量模最大值表示", "book_page": 81},
     {"symbol": "‖x‖A", "latex": "\\|\\boldsymbol x\\|_{\\boldsymbol A}", "meaning": "正定矩阵A诱导的加权范数", "book_page": 82},
     {"symbol": "‖A‖F", "latex": "\\|\\boldsymbol A\\|_F", "meaning": "把矩阵按元素排列成向量所得的Frobenius范数", "book_page": 83}
   ],
   "items": [
+    {"type": "注", "no": "", "book_page": 81, "summary": "本章引言以整体度量动机说明向量范数与矩阵范数，并指出它们在数值代数和矩阵分析中的作用", "kp": "M3.1.K1"},
     {"type": "定义", "no": "3.1-1", "book_page": 81, "summary": "向量范数的正定性、齐次性、三角不等式", "kp": "M3.1.K1"},
     {"type": "式", "no": "3.1-1", "book_page": 81, "summary": "向量1-范数为各分量模之和", "kp": "M3.1.K2"},
     {"type": "式", "no": "3.1-2", "book_page": 81, "summary": "向量无穷范数为各分量模的最大值", "kp": "M3.1.K2"},

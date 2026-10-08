@@ -22,6 +22,15 @@ eig = np.linalg.eigvalsh(AtA)
 assert np.allclose(np.sort(eig), [15 - 5 * np.sqrt(5), 15 + 5 * np.sqrt(5)])
 assert abs(np.linalg.norm(A, 2) - np.sqrt(15 + 5 * np.sqrt(5))) < 1e-12
 assert abs(np.linalg.norm(A, 2) - 5.1167) < 5e-4
+x_row = np.array([1.0, 1.0])
+Ax_row = A @ x_row
+assert np.allclose(Ax_row, [-1.0, 7.0])
+assert np.linalg.norm(Ax_row, np.inf) == 7
+x_bad = np.array([1.0, -1.0])
+assert abs((A @ x_bad)[1] - (3 - 4)) < 1e-12
+assert abs(np.linalg.norm(A, "fro") - np.sqrt(30)) < 1e-12
+assert abs(np.sqrt(30) - 5.4772) < 5e-4
+assert np.linalg.norm(A, 2) <= np.linalg.norm(A, "fro") + 1e-12
 
 # K6 I-A inverse bound, A=(1/4)I
 As = 0.25 * np.eye(2)
@@ -66,6 +75,23 @@ xb = np.outer(x, b)
 assert np.allclose(xb, [[1, 2], [-1, -2]])
 assert abs(np.linalg.norm(xb, "fro") - np.sqrt(10)) < 1e-12
 assert abs(np.linalg.norm(b) ** 2 * np.linalg.norm(x) ** 2 - 10) < 1e-12
+
+# Book page 84: F-norm does not coordinate with the vector 1-norm
+x84 = np.array([0.0, 2.0])
+A84 = np.array([[1.0, 4.0], [1.0, 4.0]])
+Ax84 = A84 @ x84
+assert np.allclose(Ax84, [8.0, 8.0])
+assert abs(np.linalg.norm(Ax84, 1) - 16) < 1e-12
+assert abs(np.linalg.norm(x84, 1) - 2) < 1e-12
+assert abs(np.linalg.norm(A84, "fro") - np.sqrt(34)) < 1e-12
+assert 16 ** 2 == 256 and (2 * np.sqrt(34)) ** 2 == 136
+assert 16 > 2 * np.sqrt(34)
+
+# Example 5 intermediate row and column sums
+assert np.allclose(np.sum(np.abs(M), axis=1), [8, 3, 13])
+assert np.allclose(np.sum(np.abs(M), axis=0), [6, 14, 4])
+assert np.allclose(np.sum(np.abs(Mi), axis=1), [10 / 4, 4, 47 / 4])
+assert np.allclose(np.sum(np.abs(Mi), axis=0), [19 / 4, 37 / 4, 17 / 4])
 
 # Self-test values
 assert abs(1 / (1 - 0.2) - 1.25) < 1e-12

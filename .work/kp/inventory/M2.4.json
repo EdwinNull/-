@@ -9,43 +9,268 @@
     86,
     90
   ],
-  "hires_pdf_pages": [],
-  "extra_pages_consulted": [],
-  "notation": [],
-  "items": [],
-  "errata": [],
+  "hires_pdf_pages": [
+    86,
+    87,
+    88,
+    89,
+    90
+  ],
+  "extra_pages_consulted": [
+    {
+      "book_page": 71,
+      "why": "第 2.3 节 Schur 定理（复数域、酉相似）及其归纳证明，定理 2.4-1 的证明仿此"
+    },
+    {
+      "book_page": 72,
+      "why": "Schur 定理证明的后半（分块、归纳）"
+    },
+    {
+      "book_page": 74,
+      "why": "2.3 节例 3 用酉矩阵化上三角（对照实情形）"
+    },
+    {
+      "book_page": 80,
+      "why": "习题 2.4 第 2–4 题题面与图 2.4-2"
+    },
+    {
+      "book_page": 119,
+      "why": "第 5.2 节：“在 2.4 节中曾讲过，Householder 变换……”，引入 QR 分解的 Householder 方法（后续应用核实）"
+    },
+    {
+      "book_page": 206,
+      "why": "第二部分 3.3.2 小节：任一实方阵可正交相似化为上 Hessenberg 矩阵，Hessenberg×上三角仍为 Hessenberg（后续应用核实）"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "|x|",
+      "latex": "|\\boldsymbol x|",
+      "meaning": "向量的长度（欧氏长度），即第 3 章的 ‖x‖₂",
+      "book_page": 77
+    },
+    {
+      "symbol": "ℋ_ω",
+      "latex": "\\mathscr H_{\\omega}",
+      "meaning": "Householder 变换 ℋ_ω α=(I−2ωωᵀ)α",
+      "book_page": 77
+    },
+    {
+      "symbol": "H, H_ω",
+      "latex": "\\boldsymbol H_{\\omega}",
+      "meaning": "Householder 矩阵 I−2ωωᵀ（ω 为单位向量）",
+      "book_page": 77
+    },
+    {
+      "symbol": "σ",
+      "latex": "\\sigma",
+      "meaning": "定理 2.4-2 证明中取 +1 或 −1 的符号，依 a21 的正负而定",
+      "book_page": 78
+    },
+    {
+      "symbol": "β, γᵀ, A₁",
+      "latex": "\\boldsymbol\\beta,\\ \\boldsymbol\\gamma^{\\mathrm T},\\ \\boldsymbol A_1",
+      "meaning": "A 的分块：第 1 列下方、第 1 行右方、右下 n−1 阶子块",
+      "book_page": 78
+    },
+    {
+      "symbol": "Q₁, Q₂",
+      "latex": "\\boldsymbol Q_1=\\operatorname{diag}(1,\\boldsymbol Q_2)",
+      "meaning": "定理 2.4-2 证明中第一步的正交变换矩阵",
+      "book_page": 78
+    }
+  ],
+  "items": [
+    {
+      "type": "注",
+      "no": "",
+      "book_page": 75,
+      "summary": "节首：实数域上实方阵的特征值不一定存在，故实方阵未必正交相似于上三角矩阵；作为 Schur 定理的推论有定理 2.4-1",
+      "kp": "M2.4.K1"
+    },
+    {
+      "type": "定理",
+      "no": "2.4-1",
+      "book_page": 75,
+      "summary": "（Schur）n 阶实方阵 A 的 n 个特征值均为实数，则 A 正交相似于上三角实矩阵；教材写“请读者自证”",
+      "kp": "M2.4.K1"
+    },
+    {
+      "type": "例",
+      "no": "1",
+      "book_page": 75,
+      "summary": "A=[[1,1,−1],[1,1,1],[0,−1,2]]，det(A−λI)=(2−λ)(1−λ)²，ε1=[√2/2,0,−√2/2]ᵀ，QᵀAQ=R=[[2,√2,−1],[0,1,√2],[0,0,1]]（书页 75–76）",
+      "kp": "M2.4.K1"
+    },
+    {
+      "type": "定义",
+      "no": "2.4-1",
+      "book_page": 76,
+      "summary": "上 Hessenberg 矩阵：i>j+1 时 aij=0；类似可定义下 Hessenberg 矩阵",
+      "kp": "M2.4.K2"
+    },
+    {
+      "type": "式",
+      "no": "2.4-1",
+      "book_page": 76,
+      "summary": "上 Hessenberg 矩阵的形状图",
+      "kp": "M2.4.K2"
+    },
+    {
+      "type": "正文例",
+      "no": "",
+      "book_page": 76,
+      "summary": "三个上 Hessenberg 矩阵（3 阶、4 阶、5 阶）；与上三角矩阵的差别仅在下次对角线",
+      "kp": "M2.4.K2"
+    },
+    {
+      "type": "性质",
+      "no": "",
+      "book_page": 77,
+      "summary": "1) 上 Hessenberg 矩阵与上三角矩阵的乘积是上 Hessenberg 矩阵（作为习题）；2) 下次对角线有零元时可分块，两个对角子块都是上 Hessenberg 矩阵",
+      "kp": "M2.4.K3"
+    },
+    {
+      "type": "正文例",
+      "no": "",
+      "book_page": 77,
+      "summary": "5 阶上 Hessenberg 矩阵在 (4,3) 位置为零，分成 3 阶与 2 阶对角子块",
+      "kp": "M2.4.K3"
+    },
+    {
+      "type": "定义",
+      "no": "",
+      "book_page": 77,
+      "summary": "平面上关于直线 l 的 Householder 变换（图 2.4-1）：β=α−2(ωωᵀ)α",
+      "kp": "M2.4.K4"
+    },
+    {
+      "type": "图",
+      "no": "",
+      "book_page": 77,
+      "summary": "图 2.4-1：平面上的反射",
+      "kp": "M2.4.K4"
+    },
+    {
+      "type": "式",
+      "no": "2.4-2",
+      "book_page": 77,
+      "summary": "Householder 变换 ℋ_ω α=(I−2ωωᵀ)α，∀α∈Rⁿ",
+      "kp": "M2.4.K4"
+    },
+    {
+      "type": "式",
+      "no": "2.4-3",
+      "book_page": 77,
+      "summary": "Householder 矩阵 H=I−2ωωᵀ；Hᵀ=H，HᵀH=H²=I；|β|=|α|",
+      "kp": "M2.4.K4"
+    },
+    {
+      "type": "性质",
+      "no": "",
+      "book_page": 78,
+      "summary": "非零 x,y∈Rⁿ，|x|=|y| 则存在 Householder 矩阵 H 使 y=Hx；y≠x 时 (x−y)ᵀ(x+y)=0，ω=(x−y)/|x−y|",
+      "kp": "M2.4.K5"
+    },
+    {
+      "type": "式",
+      "no": "2.4-4",
+      "book_page": 78,
+      "summary": "H=I−2(x−y)(x−y)ᵀ/|x−y|²",
+      "kp": "M2.4.K5"
+    },
+    {
+      "type": "例",
+      "no": "2",
+      "book_page": 78,
+      "summary": "x=[−2,2,1]ᵀ 变为与 e1 同方向：y=[3,0,0]ᵀ，H=[[−2/3,2/3,1/3],[2/3,11/15,−2/15],[1/3,−2/15,14/15]]",
+      "kp": "M2.4.K5"
+    },
+    {
+      "type": "定理",
+      "no": "2.4-2",
+      "book_page": 78,
+      "summary": "任一 n 阶实方阵都正交相似于 n 阶上 Hessenberg 实矩阵；证明用 Q1=diag(1,Q2)，至多 n−2 次 Householder 变换（书页 78–79）",
+      "kp": "M2.4.K6"
+    },
+    {
+      "type": "性质",
+      "no": "",
+      "book_page": 79,
+      "summary": "A 对称时 γ=β，γᵀQ2ᵀ=(Q2β)ᵀ，Q2A1Q2ᵀ 对称，故实对称矩阵正交相似于三对角线矩阵",
+      "kp": "M2.4.K7"
+    },
+    {
+      "type": "例",
+      "no": "3",
+      "book_page": 79,
+      "summary": "A=[[1,0,1],[0,2,−1],[1,−1,1]]，x=[1,0,1]ᵀ→y=[1,1,0]ᵀ，H=[[1,0,0],[0,0,1],[0,1,0]]，HAHᵀ=[[1,1,0],[1,1,−1],[0,−1,2]]",
+      "kp": "M2.4.K7"
+    },
+    {
+      "type": "注",
+      "no": "",
+      "book_page": 79,
+      "summary": "两个同阶 Householder 矩阵的乘积一般不是 Householder 矩阵：(H1H2)ᵀ=H2H1≠H1H2；仅当 H1H2=H2H1 时才是",
+      "kp": "M2.4.K8"
+    },
+    {
+      "type": "图",
+      "no": "",
+      "book_page": 80,
+      "summary": "图 2.4-2：超平面 π 上的正交投影",
+      "kp": "",
+      "skip_reason": "属于习题 2.4 第 4 题题面，在习题导航第 4 题与 M2.4.K4 的关联中体现"
+    }
+  ],
+  "errata": [
+    {
+      "book_page": 78,
+      "text": "“若 y=x，则取 H=I 即可”：I 不具有 I−2ωωᵀ 的形式，严格说不是 Householder 矩阵；n≥2 时可取与 x 正交的单位向量 ω，则 Hx=x。讲解中以括注说明。"
+    },
+    {
+      "book_page": 79,
+      "text": "“仅当 H1 与 H2 可交换……时，H1H2 才是 Householder 矩阵”只能理解为必要条件，且实际上从不成立：det(H1H2)=(−1)(−1)=1，而 Householder 矩阵行列式为 −1，故两个 Householder 矩阵之积永远不是 Householder 矩阵。例如 H1=I−2e1e1ᵀ、H2=I−2e2e2ᵀ 可交换，乘积 diag(−1,−1,1) 不是 Householder 矩阵。讲解 M2.4.K8 以要点说明。"
+    },
+    {
+      "book_page": 75,
+      "text": "教材称定理 2.4-1 为“Schur 定理的一个推论”，但复数域 Schur 定理给出的是酉矩阵，不能直接得到实正交矩阵，需在实数域上重做归纳（要用到特征值全为实数，才能保证每一步都有实特征向量）；讲解按 A 级补全证明。"
+    }
+  ],
   "exercises": [
     {
       "set": "习题 2.4",
-      "no": 1,
+      "no": "1",
       "kp": [
-        "M2.4.K1"
+        "M2.4.K5"
       ],
-      "method": "按本节讲解流程处理并核对条件"
+      "method": "|x|=|y|=2，x−y=[3,1,1,1]ᵀ，代入式 (2.4-4)，H=−(1/6)[[3,3,3,3],[3,−5,1,1],[3,1,−5,1],[3,1,1,−5]]"
     },
     {
       "set": "习题 2.4",
-      "no": 2,
+      "no": "2",
       "kp": [
-        "M2.4.K1"
+        "M2.4.K6",
+        "M2.4.K5"
       ],
-      "method": "按本节讲解流程处理并核对条件"
+      "method": "β=[1,2]ᵀ，解答取 σ=+1，Q2=(√5/5)[[1,2],[2,−1]]，QAQᵀ=[[2,4√5/5,3√5/5],[√5,16/5,2/5],[0,7/5,4/5]]"
     },
     {
       "set": "习题 2.4",
-      "no": 3,
+      "no": "3",
       "kp": [
-        "M2.4.K1"
+        "M2.4.K3",
+        "M2.4.K2"
       ],
-      "method": "按本节讲解流程处理并核对条件"
+      "method": "按下标讨论：TH 中 i>j+1 时各项 t_ik 或 h_kj 为零；HT 中只剩 k≤j，而 i>k+1 故 h_ik=0"
     },
     {
       "set": "习题 2.4",
-      "no": 4,
+      "no": "4",
       "kp": [
-        "M2.4.K1"
+        "M2.4.K4"
       ],
-      "method": "按本节讲解流程处理并核对条件"
+      "method": "y=x−(ωᵀx)ω，P_ω=I−ωωᵀ，直接验证 P_ωᵀ=P_ω、P_ω²=P_ω；与 Householder 矩阵的关系 H=2P_ω−I"
     }
   ],
   "verify_script": ".work/kp/verify/M2.4.py"

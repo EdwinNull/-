@@ -1,52 +1,84 @@
 {
   "id": "M2.1",
   "title": "Jordan 标准形",
-  "read_book_pages": [
-    50,
-    62
+  "read_book_pages": [50, 62],
+  "read_pdf_pages": [61, 73],
+  "hires_pdf_pages": [64, 68, 69, 70, 71, 72, 73],
+  "extra_pages_consulted": [
+    {"book_page": 94, "why": "第 4.1 节定理 4.1-3 的证明以 Jordan 块为例（后续应用核实）"},
+    {"book_page": 96, "why": "第 4.2 节“利用方阵 A 的 Jordan 标准形”计算方阵函数（后续应用核实）"},
+    {"book_page": 62, "why": "第 2.2 节开头：应用 Jordan 标准形证明 Cayley-Hamilton 定理（后续应用核实）"}
   ],
-  "read_pdf_pages": [
-    61,
-    73
+  "notation": [
+    {"symbol": "Jordan 块", "latex": "\\boldsymbol J_i", "meaning": "主对角元同为 λ、次对角元（上方）为 1、其余为 0 的 r 阶方阵", "book_page": 51},
+    {"symbol": "J=diag(J₁,J₂)", "latex": "\\boldsymbol J=\\operatorname{diag}(\\boldsymbol J_1,\\boldsymbol J_2)", "meaning": "由子 Jordan 矩阵组成的分块对角矩阵", "book_page": 52},
+    {"symbol": "r(·)", "latex": "r(\\boldsymbol A)", "meaning": "矩阵的秩", "book_page": 51},
+    {"symbol": "N((A−λ₀I)^k)", "latex": "\\mathcal N((\\boldsymbol A-\\lambda_0\\boldsymbol I)^k)", "meaning": "齐次方程组 (A−λ₀I)^k x=0 的解空间；教材用花体 N，讲解按第 1.4 节与习题解答写作 \\mathcal N", "book_page": 58},
+    {"symbol": "N_λ₀", "latex": "\\mathcal N_{\\lambda_0}", "meaning": "A 关于特征值 λ₀ 的根空间", "book_page": 58},
+    {"symbol": "r（指标）", "latex": "r", "meaning": "λ₀ 的指标：根空间中根向量的最高级数", "book_page": 58},
+    {"symbol": "x^{(j)}", "latex": "\\boldsymbol x_i^{(j)}", "meaning": "例 4 中第 i 条链上的 j 级根向量", "book_page": 59}
   ],
-  "hires_pdf_pages": [],
-  "extra_pages_consulted": [],
-  "notation": [],
-  "items": [],
-  "errata": [],
+  "items": [
+    {"type": "注", "no": "", "book_page": 50, "summary": "第 2 章章首引言：一般方阵未必有 n 个线性无关特征向量；本章论述复数域上任一方阵相似于 Jordan 矩阵，并据此证 Cayley-Hamilton 定理；酉相似化为上三角、实正交相似化为上 Hessenberg", "kp": "M2.1.K1"},
+    {"type": "定理", "no": "2.1-1", "book_page": 50, "summary": "任何方阵的特征值的几何重数都不大于其代数重数（证明：把 k 个无关特征向量扩充为基，P⁻¹AP 为分块上三角，书页 50–51）", "kp": "M2.1.K1"},
+    {"type": "注", "no": "", "book_page": 51, "summary": "推论性说明：只要有一个特征值几何重数小于代数重数，A 就不可相似对角化", "kp": "M2.1.K1"},
+    {"type": "例", "no": "1", "book_page": 51, "summary": "A=[[-3,3,-2],[-7,6,-3],[1,-1,2]]，|A−λI|=(1−λ)(2−λ)²，r(A−2I)=2，几何重数 1<2，不可相似对角化", "kp": "M2.1.K1"},
+    {"type": "定义", "no": "2.1-1", "book_page": 51, "summary": "Jordan 块（r≥1 阶，λ 实或复，主对角元相同，次对角元为 1）与 Jordan 矩阵（由若干 Jordan 块构成的分块对角矩阵）", "kp": "M2.1.K2"},
+    {"type": "正文例", "no": "", "book_page": 51, "summary": "Jordan 块与 Jordan 矩阵的例子（书页 51–52）", "kp": "M2.1.K2"},
+    {"type": "定义", "no": "", "book_page": 52, "summary": "子 Jordan 矩阵：主对角元相同的 Jordan 块靠在一起构成；J=diag(J₁,J₂)", "kp": "M2.1.K2"},
+    {"type": "注", "no": "", "book_page": 52, "summary": "对角矩阵是由 1 阶 Jordan 块构成的 Jordan 矩阵；本节目的：子 Jordan 矩阵个数=不同特征值个数，Jordan 块个数=线性无关特征向量个数", "kp": "M2.1.K2"},
+    {"type": "正文例", "no": "", "book_page": 52, "summary": "3 阶方阵相似于单个 3 阶 Jordan 块的讨论：由 AP=PJ 得关系式", "kp": "M2.1.K3"},
+    {"type": "式", "no": "2.1-1", "book_page": 52, "summary": "Ax₁=λ₀x₁，Ax₂=λ₀x₂+x₁，Ax₃=λ₀x₃+x₂", "kp": "M2.1.K3"},
+    {"type": "式", "no": "2.1-2", "book_page": 53, "summary": "(A−λ₀I)x₁=0，(A−λ₀I)x₂=x₁，(A−λ₀I)x₃=x₂", "kp": "M2.1.K3"},
+    {"type": "式", "no": "2.1-3", "book_page": 53, "summary": "r([A−λ₀I ⋮ x₁])=r(A−λ₀I)（由定理 1.4-1，x₁ 不能随便选取）", "kp": "M2.1.K3"},
+    {"type": "式", "no": "2.1-4", "book_page": 53, "summary": "(A−λ₀I)²x₂=0 但 (A−λ₀I)x₂≠0", "kp": "M2.1.K3"},
+    {"type": "式", "no": "2.1-5", "book_page": 53, "summary": "r([A−λ₀I ⋮ x₂])=r(A−λ₀I)", "kp": "M2.1.K3"},
+    {"type": "式", "no": "2.1-6", "book_page": 53, "summary": "(A−λ₀I)³x₃=0 但 (A−λ₀I)²x₃≠0", "kp": "M2.1.K3"},
+    {"type": "式", "no": "2.1-7", "book_page": 53, "summary": "k₁x₁+k₂x₂+k₃x₃=0，依次左乘 (A−λ₀I)²、(A−λ₀I) 证线性无关", "kp": "M2.1.K3"},
+    {"type": "式", "no": "2.1-8", "book_page": 53, "summary": "(A−λ₀I)x=y：y=0、x₁、x₂ 分别给出三个方程组；需对增广矩阵 [A−λ₀I ⋮ y] 作行初等变换找出可解条件（书页 53–54）", "kp": "M2.1.K4"},
+    {"type": "例", "no": "2", "book_page": 54, "summary": "A=[[3,1,1],[0,2,0],[-1,0,1]]，三重特征值 2，几何重数 1；可解条件 y₂=0；x₁=[1,0,−1]ᵀ，x₂=[0,0,1]ᵀ，x₃=[−1,1,0]ᵀ；P⁻¹=[[1,1,0],[1,1,1],[0,1,0]]（书页 54–55）", "kp": "M2.1.K4"},
+    {"type": "式", "no": "2.1-9", "book_page": 54, "summary": "例 2 的方程组 (A−2I)x=y 的矩阵形式", "kp": "M2.1.K4"},
+    {"type": "注", "no": "", "book_page": 55, "summary": "三点说明：①可解行初等变换后的同解方程组；②只需一个解，尽量多取零分量；③解可不同、P 不同，但 P⁻¹AP 一致", "kp": "M2.1.K4"},
+    {"type": "算法", "no": "", "book_page": 55, "summary": "一般 n 阶方阵求 P 的方法：求特征多项式→单重特征值求一个特征向量→多重特征值 λ₀ 由 (2.1-8) 得与代数重数一样多的线性无关解→合成 P（P 可逆后面说明）", "kp": "M2.1.K5"},
+    {"type": "例", "no": "3", "book_page": 55, "summary": "4 阶 A=[[4,3,0,1],[0,2,0,0],[1,3,2,1],[0,0,0,2]]，(4−λ)(2−λ)³；x₁=[2,0,1,0]ᵀ；可解条件 y₂=y₄=0；x₂=[0,−1,0,3]ᵀ，x₃=[0,0,1,0]ᵀ，x₄=[−1,0,0,2]ᵀ；|P|=−4（书页 55–57）", "kp": "M2.1.K5"},
+    {"type": "式", "no": "2.1-10", "book_page": 56, "summary": "例 3 的方程组 (A−2I)x=y 的矩阵形式", "kp": "M2.1.K5"},
+    {"type": "定义", "no": "2.1-2", "book_page": 57, "summary": "k 级根向量：(A−λ₀I)^{k−1}x≠0 但 (A−λ₀I)^k x=0", "kp": "M2.1.K6"},
+    {"type": "式", "no": "2.1-11", "book_page": 57, "summary": "(A−λ₀I)^{k−1}x≠0 但 (A−λ₀I)^k x=0", "kp": "M2.1.K6"},
+    {"type": "注", "no": "", "book_page": 57, "summary": "1 级根向量即特征向量；例 2 的 x₂、x₃ 是 2、3 级根向量；例 3 的 x₄ 是 2 级根向量", "kp": "M2.1.K6"},
+    {"type": "定理", "no": "2.1-2", "book_page": 57, "summary": "属于同一特征值 λ₀ 的不同级根向量线性无关", "kp": "M2.1.K7"},
+    {"type": "式", "no": "2.1-12", "book_page": 57, "summary": "k₁x₁+…+k_px_p=0", "kp": "M2.1.K7"},
+    {"type": "式", "no": "2.1-13", "book_page": 57, "summary": "以 (A−λ₀I)^{p−1} 左乘 (2.1-12)", "kp": "M2.1.K7"},
+    {"type": "定理", "no": "2.1-3", "book_page": 57, "summary": "属于不同特征值的根向量线性无关（证明书页 57–58）", "kp": "M2.1.K8"},
+    {"type": "式", "no": "2.1-14", "book_page": 57, "summary": "k₁x₁+…+k_sx_s=0（x_i 为关于 λ_i 的 n_i 级根向量）", "kp": "M2.1.K8"},
+    {"type": "式", "no": "2.1-15", "book_page": 57, "summary": "以 L=(A−λ₁I)^{n₁−1}(A−λ₂I)^{n₂}…(A−λ_sI)^{n_s} 左乘 (2.1-14)", "kp": "M2.1.K8"},
+    {"type": "式", "no": "2.1-16", "book_page": 58, "summary": "k₁(A−λ₂I)^{n₂}…(A−λ_sI)^{n_s}(A−λ₁I)^{n₁−1}x₁=0", "kp": "M2.1.K8"},
+    {"type": "定义", "no": "2.1-3", "book_page": 58, "summary": "根空间 N_λ₀=N((A−λ₀I)^k)（k 为代数重数）；指标 r：根空间中根向量的最高级数", "kp": "M2.1.K9"},
+    {"type": "正文例", "no": "", "book_page": 58, "summary": "例 3 中 (A−2I)²、(A−2I)³ 的计算，N((A−2I)³)=N((A−2I)²)，特征值 2 的指标为 2 < 代数重数 3", "kp": "M2.1.K9"},
+    {"type": "性质", "no": "", "book_page": 58, "summary": "指标为 r 时 N_λ₀=N((A−λ₀I)^r)；m₁<m₂ 时 N((A−λ₀I)^{m₁})⊆N((A−λ₀I)^{m₂})", "kp": "M2.1.K9"},
+    {"type": "性质", "no": "", "book_page": 58, "summary": "（将会知道）指标 r 等于关于 λ₀ 的子 Jordan 矩阵中 Jordan 块的最大阶数", "kp": "M2.1.K9"},
+    {"type": "性质", "no": "", "book_page": 58, "summary": "dim N_λ₀=k（k 为代数重数），脚注引《高等工程数学》第二版 81–82 页", "kp": "M2.1.K9"},
+    {"type": "注", "no": "", "book_page": 59, "summary": "化简为 Jordan 矩阵的关键是找各级根向量：由根向量 y 解 (2.1-8) 求高一级根向量，y 的选取须保证有解", "kp": "M2.1.K10"},
+    {"type": "例", "no": "4", "book_page": 59, "summary": "6 阶 A，det(A−λI)=−λ(2−λ)⁵；可解条件 y₃+y₄=0、y₅+y₆=0；两条链长 2、3；P⁻¹AP=diag(0,J₂(2),J₃(2))；指标 3<代数重数 5（书页 59–60）", "kp": "M2.1.K10"},
+    {"type": "式", "no": "2.1-17", "book_page": 59, "summary": "例 4 的方程组 (A−2I)x=y 的矩阵形式", "kp": "M2.1.K10"},
+    {"type": "性质", "no": "", "book_page": 60, "summary": "同一特征值的线性无关同级根向量求得的高一级根向量必线性无关（教材问“为什么?”）", "kp": "M2.1.K10"},
+    {"type": "定义", "no": "", "book_page": 60, "summary": "任一方阵与一个 Jordan 矩阵相似，称之为 A 的 Jordan 标准形（教材通过例子说明）", "kp": "M2.1.K11"},
+    {"type": "性质", "no": "", "book_page": 61, "summary": "Jordan 标准形结构四条：(1) 子 Jordan 矩阵个数=不同特征值个数；(2) 子 Jordan 矩阵阶数=代数重数；(3) Jordan 块个数=几何重数；(4) Jordan 块最大阶数=指标", "kp": "M2.1.K11"},
+    {"type": "注", "no": "", "book_page": 61, "summary": "Jordan 标准形用于讨论方阵幂级数和方阵函数", "kp": "M2.1.K13"},
+    {"type": "例", "no": "5", "book_page": 61, "summary": "例 1 的 A，求 A^k：x₁=[1,2,1]ᵀ，x₂=[−1,−1,1]ᵀ，x₃=[−1,−2,0]ᵀ，可解条件 3y₁−2y₂+y₃=0，P⁻¹=[[2,−1,1],[−2,1,0],[3,−2,1]]，A^k=P diag(1,J₂(2)^k) P⁻¹（书页 61–62）", "kp": "M2.1.K13"},
+    {"type": "式", "no": "2.1-18", "book_page": 61, "summary": "例 5 的方程组 (A−2I)x=y 的矩阵形式", "kp": "M2.1.K13"}
+  ],
+  "errata": [
+    {"book_page": 50, "text": "章首引言写“本章 1.5 节中已经说明”，书页 52、53 又写“本章 1.5 节中定理 1.5-5”“本章 1.4 节中定理 1.4-1”；所指均为第 1 章的节，“本章”应理解为“第 1 章”。措辞问题，不影响数学内容。"},
+    {"book_page": 58, "text": "式 (2.1-16) 中印作 (A−λ_sI_s)^{n_s}，单位矩阵多了下标 s，应为 (A−λ_sI)^{n_s}。"},
+    {"book_page": 57, "text": "定理 2.1-3 的证明中 n_i 表示 x_i 的级数，与定理 2.1-1 证明中 n_i（代数重数）同名而含义不同；讲解中改记为 m_i 并加说明。"},
+    {"book_page": 55, "text": "求 P 的一般方法只说“得到与 λ₀ 的代数重数一样多的线性无关解”，未说明作右端的特征向量（链首）一般须取基础解系的适当线性组合，且须从能延伸到最高级的方向选取；例 4 若把特征向量基取成 x₂⁽¹⁾ 与 x₂⁽¹⁾+x₃⁽¹⁾，两条链都只能到 2 级。讲解中在 M2.1.K10、M2.1.K12 补充说明。"},
+    {"book_page": 60, "text": "“通过上面几个例子，我们说明了任一方阵 A 是与一个 Jordan 矩阵相似的”——教材以例代证，存在性的一般证明与 dim N_λ₀=k 均未给出（后者引第二版）。讲解按 C 级说明。"}
+  ],
   "exercises": [
-    {
-      "set": "习题 2.1",
-      "no": 1,
-      "kp": [
-        "M2.1.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 2.1",
-      "no": 2,
-      "kp": [
-        "M2.1.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 2.1",
-      "no": 3,
-      "kp": [
-        "M2.1.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 2.1",
-      "no": 4,
-      "kp": [
-        "M2.1.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    }
+    {"set": "习题 2.1", "no": "1", "kp": ["M2.1.K6", "M2.1.K9", "M2.1.K12"], "method": "(1) 特征值 2（三重）、4；r(A−2I)^k=3,2,1 ⇒ 一条 3 级链，取 w∈N(N³)∖N(N²) 自上而下得链；(2) 特征值 1（三重），N=A−I 秩 1 且 N²=O，1 级根向量为平面 x₁+x₂−3x₃=0 中非零向量，其余为 2 级"},
+    {"set": "习题 2.1", "no": "2", "kp": ["M2.1.K5", "M2.1.K10", "M2.1.K11"], "method": "(1) 特征值 1、2（二重），r(A−2I)=2 ⇒ J=diag(1,J₂(2))，由 (A−2I)p₃=p₂ 求 2 级根向量；(2) 同第 1 题 (1)"},
+    {"set": "习题 2.1", "no": "3", "kp": ["M2.1.K13"], "method": "用第 2 题 (1) 的 Jordan 分解，A^k=P J^k P⁻¹，J₂(2)^k=[[2^k,k2^{k−1}],[0,2^k]]"},
+    {"set": "习题 2.1", "no": "4", "kp": ["M2.1.K9", "M2.1.K12"], "method": "零空间链 N(N^i)⊆N(N^{i+1})；由 r 级根向量 z 得 N^{r−i−1}z∈N(N^{i+1})∖N(N^i)，故维数严格递增"}
   ],
   "verify_script": ".work/kp/verify/M2.1.py"
 }

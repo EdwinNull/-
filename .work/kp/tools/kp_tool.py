@@ -372,10 +372,47 @@ def check_section(sid, strict=False, quiet=False):
     rep.i(f"篇幅：{chars} 字符（去空白，含公式源码），教材 {pages} 页，约 {per:.0f} 字符/页；知识点 {len(kps)} 个")
     lo, hi = length_bounds(pages)
     if chars < lo:
-        rep.w(f"篇幅偏短：{chars} < 建议下限 {lo}")
+        (rep.e if chars < 0.7 * lo else rep.w)(f"篇幅偏短：{chars} < 建议下限 {lo}"
+                                               + ("（不足下限的 70%，疑似占位稿）" if chars < 0.7 * lo else ""))
     if chars > hi:
         rep.w(f"篇幅偏长：{chars} > 建议上限 {hi}（考虑精简或确认确有必要）")
+    check_anti_stub(sid, text, kps, rep)
     return rep
+
+
+STUB_PHRASES = ["说明本知识点在", "设一个简单对象满足本知识点的条件", "不是孤立公式，而是把", "各知识点按这一顺序衔接",
+                "本节示例为结构性说明", "无需数值验算", "具体计算只保留必要步骤"]
+
+
+def check_anti_stub(sid, text, kps, rep):
+    """防止用模板套话批量生成的占位稿通过检查。"""
+    for ph in STUB_PHRASES:
+        if ph in text:
+            rep.e(f"出现模板套话「{ph}」（疑似占位稿，须依据教材重写）")
+    # 重复句：去掉知识点 ID 与节名后，同一句在文中出现 3 次以上
+    norm = {}
+    for line in text.split("\n"):
+        t = re.sub(r"[MNS]\d+\.\d+\.K\d+|K\d+", "", line.strip())
+        if len(t) >= 25 and not t.startswith("|") and not t.startswith("$$"):
+            norm[t] = norm.get(t, 0) + 1
+    dup = [t for t, c in norm.items() if c >= 3]
+    if dup:
+        rep.e(f"有 {len(dup)} 句内容在文中重复 3 次以上（疑似模板套话），例：{dup[0][:40]}")
+    # 知识点块平均篇幅
+    if kps:
+        region = text.split("## 知识点讲解", 1)[-1].split("## 方法与题型归纳", 1)[0]
+        avg = len(re.sub(r"\s", "", region)) / len(kps)
+        if avg < 600:
+            rep.e(f"知识点块平均只有 {avg:.0f} 字符（要求每块约 800–3500 字符），疑似空洞")
+    # 验算脚本
+    vp = os.path.join(KP, "verify", f"{sid}.py")
+    if not os.path.isfile(vp):
+        rep.e(f"缺少验算脚本 .work/kp/verify/{sid}.py")
+    else:
+        src = open(vp, encoding="utf-8").read()
+        n = len(re.findall(r"\bassert\b", src))
+        if n < 8:
+            rep.e(f"验算脚本只有 {n} 个 assert（要求覆盖讲解中全部数值，一般不少于 8 个）")
 
 
 def length_bounds(pages):
@@ -520,6 +557,17 @@ def check_chapter(cid, strict=False):
         if heads != CHAPTER_H2:
             rep.e(f"二级标题必须依次为 {CHAPTER_H2}，实际为 {heads}")
         check_common(c["guide_file"], text, rep, strict)
+        if "**教材位置**" not in text.split("\n## ")[0]:
+            rep.e("头部缺少「**教材位置**」字段")
+        for ph in STUB_PHRASES + ["这些节按“概念或表示", "前一节提供后一节的对象和工具"]:
+            if ph in text:
+                rep.e(f"出现模板套话「{ph}」（疑似占位稿）")
+        chars = len(re.sub(r"\s", "", text))
+        if chars < 6000:
+            rep.e(f"章导读只有 {chars} 字符（要求约 3000–8000 字，即 6000 字符以上），疑似占位稿")
+        cited = set(m.group(0) for m in CITE_RE.finditer(text))
+        if len(cited) < 5:
+            rep.e(f"章导读只引用了 {len(cited)} 个教材编号（速查表应给出各结论的定理/定义/式号出处，至少 5 个）")
         for s in c["sections"]:
             fn = os.path.basename(s["file"])
             if f"]({'./' + fn})" not in text and f"]({fn})" not in text:

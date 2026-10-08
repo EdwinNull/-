@@ -1,36 +1,41 @@
 {
   "id": "N1.2",
   "title": "数值计算的误差估计及算法稳定性",
-  "read_book_pages": [
-    159,
-    164
-  ],
-  "read_pdf_pages": [
-    170,
-    175
-  ],
-  "hires_pdf_pages": [],
+  "read_book_pages": [159, 164],
+  "read_pdf_pages": [170, 175],
+  "hires_pdf_pages": [171, 175],
   "extra_pages_consulted": [],
-  "notation": [],
-  "items": [],
-  "errata": [],
+  "notation": [
+    {"symbol": "ε_y", "latex": "\\varepsilon_y", "meaning": "y* 的绝对误差限", "book_page": 160},
+    {"symbol": "条件数", "latex": "\\left|\\frac{x_i^*}{y^*}\\frac{\\partial f}{\\partial x_i}\\right|", "meaning": "第 i 个数据的相对误差对结果相对误差的放大倍数", "book_page": 160},
+    {"symbol": "δ_x", "latex": "\\delta_x", "meaning": "浮点近似 fl(x) 的相对舍入误差", "book_page": 162}
+  ],
+  "items": [
+    {"type": "式", "no": "1.2-1", "book_page": 160, "summary": "一阶近似 e_y≈∑ ∂f/∂x_i (x_i*-x_i)", "kp": "N1.2.K1"},
+    {"type": "式", "no": "1.2-2", "book_page": 160, "summary": "绝对误差限 ε_y≤∑|∂f/∂x_i|ε_{x_i}", "kp": "N1.2.K1"},
+    {"type": "式", "no": "1.2-3", "book_page": 160, "summary": "相对误差限由条件数乘数据相对误差限", "kp": "N1.2.K1"},
+    {"type": "式", "no": "1.2-4", "book_page": 161, "summary": "向量值函数的一阶误差 y*-y=Df(x*)(x*-x)", "kp": "N1.2.K2"},
+    {"type": "式", "no": "1.2-5", "book_page": 161, "summary": "Jacobi 矩阵", "kp": "N1.2.K2"},
+    {"type": "式", "no": "1.2-6", "book_page": 161, "summary": "绝对误差的范数估计", "kp": "N1.2.K2"},
+    {"type": "式", "no": "1.2-7", "book_page": 161, "summary": "相对误差的范数估计", "kp": "N1.2.K2"},
+    {"type": "例", "no": "1", "book_page": 161, "summary": "y=-a+sqrt(a^2+b)，b*>0 时良态，b*≈-(a*)^2 时病态", "kp": "N1.2.K2"},
+    {"type": "例", "no": "2", "book_page": 161, "summary": "y=Ax 的条件数是 ||A^{-1}||_p ||A||_p", "kp": "N1.2.K2"},
+    {"type": "式", "no": "1.2-8", "book_page": 163, "summary": "fl(x)=(1+δ_x)x", "kp": "N1.2.K3"},
+    {"type": "式", "no": "1.2-9", "book_page": 163, "summary": "四则运算的舍入模型", "kp": "N1.2.K3"},
+    {"type": "式", "no": "1.2-10", "book_page": 163, "summary": "三个数相加的相对误差与放缩因子", "kp": "N1.2.K3"},
+    {"type": "例", "no": "3", "book_page": 162, "summary": "四种矩阵连乘，乘法次数 11500、125000、2200", "kp": "N1.2.K4"},
+    {"type": "例", "no": "4", "book_page": 163, "summary": "a^2-b^2 的两个算法；印出的算法 I 结果为 0.66×10^{-2}", "kp": "N1.2.K4"},
+    {"type": "式", "no": "1.2-11", "book_page": 164, "summary": "算法 I 的相对误差限", "kp": "N1.2.K4"},
+    {"type": "式", "no": "1.2-12", "book_page": 164, "summary": "算法 II 的相对误差限不超过 3 eps", "kp": "N1.2.K4"}
+  ],
+  "errata": [
+    {"book_page": 164, "text": "例 4 算法 I 印作 0.66×10^{-2}。0.1048-0.09822=0.00658，按四位有效数字应为 0.6580×10^{-2}。结论不受影响。"}
+  ],
   "exercises": [
-    {
-      "set": "习题 1.2",
-      "no": 2,
-      "kp": [
-        "N1.2.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 1.2",
-      "no": 5,
-      "kp": [
-        "N1.2.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    }
+    {"set": "习题 1", "no": "2", "kp": ["N1.2.K1"], "method": "y=x^n 的条件数是 |n|，相对误差约为 n 倍"},
+    {"set": "习题 1", "no": "3", "kp": ["N1.2.K1"], "method": "用式 (1.2-2)、式 (1.2-3) 估计开方与乘积的误差限"},
+    {"set": "习题 1", "no": "4", "kp": ["N1.2.K3", "N1.2.K4"], "method": "三位舍入下比较两种加法顺序，用式 (1.2-10) 的放缩因子"},
+    {"set": "习题 1", "no": "5", "kp": ["N1.2.K4"], "method": "四个算式中相近数相减会放大舍入误差，选条件数小的算式"}
   ],
   "verify_script": ".work/kp/verify/N1.2.py"
 }

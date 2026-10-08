@@ -1,44 +1,33 @@
 {
   "id": "N1.1",
   "title": "绝对误差、相对误差及有效数字",
-  "read_book_pages": [
-    157,
-    159
-  ],
-  "read_pdf_pages": [
-    168,
-    170
-  ],
+  "read_book_pages": [157, 159],
+  "read_pdf_pages": [168, 170],
   "hires_pdf_pages": [],
   "extra_pages_consulted": [],
-  "notation": [],
-  "items": [],
-  "errata": [],
+  "notation": [
+    {"symbol": "x*", "latex": "x^*", "meaning": "准确值 x 的近似值", "book_page": 157},
+    {"symbol": "e", "latex": "e", "meaning": "绝对误差，定义为近似值减准确值", "book_page": 157},
+    {"symbol": "ε", "latex": "\\varepsilon", "meaning": "绝对误差限", "book_page": 157}
+  ],
+  "items": [
+    {"type": "注", "no": "", "book_page": 157, "summary": "章首：模型误差、观测误差、截断误差、舍入误差", "kp": "N1.1.K1"},
+    {"type": "式", "no": "1.1-1", "book_page": 157, "summary": "e=x*-x，绝对误差", "kp": "N1.1.K2"},
+    {"type": "例", "no": "1", "book_page": 158, "summary": "四舍五入的绝对误差限是末位的半个单位", "kp": "N1.1.K2"},
+    {"type": "式", "no": "1.1-2", "book_page": 158, "summary": "相对误差 e_r=e/x", "kp": "N1.1.K3"},
+    {"type": "式", "no": "1.1-2'", "book_page": 158, "summary": "实用相对误差 e/x*", "kp": "N1.1.K3"},
+    {"type": "例", "no": "2", "book_page": 158, "summary": "π≈3.1416，e=0.0000073，e_r≈0.2324×10^{-5}", "kp": "N1.1.K3"},
+    {"type": "式", "no": "1.1-3", "book_page": 159, "summary": "n 位有效数字：|e|≤(1/2)×10^{m-n}", "kp": "N1.1.K4"},
+    {"type": "例", "no": "3", "book_page": 159, "summary": "误差限 0.5×10^{-2} 时，a 三位、b 一位、c 没有有效数字", "kp": "N1.1.K4"},
+    {"type": "式", "no": "1.1-4", "book_page": 159, "summary": "有 n 位有效数字则 ε_r≤10^{-(n-1)}/(2a_1)", "kp": "N1.1.K4"},
+    {"type": "例", "no": "4", "book_page": 159, "summary": "√5 的相对误差小于 1% 时取三位有效数字 2.24", "kp": "N1.1.K4"}
+  ],
+  "errata": [
+    {"book_page": 0, "text": "习题 1 第 1 题印出五位数字的 b，却说均有四位有效数字。README 已记，按四位取误差限。"}
+  ],
   "exercises": [
-    {
-      "set": "习题 1.1",
-      "no": 1,
-      "kp": [
-        "N1.1.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 1.1",
-      "no": 4,
-      "kp": [
-        "N1.1.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 1.1",
-      "no": 7,
-      "kp": [
-        "N1.1.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    }
+    {"set": "习题 1", "no": "1", "kp": ["N1.1.K2", "N1.1.K3", "N1.1.K4"], "method": "按四位有效数字用式 (1.1-3) 求绝对误差限，再用式 (1.1-4) 估计相对误差限；b 的第五位数字不计入"}
+
   ],
   "verify_script": ".work/kp/verify/N1.1.py"
 }

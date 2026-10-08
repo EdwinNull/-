@@ -1,36 +1,26 @@
 {
   "id": "N1.3",
   "title": "数值计算中应注意的一些原则",
-  "read_book_pages": [
-    164,
-    166
-  ],
-  "read_pdf_pages": [
-    175,
-    177
-  ],
+  "read_book_pages": [164, 166],
+  "read_pdf_pages": [175, 177],
   "hires_pdf_pages": [],
   "extra_pages_consulted": [],
-  "notation": [],
-  "items": [],
+  "notation": [
+    {"symbol": "y_n", "latex": "y_n", "meaning": "积分递推中的第 n 项", "book_page": 164},
+    {"symbol": "秦九韶法", "latex": "p_n(x)=u_0", "meaning": "多项式的嵌套乘法，n 次乘法和 n 次加法", "book_page": 166}
+  ],
+  "items": [
+    {"type": "正文例", "no": "", "book_page": 164, "summary": "积分递推向前乘 5 不稳定，向后乘 1/5 稳定；y0≈0.1823，y100≈0.1815×10^{-2}", "kp": "N1.3.K1"},
+    {"type": "正文例", "no": "", "book_page": 165, "summary": "52492 吃掉 1000 个小数，应先把小数相加", "kp": "N1.3.K2"},
+    {"type": "正文例", "no": "", "book_page": 165, "summary": "1.232^3-1.231^3 直接算得 0.5×10^{-2}，因式分解得 0.455×10^{-2}", "kp": "N1.3.K3"},
+    {"type": "正文例", "no": "", "book_page": 166, "summary": "除法误差限在 |y| 远小于 |x| 时变大", "kp": "N1.3.K4"},
+    {"type": "注", "no": "", "book_page": 166, "summary": "用比例因子避免机器零和溢出", "kp": "N1.3.K5"},
+    {"type": "注", "no": "", "book_page": 166, "summary": "秦九韶法把多项式运算降为 n 次乘法和 n 次加法", "kp": "N1.3.K6"}
+  ],
   "errata": [],
   "exercises": [
-    {
-      "set": "习题 1.3",
-      "no": 3,
-      "kp": [
-        "N1.3.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 1.3",
-      "no": 6,
-      "kp": [
-        "N1.3.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    }
+    {"set": "习题 1", "no": "6", "kp": ["N1.3.K3", "N1.3.K4"], "method": "把相近数相减或小数除大数改写成等价而条件数较小的式子"},
+    {"set": "习题 1", "no": "7", "kp": ["N1.3.K1"], "method": "仿照书页 164 的向后递推，避免误差每步乘 4"}
   ],
   "verify_script": ".work/kp/verify/N1.3.py"
 }

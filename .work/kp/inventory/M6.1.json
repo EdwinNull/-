@@ -1,68 +1,60 @@
 {
   "id": "M6.1",
   "title": "线性空间",
-  "read_book_pages": [
-    130,
-    138
-  ],
-  "read_pdf_pages": [
-    141,
-    149
-  ],
+  "read_book_pages": [130, 138],
+  "read_pdf_pages": [141, 149],
   "hires_pdf_pages": [],
-  "extra_pages_consulted": [],
-  "notation": [],
-  "items": [],
-  "errata": [],
+  "extra_pages_consulted": [139],
+  "notation": [
+    {"symbol": "V(F)", "latex": "V(F)", "meaning": "数域 F 上的线性空间", "book_page": 131},
+    {"symbol": "B", "latex": "\\mathscr{B}", "meaning": "有序基", "book_page": 133},
+    {"symbol": "P", "latex": "\\boldsymbol P", "meaning": "由旧基到新基的过渡矩阵，新基等于旧基右乘 P", "book_page": 134}
+  ],
+  "items": [
+    {"type": "定义", "no": "6.1-1", "book_page": 130, "summary": "数域上的线性空间，加法四条与数乘四条", "kp": "M6.1.K1"},
+    {"type": "例", "no": "1", "book_page": 131, "summary": "F^{m×n}", "kp": "M6.1.K1"},
+    {"type": "例", "no": "2", "book_page": 131, "summary": "C[a,b] 与 C^1[a,b]", "kp": "M6.1.K1"},
+    {"type": "例", "no": "3", "book_page": 131, "summary": "P[λ] 与 P_n[λ]", "kp": "M6.1.K1"},
+    {"type": "例", "no": "4", "book_page": 131, "summary": "数域自身", "kp": "M6.1.K1"},
+    {"type": "例", "no": "5", "book_page": 131, "summary": "正实数集上 a⊕b=ab，k∘a=a^k", "kp": "M6.1.K1"},
+    {"type": "定义", "no": "6.1-2", "book_page": 132, "summary": "线性相关与线性无关，式 (6.1-1)", "kp": "M6.1.K3"},
+    {"type": "式", "no": "6.1-1", "book_page": 132, "summary": "不全为零的系数使线性组合为零", "kp": "M6.1.K3"},
+    {"type": "定义", "no": "6.1-3", "book_page": 132, "summary": "有限维、无限维与维数", "kp": "M6.1.K3"},
+    {"type": "定义", "no": "6.1-4", "book_page": 133, "summary": "基与基向量", "kp": "M6.1.K4"},
+    {"type": "定理", "no": "6.1-1", "book_page": 133, "summary": "基下的线性表示唯一", "kp": "M6.1.K4"},
+    {"type": "式", "no": "6.1-2", "book_page": 133, "summary": "ξ=Bx，x 为坐标向量", "kp": "M6.1.K4"},
+    {"type": "例", "no": "6", "book_page": 133, "summary": "2λ^2-λ+1 在两组基下的坐标 [1,-1,2] 与 [-3,2,2]", "kp": "M6.1.K4"},
+    {"type": "例", "no": "7", "book_page": 133, "summary": "C 作为复空间是 1 维，作为实空间是 2 维", "kp": "M6.1.K3"},
+    {"type": "定义", "no": "6.1-5", "book_page": 134, "summary": "基变换与过渡矩阵", "kp": "M6.1.K5"},
+    {"type": "式", "no": "6.1-3", "book_page": 134, "summary": "新基等于旧基右乘 P", "kp": "M6.1.K5"},
+    {"type": "式", "no": "6.1-3'", "book_page": 134, "summary": "B_β=B_α P", "kp": "M6.1.K5"},
+    {"type": "例", "no": "8", "book_page": 134, "summary": "P_2[λ] 的过渡矩阵 [[2,1,1],[1,-1,1],[0,0,1]]", "kp": "M6.1.K5"},
+    {"type": "例", "no": "9", "book_page": 135, "summary": "R^3 的过渡矩阵 [[-2,-1,-1],[-1,-1,0],[2,1,2]]", "kp": "M6.1.K5"},
+    {"type": "式", "no": "6.1-4", "book_page": 135, "summary": "坐标变换 y=P^{-1}x", "kp": "M6.1.K6"},
+    {"type": "例", "no": "10", "book_page": 135, "summary": "相同坐标的向量为 k[1,2,1]^T", "kp": "M6.1.K6"},
+    {"type": "式", "no": "6.1-5", "book_page": 135, "summary": "例 10 中 ξ=B1 x=B2 x", "kp": "M6.1.K6"},
+    {"type": "定义", "no": "6.1-6", "book_page": 136, "summary": "子空间", "kp": "M6.1.K7"},
+    {"type": "定义", "no": "6.1-7", "book_page": 136, "summary": "交与和", "kp": "M6.1.K7"},
+    {"type": "定理", "no": "6.1-2", "book_page": 136, "summary": "维数定理 dim(W1+W2)+dim(W1∩W2)=dim W1+dim W2", "kp": "M6.1.K8"},
+    {"type": "式", "no": "6.1-6", "book_page": 136, "summary": "维数定理公式", "kp": "M6.1.K8"},
+    {"type": "式", "no": "6.1-7", "book_page": 137, "summary": "和空间的一组基", "kp": "M6.1.K8"},
+    {"type": "式", "no": "6.1-8", "book_page": 137, "summary": "证明线性无关时的组合", "kp": "M6.1.K8"},
+    {"type": "式", "no": "6.1-9", "book_page": 137, "summary": "和空间中元素的一种写法", "kp": "M6.1.K8"},
+    {"type": "定义", "no": "6.1-8", "book_page": 137, "summary": "直和", "kp": "M6.1.K8"},
+    {"type": "定理", "no": "6.1-3", "book_page": 137, "summary": "直和的三个等价条件", "kp": "M6.1.K8"},
+    {"type": "定理", "no": "6.1-4", "book_page": 138, "summary": "真子空间有直和补，教材要求自行证明", "kp": "M6.1.K8"}
+  ],
+  "errata": [
+    {"book_page": 138, "text": "定理 6.1-4 后写“请读者自证”。讲解补出把 W1 的基扩充后取补空间的证明。"},
+    {"book_page": 139, "text": "习题 6.1 第 4 题印作 Span(α1, 2α+α2)，α 漏下标。README 已记，按 2α1+α2 理解。"}
+  ],
   "exercises": [
-    {
-      "set": "习题 6.1",
-      "no": 1,
-      "kp": [
-        "M6.1.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 6.1",
-      "no": 2,
-      "kp": [
-        "M6.1.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 6.1",
-      "no": 3,
-      "kp": [
-        "M6.1.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 6.1",
-      "no": 4,
-      "kp": [
-        "M6.1.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 6.1",
-      "no": 5,
-      "kp": [
-        "M6.1.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 6.1",
-      "no": 6,
-      "kp": [
-        "M6.1.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    }
+    {"set": "习题 6.1", "no": "1", "kp": ["M6.1.K1"], "method": "逐条核对定义 6.1-1 的封闭性与八条规则，尤其是零元素"},
+    {"set": "习题 6.1", "no": "2", "kp": ["M6.1.K7", "M6.1.K8"], "method": "用生成元求维数，再用定理 6.1-2 求交的维数"},
+    {"set": "习题 6.1", "no": "3", "kp": ["M6.1.K8"], "method": "分别求两个解空间的维数，验证交为零且维数之和为 n"},
+    {"set": "习题 6.1", "no": "4", "kp": ["M6.1.K8"], "method": "把印错的 2α 读成 2α1，再验证交为零且维数之和为 4"},
+    {"set": "习题 6.1", "no": "5", "kp": ["M6.1.K7"], "method": "两个真子空间的并不能盖住整个空间"},
+    {"set": "习题 6.1", "no": "6", "kp": ["M6.1.K5", "M6.1.K6"], "method": "按式 (6.1-3') 求 P，再解 B1 x=B2 x"}
   ],
   "verify_script": ".work/kp/verify/M6.1.py"
 }

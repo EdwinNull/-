@@ -1,60 +1,38 @@
 {
   "id": "M6.3",
   "title": "内积空间及两类特殊的线性变换",
-  "read_book_pages": [
-    149,
-    152
-  ],
-  "read_pdf_pages": [
-    160,
-    163
-  ],
+  "read_book_pages": [149, 152],
+  "read_pdf_pages": [160, 163],
   "hires_pdf_pages": [],
-  "extra_pages_consulted": [],
-  "notation": [],
-  "items": [],
-  "errata": [],
+  "extra_pages_consulted": [153],
+  "notation": [
+    {"symbol": "⟨α,β⟩", "latex": "\\langle\\boldsymbol\\alpha,\\boldsymbol\\beta\\rangle", "meaning": "内积，对第一变元线性，对第二变元共轭线性", "book_page": 149},
+    {"symbol": "Q", "latex": "\\boldsymbol Q", "meaning": "酉变换在标准正交基下的矩阵，满足 Q^H Q=I", "book_page": 150},
+    {"symbol": "A", "latex": "\\boldsymbol A", "meaning": "酉对称变换在标准正交基下的 Hermite 矩阵", "book_page": 151}
+  ],
+  "items": [
+    {"type": "定义", "no": "6.3-1", "book_page": 149, "summary": "内积四条性质；内积空间、欧氏空间、酉空间", "kp": "M6.3.K1"},
+    {"type": "例", "no": "1", "book_page": 149, "summary": "P_n[t] 上用权 t^2 的积分定义内积", "kp": "M6.3.K1"},
+    {"type": "例", "no": "2", "book_page": 150, "summary": "C[a,b] 上带权积分内积", "kp": "M6.3.K1"},
+    {"type": "式", "no": "6.3-1", "book_page": 150, "summary": "⟨f,g⟩=∫ ρ f g dx", "kp": "M6.3.K1"},
+    {"type": "定义", "no": "6.3-2", "book_page": 150, "summary": "酉变换保持内积；欧氏空间中称为正交变换", "kp": "M6.3.K2"},
+    {"type": "式", "no": "6.3-2", "book_page": 150, "summary": "⟨Tα, Tβ⟩=⟨α, β⟩", "kp": "M6.3.K2"},
+    {"type": "定理", "no": "6.3-1", "book_page": 150, "summary": "酉变换的三个等价条件；保长这一条教材要求自行证明", "kp": "M6.3.K2"},
+    {"type": "式", "no": "6.3-3", "book_page": 151, "summary": "标准正交基下 ⟨Tε_i, Tε_j⟩=∑ q_ki conjugate(q_kj)", "kp": "M6.3.K2"},
+    {"type": "定义", "no": "6.3-3", "book_page": 151, "summary": "酉对称变换；欧氏空间中称为对称变换", "kp": "M6.3.K3"},
+    {"type": "式", "no": "6.3-4", "book_page": 151, "summary": "⟨Tα, β⟩=⟨α, Tβ⟩", "kp": "M6.3.K3"},
+    {"type": "定理", "no": "6.3-2", "book_page": 151, "summary": "酉对称变换当且仅当标准正交基下的矩阵是 Hermite 矩阵", "kp": "M6.3.K3"},
+    {"type": "定理", "no": "6.3-3", "book_page": 152, "summary": "酉对称变换的特征值是实数，不同特征值的特征向量正交，并可酉对角化", "kp": "M6.3.K4"}
+  ],
+  "errata": [
+    {"book_page": 153, "text": "习题 6.3 第 5 题 (1) 印作 (V1+V1)^⊥=V1^⊥∩V2^⊥。左端第二个 V1 应为 V2。README 已记。"}
+  ],
   "exercises": [
-    {
-      "set": "习题 6.3",
-      "no": 1,
-      "kp": [
-        "M6.3.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 6.3",
-      "no": 2,
-      "kp": [
-        "M6.3.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 6.3",
-      "no": 3,
-      "kp": [
-        "M6.3.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 6.3",
-      "no": 4,
-      "kp": [
-        "M6.3.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 6.3",
-      "no": 5,
-      "kp": [
-        "M6.3.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    }
+    {"set": "习题 6.3", "no": "1", "kp": ["M6.3.K1"], "method": "用长度的三角不等式证明距离满足三角不等式"},
+    {"set": "习题 6.3", "no": "2", "kp": ["M6.3.K1"], "method": "在积分内积下对 {1,t,t^2} 作 Schmidt 正交化，依据定理 1.1-5"},
+    {"set": "习题 6.3", "no": "3", "kp": ["M6.3.K1"], "method": "Gram 矩阵可逆当且仅当向量组无关"},
+    {"set": "习题 6.3", "no": "4", "kp": ["M6.3.K3"], "method": "对照定理 6.3-2，把等号改成负号，得到反对称矩阵"},
+    {"set": "习题 6.3", "no": "5", "kp": ["M6.3.K1"], "method": "第 (1) 题印作 V1+V1，按 V1+V2 证明正交补与交、和的对偶"}
   ],
   "verify_script": ".work/kp/verify/M6.3.py"
 }

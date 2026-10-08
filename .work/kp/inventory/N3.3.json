@@ -1,36 +1,25 @@
 {
   "id": "N3.3",
   "title": "QR 方法",
-  "read_book_pages": [
-    204,
-    207
-  ],
-  "read_pdf_pages": [
-    215,
-    218
-  ],
+  "read_book_pages": [204, 207],
+  "read_pdf_pages": [215, 218],
   "hires_pdf_pages": [],
   "extra_pages_consulted": [],
-  "notation": [],
-  "items": [],
-  "errata": [],
-  "exercises": [
-    {
-      "set": "习题 3.3",
-      "no": 3,
-      "kp": [
-        "N3.3.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 3.3",
-      "no": 6,
-      "kp": [
-        "N3.3.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    }
+  "notation": [
+    {"symbol": "G_k", "latex": "\\boldsymbol G_k", "meaning": "Q_1…Q_k 的乘积，正交", "book_page": 205},
+    {"symbol": "H_k", "latex": "\\boldsymbol H_k", "meaning": "R_k…R_1 的乘积；亦用于上 Hessenberg 矩阵，两处不是同一对象", "book_page": 205}
   ],
+  "items": [
+    {"type": "式", "no": "3.3-1", "book_page": 205, "summary": "A_k=Q_k R_k，A_{k+1}=R_k Q_k", "kp": "N3.3.K1"},
+    {"type": "式", "no": "3.3-2", "book_page": 205, "summary": "A_{k+1} 与 A 正交相似", "kp": "N3.3.K1"},
+    {"type": "式", "no": "3.3-3", "book_page": 205, "summary": "A^k=G_k H_k", "kp": "N3.3.K1"},
+    {"type": "定理", "no": "3.3-1", "book_page": 205, "summary": "模严格递减且 X^{-1}=LR 时，A_k 本质收敛于上三角，对角元为特征值", "kp": "N3.3.K2"},
+    {"type": "例", "no": "1", "book_page": 205, "summary": "特征值 -1,4,1±2i；12 次后对角出现 4 与 -1，2×2 块给出 1±2i", "kp": "N3.3.K2"},
+    {"type": "式", "no": "3.3-4", "book_page": 206, "summary": "带原点平移：H_k-s_k I=Q_k R_k，H_{k+1}=R_k Q_k+s_k I", "kp": "N3.3.K3"},
+    {"type": "注", "no": "", "book_page": 206, "summary": "上 Hessenberg 的一步 QR 约 4n^2 次；次对角小元素可分块", "kp": "N3.3.K3"},
+    {"type": "注", "no": "", "book_page": 207, "summary": "单次实平移不能收敛到复特征值；Francis 二重 QR 只指出文献，正文不给算法", "kp": "N3.3.K3"}
+  ],
+  "errata": [],
+  "exercises": [],
   "verify_script": ".work/kp/verify/N3.3.py"
 }

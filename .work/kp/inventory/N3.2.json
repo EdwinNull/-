@@ -1,36 +1,50 @@
 {
   "id": "N3.2",
   "title": "幂法与反幂法",
-  "read_book_pages": [
-    197,
-    204
-  ],
-  "read_pdf_pages": [
-    208,
-    215
-  ],
+  "read_book_pages": [197, 204],
+  "read_pdf_pages": [208, 215],
   "hires_pdf_pages": [],
   "extra_pages_consulted": [],
-  "notation": [],
-  "items": [],
+  "notation": [
+    {"symbol": "max(x)", "latex": "\\max(\\boldsymbol x)", "meaning": "按模最大的那个分量，保留该分量的符号", "book_page": 198},
+    {"symbol": "R(x)", "latex": "R(\\boldsymbol x)", "meaning": "对称矩阵的 Rayleigh 商 x^T A x / x^T x", "book_page": 201}
+  ],
+  "items": [
+    {"type": "式", "no": "3.2-1", "book_page": 197, "summary": "|λ1|>|λ2|≥…≥|λn|", "kp": "N3.2.K1"},
+    {"type": "式", "no": "3.2-2", "book_page": 198, "summary": "A^k x0 按特征向量展开", "kp": "N3.2.K1"},
+    {"type": "式", "no": "3.2-3", "book_page": 198, "summary": "未规范化的幂迭代", "kp": "N3.2.K1"},
+    {"type": "式", "no": "3.2-4", "book_page": 198, "summary": "用 max(x) 规范化的幂法", "kp": "N3.2.K2"},
+    {"type": "定理", "no": "3.2-1", "book_page": 198, "summary": "y^k 趋于 v1/max(v1)，max(x^k) 趋于 λ1", "kp": "N3.2.K2"},
+    {"type": "式", "no": "3.2-5", "book_page": 198, "summary": "定理 3.2-1 的两个极限", "kp": "N3.2.K2"},
+    {"type": "例", "no": "1", "book_page": 199, "summary": "五次幂法，λ1≈43.88，y≈[0.1859,0.4460,1]", "kp": "N3.2.K2"},
+    {"type": "表", "no": "3.2-1", "book_page": 199, "summary": "例 1 的五次迭代", "kp": "N3.2.K2"},
+    {"type": "式", "no": "3.2-6", "book_page": 199, "summary": "幂法误差约按 (λ2/λ1)^{k-1} 衰减", "kp": "N3.2.K3"},
+    {"type": "式", "no": "3.2-7", "book_page": 200, "summary": "Aitken 加速公式", "kp": "N3.2.K3"},
+    {"type": "例", "no": "2", "book_page": 200, "summary": "特征值 6,3,2；四次后 Aitken 得 6.0636", "kp": "N3.2.K3"},
+    {"type": "表", "no": "3.2-2", "book_page": 200, "summary": "例 2 的幂法与 Aitken", "kp": "N3.2.K3"},
+    {"type": "式", "no": "3.2-8", "book_page": 200, "summary": "原点平移：对 A-aI 做幂法", "kp": "N3.2.K4"},
+    {"type": "式", "no": "3.2-9", "book_page": 200, "summary": "max(x^k)→λ1-a", "kp": "N3.2.K4"},
+    {"type": "例", "no": "3", "book_page": 201, "summary": "直接幂法波动；a=-4 时六次得约 5.1247", "kp": "N3.2.K4"},
+    {"type": "表", "no": "3.2-3", "book_page": 201, "summary": "例 3 直接幂法前六次", "kp": "N3.2.K4"},
+    {"type": "表", "no": "3.2-4", "book_page": 201, "summary": "例 3 对 A+4I 的幂法", "kp": "N3.2.K4"},
+    {"type": "式", "no": "3.2-10", "book_page": 202, "summary": "Rayleigh 商误差约按 (λ2/λ1)^{2k} 衰减", "kp": "N3.2.K5"},
+    {"type": "式", "no": "3.2-11", "book_page": 202, "summary": "Rayleigh 商加速的迭代公式", "kp": "N3.2.K5"},
+    {"type": "例", "no": "4", "book_page": 202, "summary": "第一步 R=6，x1=[9,6,3]；四次后 R≈7.287", "kp": "N3.2.K5"},
+    {"type": "表", "no": "3.2-5", "book_page": 202, "summary": "例 4 前四次与幂法的 max 对照", "kp": "N3.2.K5"},
+    {"type": "式", "no": "3.2-12", "book_page": 203, "summary": "反幂法：解 A x^{k+1}=y^k", "kp": "N3.2.K6"},
+    {"type": "式", "no": "3.2-13", "book_page": 203, "summary": "max(x^k)→1/λn", "kp": "N3.2.K6"},
+    {"type": "式", "no": "3.2-14", "book_page": 203, "summary": "带原点平移的反幂法", "kp": "N3.2.K7"},
+    {"type": "式", "no": "3.2-15", "book_page": 203, "summary": "λ≈λ̂+1/max(x^k)", "kp": "N3.2.K7"},
+    {"type": "式", "no": "3.2-16", "book_page": 204, "summary": "用选主元的 LR 分解实现反幂法；半次迭代取 z^{(1)} 为全 1", "kp": "N3.2.K7"},
+    {"type": "例", "no": "5", "book_page": 204, "summary": "λ̂=-6.42，两次后约 -6.421066", "kp": "N3.2.K7"}
+  ],
   "errata": [],
   "exercises": [
-    {
-      "set": "习题 3.2",
-      "no": 2,
-      "kp": [
-        "N3.2.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 3.2",
-      "no": 5,
-      "kp": [
-        "N3.2.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    }
+    {"set": "习题 3", "no": "2", "kp": ["N3.2.K2", "N3.2.K5"], "method": "从 [1,0,0] 做 4 次幂法，并用 Rayleigh 商加速"},
+    {"set": "习题 3", "no": "3", "kp": ["N3.2.K3"], "method": "幂法序列再用式 (3.2-7) 做 Aitken 加速"},
+    {"set": "习题 3", "no": "4", "kp": ["N3.2.K7"], "method": "以 6.1 为平移做反幂法，求特征向量并改善特征值"},
+    {"set": "习题 3", "no": "5", "kp": ["N3.2.K7"], "method": "最接近 12 的特征值，半次迭代取初值，迭代二次"},
+    {"set": "习题 3", "no": "6", "kp": ["N3.2.K5"], "method": "对称矩阵的 Rayleigh 商最大是 λ1、最小是 λn"}
   ],
   "verify_script": ".work/kp/verify/N3.2.py"
 }

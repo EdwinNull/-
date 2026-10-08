@@ -1,44 +1,27 @@
 {
   "id": "N3.1",
   "title": "特征值的估计",
-  "read_book_pages": [
-    195,
-    197
-  ],
-  "read_pdf_pages": [
-    206,
-    208
-  ],
+  "read_book_pages": [195, 197],
+  "read_pdf_pages": [206, 208],
   "hires_pdf_pages": [],
   "extra_pages_consulted": [],
-  "notation": [],
+  "notation": [
+    {"symbol": "G_i", "latex": "G_i", "meaning": "第 i 个盖氏圆，中心 a_ii，半径为同行非对角元绝对值之和", "book_page": 195}
+  ],
   "items": [
-    {
-      "type": "定理",
-      "no": "3.1-1",
-      "book_page": 195,
-      "summary": "本节教材定理，供相邻章节引用核对",
-      "kp": "N3.1.K1"
-    }
+    {"type": "注", "no": "", "book_page": 195, "summary": "章首：相似变换不改变特征值；常用方法具有迭代特点", "kp": "N3.1.K1"},
+    {"type": "定义", "no": "3.1-1", "book_page": 195, "summary": "盖氏圆 G_i", "kp": "N3.1.K1"},
+    {"type": "式", "no": "3.1-1", "book_page": 195, "summary": "|z-a_ii|≤同行非对角元绝对值之和", "kp": "N3.1.K1"},
+    {"type": "定理", "no": "3.1-1", "book_page": 195, "summary": "每个特征值都在盖氏圆的并集上", "kp": "N3.1.K1"},
+    {"type": "例", "no": "1", "book_page": 196, "summary": "四个盖氏圆，三个连通部分；孤立圆各含一个实特征值", "kp": "N3.1.K2"},
+    {"type": "定理", "no": "3.1-2", "book_page": 196, "summary": "k 个圆组成的连通部分恰含 k 个特征值", "kp": "N3.1.K2"},
+    {"type": "式", "no": "3.1-2", "book_page": 197, "summary": "对角相似 B=P^{-1}AP", "kp": "N3.1.K3"},
+    {"type": "式", "no": "3.1-3", "book_page": 197, "summary": "相似后第 i 圆半径乘 b_j/b_i", "kp": "N3.1.K3"},
+    {"type": "例", "no": "2", "book_page": 197, "summary": "取 b3=0.1 缩小前两个圆，第三个特征值仍用原圆", "kp": "N3.1.K3"}
   ],
   "errata": [],
   "exercises": [
-    {
-      "set": "习题 3.1",
-      "no": 1,
-      "kp": [
-        "N3.1.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 3.1",
-      "no": 4,
-      "kp": [
-        "N3.1.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    }
+    {"set": "习题 3", "no": "1", "kp": ["N3.1.K1", "N3.1.K2"], "method": "画出盖氏圆，按连通部分估计特征值个数和实性"}
   ],
   "verify_script": ".work/kp/verify/N3.1.py"
 }

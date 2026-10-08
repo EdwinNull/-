@@ -1,36 +1,23 @@
 {
   "id": "N2.6",
   "title": "迭代法的数值稳定性和误差分析",
-  "read_book_pages": [
-    192,
-    193
-  ],
-  "read_pdf_pages": [
-    203,
-    204
-  ],
+  "read_book_pages": [192, 193],
+  "read_pdf_pages": [203, 204],
   "hires_pdf_pages": [],
   "extra_pages_consulted": [],
-  "notation": [],
-  "items": [],
+  "notation": [
+    {"symbol": "ρ^{(k)}", "latex": "\\boldsymbol{\\rho}^{(k)}", "meaning": "计算解与精确迭代值之差，不是谱半径", "book_page": 192},
+    {"symbol": "r^{(k)}", "latex": "\\boldsymbol{r}^{(k)}", "meaning": "第 k 步扰动引起的局部余项 δB x̃^{(k)}+δg", "book_page": 192}
+  ],
+  "items": [
+    {"type": "注", "no": "", "book_page": 192, "summary": "一步舍入以后精确迭代时，误差按 q^k 衰减", "kp": "N2.6.K1"},
+    {"type": "式", "no": "2.6-1", "book_page": 192, "summary": "ρ^{(k+1)}=Bρ^{(k)}+r^{(k)}", "kp": "N2.6.K2"},
+    {"type": "式", "no": "2.6-2", "book_page": 193, "summary": "||ρ^{(k+1)}||≤q||ρ^{(k)}||+ε，总和小于 ε/(1-q)", "kp": "N2.6.K2"}
+  ],
   "errata": [],
   "exercises": [
-    {
-      "set": "习题 2.6",
-      "no": 6,
-      "kp": [
-        "N2.6.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 2.6",
-      "no": 12,
-      "kp": [
-        "N2.6.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    }
+    {"set": "习题 2", "no": "3", "kp": ["N2.6.K2"], "method": "用谱半径与 (I-A)^{-1}(I+A) 的特征值实部互推"},
+    {"set": "习题 2", "no": "11", "kp": ["N2.6.K1"], "method": "写成 B=I-ωA，收敛充要条件是 ρ(I-ωA)<1"}
   ],
   "verify_script": ".work/kp/verify/N2.6.py"
 }

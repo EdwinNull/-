@@ -1,36 +1,33 @@
 {
   "id": "N2.5",
   "title": "逐次超松弛迭代法和块迭代法",
-  "read_book_pages": [
-    188,
-    192
-  ],
-  "read_pdf_pages": [
-    199,
-    203
-  ],
+  "read_book_pages": [188, 192],
+  "read_pdf_pages": [199, 203],
   "hires_pdf_pages": [],
   "extra_pages_consulted": [],
-  "notation": [],
-  "items": [],
+  "notation": [
+    {"symbol": "ω", "latex": "\\omega", "meaning": "松弛因子；ω=1 时 SOR 退化为 Seidel", "book_page": 189},
+    {"symbol": "B_ω", "latex": "\\boldsymbol B_{\\omega}", "meaning": "SOR 迭代矩阵 (D+ωL)^{-1}[(1-ω)D-ωR]", "book_page": 190}
+  ],
+  "items": [
+    {"type": "式", "no": "2.5-1", "book_page": 189, "summary": "SOR：新值是旧值与 Seidel 辅助量的加权平均", "kp": "N2.5.K1"},
+    {"type": "例", "no": "1", "book_page": 189, "summary": "ω=1.25 七次比 Seidel 更接近 [3,4,-5]；七位小数分别要 14 次与 34 次", "kp": "N2.5.K1"},
+    {"type": "式", "no": "2.5-2", "book_page": 189, "summary": "SOR 的矩阵形式", "kp": "N2.5.K2"},
+    {"type": "式", "no": "2.5-3", "book_page": 190, "summary": "B_ω=(D+ωL)^{-1}[(1-ω)D-ωR]", "kp": "N2.5.K2"},
+    {"type": "定理", "no": "2.5-1", "book_page": 190, "summary": "收敛的必要条件 0<ω<2", "kp": "N2.5.K2"},
+    {"type": "定理", "no": "2.5-2", "book_page": 190, "summary": "对称正定且 0<ω<2 时 SOR 收敛", "kp": "N2.5.K3"},
+    {"type": "式", "no": "2.5-4", "book_page": 190, "summary": "特征值的分式表示", "kp": "N2.5.K3"},
+    {"type": "定理", "no": "2.5-3", "book_page": 191, "summary": "对称正定三对角的最优松弛因子", "kp": "N2.5.K4"},
+    {"type": "式", "no": "2.5-5", "book_page": 191, "summary": "ω_opt=2/(1+sqrt(1-ρ(B_J)^2))", "kp": "N2.5.K4"},
+    {"type": "例", "no": "2", "book_page": 191, "summary": "ρ(B_J)≈0.791，ω_opt≈1.240，ρ(B_ωopt)≈0.240", "kp": "N2.5.K4"},
+    {"type": "式", "no": "2.5-6", "book_page": 192, "summary": "块 SOR：每步解一个低阶方程组", "kp": "N2.5.K5"}
+  ],
   "errata": [],
   "exercises": [
-    {
-      "set": "习题 2.5",
-      "no": 5,
-      "kp": [
-        "N2.5.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 2.5",
-      "no": 11,
-      "kp": [
-        "N2.5.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    }
+    {"set": "习题 2", "no": "7", "kp": ["N2.5.K2"], "method": "由分裂 A=(D/ω+L)+[R+(1-1/ω)D] 推出式 (2.5-3)"},
+    {"set": "习题 2", "no": "9", "kp": ["N2.5.K1"], "method": "ω=1.25 做 SOR，用无穷范数相邻差小于 10^{-2} 停机，并作先验估计"},
+    {"set": "习题 2", "no": "10", "kp": ["N2.5.K2", "N2.5.K3"], "method": "严格对角占优在一步 Gauss 消元后保持，并且 0<ω≤1 时 SOR 收敛"},
+    {"set": "习题 2", "no": "12", "kp": ["N2.5.K5"], "method": "写出块 Jacobi 与块 Seidel，并给出收敛的充要条件"}
   ],
   "verify_script": ".work/kp/verify/N2.5.py"
 }

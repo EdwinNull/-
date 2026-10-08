@@ -1,36 +1,61 @@
 {
   "id": "N2.4",
   "title": "线性方程组的迭代解法",
-  "read_book_pages": [
-    179,
-    188
-  ],
-  "read_pdf_pages": [
-    190,
-    199
-  ],
+  "read_book_pages": [179, 188],
+  "read_pdf_pages": [190, 199],
   "hires_pdf_pages": [],
   "extra_pages_consulted": [],
-  "notation": [],
-  "items": [],
-  "errata": [],
+  "notation": [
+    {"symbol": "B", "latex": "\\boldsymbol B", "meaning": "简单迭代的迭代矩阵，B=M^{-1}N", "book_page": 180},
+    {"symbol": "B_J", "latex": "\\boldsymbol B_{\\mathrm J}", "meaning": "Jacobi 迭代矩阵 I-D^{-1}A", "book_page": 184},
+    {"symbol": "B_S", "latex": "\\boldsymbol B_{\\mathrm S}", "meaning": "Seidel 迭代矩阵 -(D+L)^{-1}R", "book_page": 184},
+    {"symbol": "L,R", "latex": "\\boldsymbol L,\\boldsymbol R", "meaning": "A 的严格下三角与严格上三角，保留原号，A=D+L+R", "book_page": 184}
+  ],
+  "items": [
+    {"type": "式", "no": "2.4-1", "book_page": 180, "summary": "分裂 A=M-N 后的等价形式 x=Bx+g", "kp": "N2.4.K1"},
+    {"type": "式", "no": "2.4-2", "book_page": 180, "summary": "简单迭代 x^{(k+1)}=Bx^{(k)}+g", "kp": "N2.4.K1"},
+    {"type": "定理", "no": "2.4-1", "book_page": 180, "summary": "对任意初值收敛的充要条件 ρ(B)<1", "kp": "N2.4.K1"},
+    {"type": "定理", "no": "2.4-2", "book_page": 180, "summary": "||B||=q<1 是收敛的充分条件", "kp": "N2.4.K1"},
+    {"type": "定理", "no": "2.4-3", "book_page": 180, "summary": "后验估计 (2.4-3) 与先验估计 (2.4-4)", "kp": "N2.4.K2"},
+    {"type": "式", "no": "2.4-3", "book_page": 180, "summary": "后验估计 ||x^{(k)}-x||≤q/(1-q)||x^{(k)}-x^{(k-1)}||", "kp": "N2.4.K2"},
+    {"type": "式", "no": "2.4-4", "book_page": 180, "summary": "先验估计 ||x^{(k)}-x||≤q^k/(1-q)||x^{(1)}-x^{(0)}||", "kp": "N2.4.K2"},
+    {"type": "式", "no": "2.4-5", "book_page": 181, "summary": "由先验估计反解迭代次数的不等式", "kp": "N2.4.K2"},
+    {"type": "式", "no": "2.4-6", "book_page": 181, "summary": "迭代次数下界，除以 lg q 时不等号反向", "kp": "N2.4.K2"},
+    {"type": "式", "no": "2.4-1'", "book_page": 182, "summary": "x=Bx+g 的分量形式", "kp": "N2.4.K3"},
+    {"type": "式", "no": "2.4-2'", "book_page": 182, "summary": "简单迭代的分量形式", "kp": "N2.4.K3"},
+    {"type": "式", "no": "2.4-7", "book_page": 182, "summary": "Seidel 迭代的分量形式，已算出的新分量立即使用", "kp": "N2.4.K3"},
+    {"type": "式", "no": "2.4-8", "book_page": 182, "summary": "Seidel 的矩阵形式 x^{(k+1)}=B_S x^{(k)}+h", "kp": "N2.4.K3"},
+    {"type": "例", "no": "1", "book_page": 183, "summary": "2 阶：简单迭代要 p^2+q^2<1；Seidel 要 p^2<1 且 q^2<(1+p)^2", "kp": "N2.4.K3"},
+    {"type": "例", "no": "2", "book_page": 183, "summary": "||B||_∞=0.5；后验 k=10，先验 k=13", "kp": "N2.4.K4"},
+    {"type": "表", "no": "2.4-1", "book_page": 184, "summary": "例 2 的迭代值；k=8 的 x3 为 -0.999", "kp": "N2.4.K4"},
+    {"type": "式", "no": "2.4-9", "book_page": 184, "summary": "Jacobi 迭代 x^{(k+1)}=D^{-1}(D-A)x^{(k)}+D^{-1}b", "kp": "N2.4.K5"},
+    {"type": "式", "no": "2.4-10", "book_page": 184, "summary": "B_J=I-D^{-1}A", "kp": "N2.4.K5"},
+    {"type": "式", "no": "2.4-11", "book_page": 184, "summary": "Seidel 分量更新写成矩阵：用 L 的新值与 R 的旧值", "kp": "N2.4.K5"},
+    {"type": "式", "no": "2.4-12", "book_page": 184, "summary": "x^{(k+1)}=-(D+L)^{-1}R x^{(k)}+(D+L)^{-1}b", "kp": "N2.4.K5"},
+    {"type": "式", "no": "2.4-13", "book_page": 184, "summary": "B_S=-(D+L)^{-1}R", "kp": "N2.4.K5"},
+    {"type": "例", "no": "3", "book_page": 185, "summary": "Jacobi 与 Seidel 都有无穷范数 0.6；准确解 [1,2,3,4]^T", "kp": "N2.4.K5"},
+    {"type": "表", "no": "2.4-2", "book_page": 185, "summary": "Jacobi 前五次，三位小数", "kp": "N2.4.K5"},
+    {"type": "表", "no": "2.4-3", "book_page": 185, "summary": "Seidel 前五次；第 3 次末分量印 3.929，应为 3.979", "kp": "N2.4.K5"},
+    {"type": "定义", "no": "2.4-1", "book_page": 185, "summary": "按行严格对角占优", "kp": "N2.4.K6"},
+    {"type": "定理", "no": "2.4-4", "book_page": 186, "summary": "严格对角占优则 A 可逆", "kp": "N2.4.K6"},
+    {"type": "定理", "no": "2.4-5", "book_page": 186, "summary": "严格对角占优则 Jacobi 与 Seidel 都收敛", "kp": "N2.4.K6"},
+    {"type": "式", "no": "2.4-14", "book_page": 186, "summary": "Seidel 特征值满足 det(λ(D+L)+R)=0", "kp": "N2.4.K6"},
+    {"type": "定理", "no": "2.4-6", "book_page": 187, "summary": "对称正定且 M+M^T-A 正定时简单迭代收敛", "kp": "N2.4.K7"},
+    {"type": "式", "no": "2.4-15", "book_page": 187, "summary": "(1-λ)Mz=Az", "kp": "N2.4.K7"},
+    {"type": "式", "no": "2.4-16", "book_page": 187, "summary": "(1-λ)z^H Mz=z^H Az", "kp": "N2.4.K7"},
+    {"type": "式", "no": "2.4-17", "book_page": 187, "summary": "取共轭转置后的 companion 等式", "kp": "N2.4.K7"},
+    {"type": "式", "no": "2.4-18", "book_page": 187, "summary": "把 1/(1-λ)+1/(1-λ̄)-1 写成 M+M^T-A 的二次型", "kp": "N2.4.K7"},
+    {"type": "注", "no": "", "book_page": 188, "summary": "推论：对称正定则 Seidel 收敛；2D-A 也正定则 Jacobi 收敛", "kp": "N2.4.K7"},
+    {"type": "算法", "no": "", "book_page": 188, "summary": "简单迭代五步，用相邻两次之差停机", "kp": "N2.4.K8"}
+  ],
+  "errata": [
+    {"book_page": 181, "item": "终止准则的警告", "printed": "仅当 q=||A|| 不很接近于 1", "corrected": "q 已定义为 ||B||，此处 A 应为 B", "action": "讲解按 ||B|| 书写并括注"},
+    {"book_page": 185, "item": "表 2.4-3", "printed": "第 3 次第四分量为 3.929，第 4 次第二分量为 1.990", "corrected": "按式 (2.4-13) 计算，第 3 次第四分量为 3.979，第 4 次第二分量三位舍入为 1.991", "action": "讲解按计算值书写并括注印出值"}
+  ],
   "exercises": [
-    {
-      "set": "习题 2.4",
-      "no": 4,
-      "kp": [
-        "N2.4.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 2.4",
-      "no": 10,
-      "kp": [
-        "N2.4.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    }
+    {"set": "习题 2", "no": "4", "kp": ["N2.4.K5", "N2.4.K1"], "method": "分别计算 Jacobi 与 Seidel 的迭代矩阵，用谱半径判断收敛"},
+    {"set": "习题 2", "no": "6", "kp": ["N2.4.K5", "N2.4.K2"], "method": "从零向量做 Jacobi 与 Seidel，用绝对误差限 10^{-3} 停机"},
+    {"set": "习题 2", "no": "8", "kp": ["N2.4.K6", "N2.4.K7"], "method": "先求正定的 a，再用定理 2.4-6 的推论写 Jacobi 与 Seidel 的收敛条件"}
   ],
   "verify_script": ".work/kp/verify/N2.4.py"
 }

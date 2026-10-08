@@ -1,36 +1,28 @@
 {
   "id": "N2.2",
   "title": "矩阵分解在解线性方程组中的应用",
-  "read_book_pages": [
-    172,
-    176
-  ],
-  "read_pdf_pages": [
-    183,
-    187
-  ],
+  "read_book_pages": [172, 176],
+  "read_pdf_pages": [183, 187],
   "hires_pdf_pages": [],
   "extra_pages_consulted": [],
-  "notation": [],
-  "items": [],
+  "notation": [
+    {"symbol": "t_ik", "latex": "t_{ik}", "meaning": "改进平方根法中 LDL^T 的中间量，l_ik=t_ik/d_k", "book_page": 173},
+    {"symbol": "p_i", "latex": "p_i", "meaning": "三对角追赶法中上三角因子的次对角线，p_i=c_i", "book_page": 174}
+  ],
+  "items": [
+    {"type": "注", "no": "", "book_page": 172, "summary": "选主元的三角分解：行交换记入置换，分解一次、多个右端只做回代", "kp": "N2.2.K1"},
+    {"type": "式", "no": "2.2-1", "book_page": 173, "summary": "对称正定矩阵的 LDL^T 递推：d_k、t_ik、l_ik", "kp": "N2.2.K2"},
+    {"type": "式", "no": "2.2-2", "book_page": 173, "summary": "由 Ly=b、Dz=y、L^T x=z 求解", "kp": "N2.2.K2"},
+    {"type": "例", "no": "1", "book_page": 173, "summary": "六位十进制改进平方根法，解约 1/3,-1/6,-1/3", "kp": "N2.2.K2"},
+    {"type": "式", "no": "2.2-3", "book_page": 174, "summary": "三对角矩阵的 LR 分解：p_i=c_i，l_i=a_i/r_{i-1}，r_i=b_i-l_i p_{i-1}", "kp": "N2.2.K3"},
+    {"type": "式", "no": "2.2-4", "book_page": 174, "summary": "追赶法的前代与回代；右端记为 d", "kp": "N2.2.K3"},
+    {"type": "式", "no": "2.2-5", "book_page": 174, "summary": "Householder 向量：d_j=-sign(a_jj)|s_j|，u_j=s_j-d_j e_j", "kp": "N2.2.K4"},
+    {"type": "式", "no": "2.2-6", "book_page": 175, "summary": "H_j 作用在增广矩阵上，只改右下角", "kp": "N2.2.K4"},
+    {"type": "算法", "no": "", "book_page": 175, "summary": "解方程组的 QR 算法七步；运算量约为 Gauss 的两倍", "kp": "N2.2.K4"}
+  ],
   "errata": [],
   "exercises": [
-    {
-      "set": "习题 2.2",
-      "no": 2,
-      "kp": [
-        "N2.2.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 2.2",
-      "no": 8,
-      "kp": [
-        "N2.2.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    }
+    {"set": "习题 2", "no": "2", "kp": ["N2.2.K1"], "method": "Doolittle 分解的乘除、加减次数与 Gauss 消元相同，分别求和"}
   ],
   "verify_script": ".work/kp/verify/N2.2.py"
 }

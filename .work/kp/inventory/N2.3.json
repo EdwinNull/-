@@ -1,36 +1,32 @@
 {
   "id": "N2.3",
   "title": "直接法的误差分析",
-  "read_book_pages": [
-    176,
-    179
-  ],
-  "read_pdf_pages": [
-    187,
-    190
-  ],
-  "hires_pdf_pages": [],
+  "read_book_pages": [176, 179],
+  "read_pdf_pages": [187, 190],
+  "hires_pdf_pages": [189, 190],
   "extra_pages_consulted": [],
-  "notation": [],
-  "items": [],
-  "errata": [],
+  "notation": [
+    {"symbol": "x*", "latex": "\\boldsymbol{x}^{*}", "meaning": "近似解；准确解记为 x，与第 1 章的星号用法不同", "book_page": 176},
+    {"symbol": "e", "latex": "\\boldsymbol{e}", "meaning": "误差向量 e=x*-x", "book_page": 176},
+    {"symbol": "r", "latex": "\\boldsymbol{r}", "meaning": "残差向量 r=b-Ax*", "book_page": 176}
+  ],
+  "items": [
+    {"type": "例", "no": "1", "book_page": 176, "summary": "残差无穷范数 0.0015，误差无穷范数 1，约 667 倍；Cond_∞约 3000", "kp": "N2.3.K1"},
+    {"type": "式", "no": "2.3-1", "book_page": 176, "summary": "e=-A^{-1}r，||e||≤||A^{-1}|| ||r||", "kp": "N2.3.K1"},
+    {"type": "式", "no": "2.3-2", "book_page": 176, "summary": "相对误差不超过 Cond(A) 倍相对残差", "kp": "N2.3.K1"},
+    {"type": "定理", "no": "2.3-1", "book_page": 177, "summary": "系数与右端同时扰动时的相对误差界", "kp": "N2.3.K2"},
+    {"type": "式", "no": "2.3-3", "book_page": 177, "summary": "扰动条件 ||A^{-1}|| ||δA||<1", "kp": "N2.3.K2"},
+    {"type": "式", "no": "2.3-4", "book_page": 177, "summary": "相对误差界", "kp": "N2.3.K2"},
+    {"type": "式", "no": "2.3-5", "book_page": 177, "summary": "扰动矩阵逆的范数界", "kp": "N2.3.K2"},
+    {"type": "式", "no": "2.3-6", "book_page": 178, "summary": "迭代改善：AΔx=r^{(0)}，Δx=x-x^{(0)}", "kp": "N2.3.K3"},
+    {"type": "例", "no": "2", "book_page": 178, "summary": "五位 Gauss 消去后迭代改善一次；印出的 x1 与五位回代不一致", "kp": "N2.3.K3"},
+    {"type": "式", "no": "2.3-7", "book_page": 179, "summary": "用 ||Δx||/||x|| 的 10^t 倍估计条件数", "kp": "N2.3.K4"}
+  ],
+  "errata": [
+    {"book_page": 179, "item": "例 2", "printed": "x1=1.2001；改善后 x1=0.99999；||Δx||_∞=0.2008，且 0.2008/1.2001×10^5=16672", "corrected": "按印出的上三角作五位回代得 x1=1.0687。残差与 1.2001 一致。1.2001-0.20008=1.00002，不是 0.99999。0.20008/1.2001×10^5=16672，印出的范数少一位", "action": "讲解按可复核的计算书写并括注印出值"}
+  ],
   "exercises": [
-    {
-      "set": "习题 2.3",
-      "no": 3,
-      "kp": [
-        "N2.3.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 2.3",
-      "no": 9,
-      "kp": [
-        "N2.3.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    }
+    {"set": "习题 2", "no": "5", "kp": ["N2.3.K3"], "method": "两位浮点 Gauss 消去后按式 (2.3-6) 做一次迭代改善"}
   ],
   "verify_script": ".work/kp/verify/N2.3.py"
 }

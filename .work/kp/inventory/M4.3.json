@@ -1,36 +1,48 @@
 {
   "id": "M4.3",
   "title": "函数矩阵及其应用",
-  "read_book_pages": [
-    102,
-    107
+  "read_book_pages": [102, 107],
+  "read_pdf_pages": [113, 118],
+  "hires_pdf_pages": [113, 115],
+  "extra_pages_consulted": [
+    {"book_page": 96, "why": "式 (4.2-1) 与可交换时的指数乘法，定理 4.3-1 证明所引"}
   ],
-  "read_pdf_pages": [
-    113,
-    118
+  "notation": [
+    {"symbol": "A(t)", "latex": "\\boldsymbol A(t)=[a_{ij}(t)]", "meaning": "元素为同一区间上函数的函数矩阵", "book_page": 103},
+    {"symbol": "dA/dt", "latex": "\\dfrac{\\mathrm d}{\\mathrm dt}\\boldsymbol A(t)", "meaning": "对每个元素求导得到的矩阵", "book_page": 103},
+    {"symbol": "x(t)", "latex": "\\boldsymbol x(t)", "meaning": "未知函数排成的列向量", "book_page": 105},
+    {"symbol": "g(t)", "latex": "\\boldsymbol g(t)", "meaning": "非齐次项向量", "book_page": 105}
   ],
-  "hires_pdf_pages": [],
-  "extra_pages_consulted": [],
-  "notation": [],
-  "items": [],
-  "errata": [],
+  "items": [
+    {"type": "定义", "no": "", "book_page": 103, "summary": "函数矩阵：每个元素是同一区间上的函数；有界、连续、可微、可积按元素定义", "kp": "M4.3.K1"},
+    {"type": "性质", "no": "", "book_page": 103, "summary": "导数与积分按元素定义；d(A^2)/dt 一般不等于 2A dA/dt，可交换时才相等", "kp": "M4.3.K1"},
+    {"type": "定理", "no": "4.3-1", "book_page": 103, "summary": "e^{At} 可逆，逆为 e^{-At}，且 d/dt e^{At}=A e^{At}=e^{At} A", "kp": "M4.3.K2"},
+    {"type": "式", "no": "4.3-1", "book_page": 103, "summary": "d/dt e^{At}=A e^{At}=e^{At} A", "kp": "M4.3.K2"},
+    {"type": "性质", "no": "", "book_page": 103, "summary": "d/dt sin(At)=A cos(At)=cos(At)A；d/dt cos(At)=-A sin(At)=-sin(At)A", "kp": "M4.3.K2"},
+    {"type": "定理", "no": "4.3-2", "book_page": 104, "summary": "可逆且 A 与 A^{-1} 都可微时，d/dt A^{-1}=-A^{-1}(dA/dt)A^{-1}", "kp": "M4.3.K3"},
+    {"type": "式", "no": "4.3-2", "book_page": 104, "summary": "逆矩阵导数公式", "kp": "M4.3.K3"},
+    {"type": "例", "no": "1", "book_page": 104, "summary": "X=e^{At}B 满足 X'=AX；Y=B e^{At} 满足 Y'=YA", "kp": "M4.3.K2"},
+    {"type": "例", "no": "2", "book_page": 104, "summary": "x=sin(At)b1+cos(At)b2 满足 x''+A^2 x=0", "kp": "M4.3.K2"},
+    {"type": "式", "no": "4.3-3", "book_page": 104, "summary": "x''+A^2 x=0", "kp": "M4.3.K2"},
+    {"type": "例", "no": "3", "book_page": 104, "summary": "积分的 1-范数不超过范数的积分", "kp": "M4.3.K4"},
+    {"type": "式", "no": "4.3-4", "book_page": 104, "summary": "‖∫A dτ‖_1 ≤ ∫‖A‖_1 dτ", "kp": "M4.3.K4"},
+    {"type": "式", "no": "4.3-5", "book_page": 105, "summary": "无穷范数的同样估计", "kp": "M4.3.K4"},
+    {"type": "式", "no": "4.3-6", "book_page": 105, "summary": "x'=Ax+g(t)", "kp": "M4.3.K5"},
+    {"type": "例", "no": "4", "book_page": 105, "summary": "两个二阶方程化为一阶组", "kp": "M4.3.K5"},
+    {"type": "式", "no": "4.3-7", "book_page": 106, "summary": "齐次方程 x'-Ax=0", "kp": "M4.3.K6"},
+    {"type": "式", "no": "4.3-8", "book_page": 106, "summary": "常数变易 x=e^{At} b(t)", "kp": "M4.3.K6"},
+    {"type": "式", "no": "4.3-9", "book_page": 106, "summary": "用 b(t0) 写出的解", "kp": "M4.3.K6"},
+    {"type": "式", "no": "4.3-10", "book_page": 106, "summary": "用初值 x(t0) 写出的解", "kp": "M4.3.K6"},
+    {"type": "例", "no": "5", "book_page": 107, "summary": "A=[[1,2],[4,3]]，x(0)=[1,2]^T，g=[1,-1]^T 的初值问题", "kp": "M4.3.K6"},
+    {"type": "例", "no": "6", "book_page": 107, "summary": "X'=AX+XB，X(0)=X0，解为 e^{At} X0 e^{Bt}", "kp": "M4.3.K7"},
+    {"type": "式", "no": "4.3-11", "book_page": 107, "summary": "矩阵方程 X'=AX+XB 及初值", "kp": "M4.3.K7"}
+  ],
+  "errata": [
+    {"book_page": 104, "text": "式 (4.3-2) 中间一个因子的括号印得较挤，放大后仍像 A^{-1}(t)。证明明确是先右乘 A^{-1}(t)，故公式按 -A^{-1}(dA/dt)A^{-1} 理解，不作为印刷错误。"}
+  ],
   "exercises": [
-    {
-      "set": "习题 4.3",
-      "no": 1,
-      "kp": [
-        "M4.3.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 4.3",
-      "no": 2,
-      "kp": [
-        "M4.3.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    }
+    {"set": "习题 4.3", "no": "1", "kp": ["M4.3.K5"], "method": "令 x1=x，x2=x'，x3=x''，得到系数矩阵 [[0,1,0],[0,0,1],[-8,-3,4]]，非齐次项 [0,0,t sin t]^T"},
+    {"set": "习题 4.3", "no": "2", "kp": ["M4.3.K6"], "method": "用式 (4.3-10)，t0=0；特征值 ±1，答案 x=[-sinh t, cosh t-2 sinh t+1]^T"}
   ],
   "verify_script": ".work/kp/verify/M4.3.py"
 }

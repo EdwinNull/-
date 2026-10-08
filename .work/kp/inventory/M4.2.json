@@ -1,68 +1,50 @@
 {
   "id": "M4.2",
   "title": "方阵函数及其计算",
-  "read_book_pages": [
-    96,
-    102
+  "read_book_pages": [96, 102],
+  "read_pdf_pages": [107, 113],
+  "hires_pdf_pages": [107, 108, 109, 110, 111, 112, 113],
+  "extra_pages_consulted": [
+    {"book_page": 94, "why": "式 (4.1-4) 是式 (4.2-2) 的来源，本轮写 M4.1 时已读 300 dpi"}
   ],
-  "read_pdf_pages": [
-    107,
-    113
+  "notation": [
+    {"symbol": "f(A)", "latex": "f(\\boldsymbol A)", "meaning": "由数量函数 f 按定义 4.2-1 或定义 4.2-3 得到的方阵函数", "book_page": 96},
+    {"symbol": "m_A(λ)", "latex": "m_{\\boldsymbol A}(\\lambda)", "meaning": "A 的最小多项式，定义 2.2-2", "book_page": 99},
+    {"symbol": "Sp(A)", "latex": "\\mathrm{Sp}(\\boldsymbol A)", "meaning": "A 的谱；定义 4.2-2 写作 Sp(A)，与第 3.3 节相同", "book_page": 100},
+    {"symbol": "m_i", "latex": "m_i", "meaning": "特征值 λ_i 在最小多项式中的重数，也是含 λ_i 的 Jordan 块的最大阶数", "book_page": 99},
+    {"symbol": "n_i", "latex": "n_i", "meaning": "特征值 λ_i 的代数重数；式 (4.2-6) 用它代替 m_i", "book_page": 100}
   ],
-  "hires_pdf_pages": [],
-  "extra_pages_consulted": [],
-  "notation": [],
-  "items": [],
-  "errata": [],
+  "items": [
+    {"type": "定义", "no": "4.2-1", "book_page": 96, "summary": "ρ(A)<R 时定义 f(A)=∑ c_k A^k", "kp": "M4.2.K1"},
+    {"type": "式", "no": "4.2-1", "book_page": 96, "summary": "e^{At}=∑ (At)^k/k! = ∑ t^k A^k/k!", "kp": "M4.2.K1"},
+    {"type": "性质", "no": "", "book_page": 96, "summary": "e^A、sin A、cos A、ln(I+A)、(I-A)^{-1} 的幂级数及收敛条件", "kp": "M4.2.K1"},
+    {"type": "性质", "no": "", "book_page": 96, "summary": "单矩阵恒等式可平移；两个方阵的恒等式一般要 AB=BA", "kp": "M4.2.K2"},
+    {"type": "式", "no": "4.2-2", "book_page": 97, "summary": "Jordan 块上 f(J_i) 由 f 及其导数组成", "kp": "M4.2.K3"},
+    {"type": "式", "no": "4.2-3", "book_page": 97, "summary": "f(A)=P diag(f(J_i)) P^{-1}", "kp": "M4.2.K3"},
+    {"type": "例", "no": "1", "book_page": 97, "summary": "A=[[0,1],[0,-2]]，求 e^A、cos A、sin A；sin A 的 (1,1) 元印作 1，应为 0", "kp": "M4.2.K3"},
+    {"type": "例", "no": "2", "book_page": 98, "summary": "三阶矩阵，特征值 2 与二重 -1，求 e^A 与 e^{At}", "kp": "M4.2.K3"},
+    {"type": "式", "no": "4.2-4", "book_page": 99, "summary": "g 与 f 在各特征值处直到 m_i-1 阶导数相等", "kp": "M4.2.K4"},
+    {"type": "注", "no": "", "book_page": 99, "summary": "脚注：式 (4.2-4) 是多项式插值条件，第二部分再证唯一性", "kp": "M4.2.K4"},
+    {"type": "例", "no": "3", "book_page": 100, "summary": "A=[[2,-1],[1,0]]，最小多项式 (λ-1)^2，求 e^A 与 e^{At}", "kp": "M4.2.K4"},
+    {"type": "式", "no": "4.2-5", "book_page": 100, "summary": "例 3 的待定系数方程 b0+b1=f(1)，b0=f'(1)", "kp": "M4.2.K4"},
+    {"type": "定义", "no": "4.2-2", "book_page": 100, "summary": "f 与 g 在谱 Sp(A) 上一致", "kp": "M4.2.K5"},
+    {"type": "式", "no": "4.2-6", "book_page": 100, "summary": "用代数重数 n_i 代替 m_i 的插值条件", "kp": "M4.2.K6"},
+    {"type": "例", "no": "4", "book_page": 101, "summary": "A=[[17,0,-25],[0,3,0],[9,0,-13]]，用特征多项式求 e^{At}", "kp": "M4.2.K6"},
+    {"type": "定义", "no": "4.2-3", "book_page": 101, "summary": "只要谱上所需导数存在，就用式 (4.2-2)(4.2-3) 定义 f(A)", "kp": "M4.2.K7"},
+    {"type": "例", "no": "5", "book_page": 102, "summary": "A=[[5,-4,4],[1,0,5],[1,-1,6]]，证明 ln A 有定义并求出", "kp": "M4.2.K7"},
+    {"type": "注", "no": "", "book_page": 102, "summary": "页末是 4.3 节开头，不在本节展开", "kp": "", "skip_reason": "4.3 节开头，归入 M4.3"}
+  ],
+  "errata": [
+    {"book_page": 97, "text": "例 1 中 sin A 的结果矩阵 (1,1) 元印作 1。sin 0=0，且该矩阵为上三角，(1,1) 元应为 0。正确结果是 [[0, (1/2)sin 2],[0, -sin 2]]。"},
+    {"book_page": 97, "text": "式 (4.2-2) 右上角阶乘印作 (r-1)!，与式 (4.1-4) 的 (r_i-1)! 下标不一致。讲解按 (r_i-1)! 与 f^{(r_i-1)}(λ_i) 书写。"}
+  ],
   "exercises": [
-    {
-      "set": "习题 4.2",
-      "no": 1,
-      "kp": [
-        "M4.2.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 4.2",
-      "no": 2,
-      "kp": [
-        "M4.2.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 4.2",
-      "no": 3,
-      "kp": [
-        "M4.2.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 4.2",
-      "no": 4,
-      "kp": [
-        "M4.2.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 4.2",
-      "no": 5,
-      "kp": [
-        "M4.2.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 4.2",
-      "no": 6,
-      "kp": [
-        "M4.2.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    }
+    {"set": "习题 4.2", "no": "1", "kp": ["M4.2.K3", "M4.2.K4", "M4.2.K6"], "method": "三个矩阵分别用 Jordan 形或待定系数求 e^A 与 e^{At}"},
+    {"set": "习题 4.2", "no": "2", "kp": ["M4.2.K3", "M4.2.K1"], "method": "特征值 ±π 的 Jordan 块上套 sin、cos 及其导数"},
+    {"set": "习题 4.2", "no": "3", "kp": ["M4.2.K7"], "method": "谱为 {2,4}，ln 及其导数存在，再用式 (4.2-3) 计算"},
+    {"set": "习题 4.2", "no": "4", "kp": ["M4.2.K1", "M4.2.K2", "M4.2.K3"], "method": "Euler 公式、可交换时的指数乘法、三角行列式、范数估计"},
+    {"set": "习题 4.2", "no": "5", "kp": ["M4.2.K2"], "method": "转置或共轭转置与指数可交换，再用第 6 题的乘法公式"},
+    {"set": "习题 4.2", "no": "6", "kp": ["M4.2.K2"], "method": "AB=BA 时二项式定理成立，两指数级数可重排"}
   ],
   "verify_script": ".work/kp/verify/M4.2.py"
 }

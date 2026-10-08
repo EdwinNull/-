@@ -1,66 +1,48 @@
 {
   "id": "M4.1",
   "title": "矩阵序列与矩阵级数",
-  "read_book_pages": [
-    92,
-    95
+  "read_book_pages": [92, 95],
+  "read_pdf_pages": [103, 106],
+  "hires_pdf_pages": [103, 104, 105, 106],
+  "extra_pages_consulted": [
+    {"book_page": 90, "why": "定理 3.3-2 与式 (3.3-3)：定理 4.1-2 充分性所引的矩阵范数"},
+    {"book_page": 96, "why": "定义 4.2-1 用本节幂级数与式 (4.1-4) 定义 f(A)，核实后续应用"},
+    {"book_page": 183, "why": "第二部分 2.4 节例 1 用 ρ(B)<1 判定简单迭代对任意初值收敛，即定理 4.1-2 的应用"}
   ],
-  "read_pdf_pages": [
-    103,
-    106
+  "notation": [
+    {"symbol": "{A_k}", "latex": "\\{\\boldsymbol A_k\\}_{k=0}^{\\infty}", "meaning": "C^{m×n} 中的矩阵序列，A_k=[a_{ij}^{(k)}]", "book_page": 92},
+    {"symbol": "lim A_k", "latex": "\\lim_{k\\to\\infty}\\boldsymbol A_k=\\boldsymbol A", "meaning": "矩阵序列的极限，指每个元素收敛", "book_page": 92},
+    {"symbol": "S_l", "latex": "\\boldsymbol S_l=\\sum_{k=0}^{l}\\boldsymbol A_k", "meaning": "矩阵级数前 l+1 项的部分和", "book_page": 92},
+    {"symbol": "R", "latex": "R", "meaning": "数量幂级数的收敛半径", "book_page": 94},
+    {"symbol": "‖·‖_*", "latex": "\\|\\cdot\\|_*", "meaning": "定理 3.3-2 所构造的、满足 ‖A‖_*≤ρ(A)+ε 的矩阵范数", "book_page": 93}
   ],
-  "hires_pdf_pages": [],
-  "extra_pages_consulted": [],
-  "notation": [],
   "items": [
-    {
-      "type": "定理",
-      "no": "4.1-1",
-      "book_page": 92,
-      "summary": "本节教材定理，供相邻章节引用核对",
-      "kp": "M4.1.K1"
-    },
-    {
-      "type": "定理",
-      "no": "4.1-2",
-      "book_page": 92,
-      "summary": "本节教材定理，供相邻章节引用核对",
-      "kp": "M4.1.K1"
-    },
-    {
-      "type": "定理",
-      "no": "4.1-3",
-      "book_page": 92,
-      "summary": "本节教材定理，供相邻章节引用核对",
-      "kp": "M4.1.K1"
-    }
+    {"type": "注", "no": "", "book_page": 92, "summary": "章首引言：由方阵多项式过渡到用幂级数定义 f(A)，从而要讨论方阵幂级数的敛散性", "kp": "M4.1.K1"},
+    {"type": "定义", "no": "4.1-1", "book_page": 92, "summary": "矩阵序列收敛：每个元素 a_ij^{(k)}→a_ij，记 lim A_k=A；否则发散", "kp": "M4.1.K1"},
+    {"type": "性质", "no": "", "book_page": 92, "summary": "极限的数乘、加法、乘法、求逆四条运算法则（求逆要求 A 与每个 A_k 都可逆）", "kp": "M4.1.K1"},
+    {"type": "定义", "no": "4.1-2", "book_page": 92, "summary": "矩阵级数、部分和 S_l 与和 S", "kp": "M4.1.K2"},
+    {"type": "式", "no": "4.1-1", "book_page": 92, "summary": "无穷和 A_0+A_1+…+A_k+…", "kp": "M4.1.K2"},
+    {"type": "性质", "no": "", "book_page": 93, "summary": "教材称无穷级数的许多性质可推广到矩阵级数但未列出；收敛级数的通项必趋于 O", "kp": "M4.1.K2"},
+    {"type": "例", "no": "1", "book_page": 93, "summary": "A_k=[[1/2^k, π/(3·4^k)],[0, 1/(k(k+1))]]，序列趋于 O，级数和为 [[1, π/9],[0, 1]]", "kp": "M4.1.K2"},
+    {"type": "性质", "no": "", "book_page": 93, "summary": "A_k→A 的充要条件是 A_k−A→O，又等价于 ‖A_k−A‖→0", "kp": "M4.1.K3"},
+    {"type": "定理", "no": "4.1-1", "book_page": 93, "summary": "方阵满足 ‖A‖<1 时 lim A^k=O", "kp": "M4.1.K3"},
+    {"type": "式", "no": "4.1-2", "book_page": 93, "summary": "lim A^k=O（在 ‖A‖<1 的条件下）", "kp": "M4.1.K3"},
+    {"type": "正文例", "no": "", "book_page": 93, "summary": "Jordan 块 [[0.8, 1],[0, 0.8]] 满足 A^k→O，但 ‖A‖_∞=‖A‖_1=1.8>1", "kp": "M4.1.K3"},
+    {"type": "定理", "no": "4.1-2", "book_page": 93, "summary": "lim A^k=O 的充要条件是 ρ(A)<1", "kp": "M4.1.K4"},
+    {"type": "定理", "no": "4.1-3", "book_page": 94, "summary": "数量幂级数收敛半径为 R 时，ρ(A)<R 则方阵幂级数收敛，ρ(A)>R 则发散", "kp": "M4.1.K5"},
+    {"type": "式", "no": "4.1-3", "book_page": 94, "summary": "方阵幂级数 ∑ c_k A^k", "kp": "M4.1.K5"},
+    {"type": "式", "no": "4.1-4", "book_page": 94, "summary": "Jordan 块上部分和 S_l(J_i) 由 S_l 及其各阶导数在 λ_i 处的值组成", "kp": "M4.1.K5"},
+    {"type": "例", "no": "2", "book_page": 94, "summary": "∑ (1/k) [[1, 4],[-2, -3]]^k，R=1，ρ=√5>R，发散", "kp": "M4.1.K5"},
+    {"type": "例", "no": "3", "book_page": 95, "summary": "∑ (1/k^2) [[1, 4],[-1, -3]]^k，ρ=R=1，定理 4.1-3 不能判定；用 Jordan 形证明收敛", "kp": "M4.1.K5"}
   ],
-  "errata": [],
+  "errata": [
+    {"book_page": 94, "text": "定理 4.1-3 证明末句印作“不妨设为 |λ_i|>1”。前文已设该特征值满足 |λ_i|>R，此处的 1 应为 R。R≠1 时按印出的 “>1” 不能推出级数发散。"},
+    {"book_page": 94, "text": "定理 4.1-3 证明写“由于任一方阵都相似于一个 Jordan 矩阵，故不妨设 A 是一个典型的 Jordan 块”，略去了“相似不改变方阵幂级数的敛散性”这一步。讲解中补出，不作为印刷错误。"}
+  ],
   "exercises": [
-    {
-      "set": "习题 4.1",
-      "no": 1,
-      "kp": [
-        "M4.1.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 4.1",
-      "no": 2,
-      "kp": [
-        "M4.1.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 4.1",
-      "no": 3,
-      "kp": [
-        "M4.1.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    }
+    {"set": "习题 4.1", "no": "1", "kp": ["M4.1.K2", "M4.1.K4", "M4.1.K5"], "method": "ρ<1 时部分和恒等式加定理 4.1-2 得和 (I-A)^{-1}；ρ>1 用定理 4.1-3（R=1）；ρ=1 时通项不趋于 O"},
+    {"set": "习题 4.1", "no": "2", "kp": ["M4.1.K4", "M4.1.K5"], "method": "比值法得 R=1，定理 4.1-3 得收敛；裂项后用定理 3.3-2 证明 l A^l→O"},
+    {"set": "习题 4.1", "no": "3", "kp": ["M4.1.K4", "M4.1.K5"], "method": "B=[[1, 2],[8, 1]] 的特征值为 5、-3，ρ(B/a)=5/a，R=1；a>5 收敛，a≤5 发散"}
   ],
   "verify_script": ".work/kp/verify/M4.1.py"
 }

@@ -1,44 +1,54 @@
 {
   "id": "N4.3",
   "title": "无约束优化问题的下降迭代法",
-  "read_book_pages": [
-    221,
-    228
-  ],
-  "read_pdf_pages": [
-    232,
-    239
-  ],
+  "read_book_pages": [221, 228],
+  "read_pdf_pages": [232, 239],
   "hires_pdf_pages": [],
-  "extra_pages_consulted": [],
-  "notation": [],
-  "items": [],
+  "extra_pages_consulted": [229],
+  "notation": [
+    {"symbol": "g_k", "latex": "\\boldsymbol{g}_k", "meaning": "第 k 次迭代点的梯度，教材记 g_k=g(x^k)", "book_page": 223},
+    {"symbol": "H", "latex": "\\boldsymbol H", "meaning": "Hesse 矩阵，即 Hessian", "book_page": 222},
+    {"symbol": "B_k", "latex": "\\boldsymbol B_k", "meaning": "变尺度法中 Hesse 逆矩阵的近似", "book_page": 224},
+    {"symbol": "s_k", "latex": "\\boldsymbol s_k", "meaning": "x^{k+1}-x^k", "book_page": 225},
+    {"symbol": "y_k", "latex": "\\boldsymbol y_k", "meaning": "g_{k+1}-g_k", "book_page": 225}
+  ],
+  "items": [
+    {"type": "注", "no": "", "book_page": 221, "summary": "无约束优化与非线性方程零点、梯度联系；约束优化不在本章", "kp": "N4.3.K1"},
+    {"type": "注", "no": "", "book_page": 222, "summary": "下降迭代要求 F(x^{k+1})<F(x^k)，方向和步长是两项规则", "kp": "N4.3.K1"},
+    {"type": "式", "no": "4.3-1", "book_page": 222, "summary": "x^{k+1}=x^k+t_k p_k", "kp": "N4.3.K1"},
+    {"type": "式", "no": "4.3-2", "book_page": 222, "summary": "F(x^{k+1})=F(x^k+t_k p_k)<F(x^k)", "kp": "N4.3.K1"},
+    {"type": "式", "no": "4.3-3", "book_page": 222, "summary": "下降方向条件 g_k^T p_k<0", "kp": "N4.3.K1"},
+    {"type": "式", "no": "4.3-4", "book_page": 222, "summary": "沿射线的一维最优步长", "kp": "N4.3.K1"},
+    {"type": "式", "no": "4.3-5", "book_page": 223, "summary": "最速下降 p_k=-g_k 并作精确线搜索", "kp": "N4.3.K2"},
+    {"type": "式", "no": "4.3-6", "book_page": 223, "summary": "二次函数 F=1/2 x^T A x+b^T x+c，A 对称正定", "kp": "N4.3.K2"},
+    {"type": "式", "no": "4.3-7", "book_page": 223, "summary": "精确步长使下一梯度与当前梯度正交", "kp": "N4.3.K2"},
+    {"type": "式", "no": "4.3-8", "book_page": 223, "summary": "t_k=g_k^T g_k/(g_k^T A g_k)", "kp": "N4.3.K2"},
+    {"type": "式", "no": "4.3-9", "book_page": 223, "summary": "二次函数最速下降显式迭代", "kp": "N4.3.K2"},
+    {"type": "算法", "no": "", "book_page": 223, "summary": "最速下降：梯度范数终止，沿负梯度作精确一维搜索", "kp": "N4.3.K2"},
+    {"type": "例", "no": "1", "book_page": 224, "summary": "F=2x1²+2x1x2+5x2²，精确步长交替，函数值递减", "kp": "N4.3.K2"},
+    {"type": "表", "no": "4.3-1", "book_page": 224, "summary": "例 1 前四次最速下降迭代", "kp": "N4.3.K2"},
+    {"type": "式", "no": "4.3-10", "book_page": 224, "summary": "用逆 Hesse 作最速下降方向的局部 Newton 近似", "kp": "N4.3.K3"},
+    {"type": "式", "no": "4.3-11", "book_page": 224, "summary": "变尺度通式 x^{k+1}=x^k-t_k B_k g_k", "kp": "N4.3.K3"},
+    {"type": "式", "no": "4.3-12", "book_page": 224, "summary": "B_k=[H(x^k)]^{-1} 时为 Newton 下山法", "kp": "N4.3.K3"},
+    {"type": "式", "no": "4.3-13", "book_page": 225, "summary": "B_{k+1}=B_k+ΔB_k", "kp": "N4.3.K3"},
+    {"type": "式", "no": "4.3-14", "book_page": 225, "summary": "拟 Newton 条件 B_{k+1}(g_{k+1}-g_k)=x^{k+1}-x^k", "kp": "N4.3.K3"},
+    {"type": "式", "no": "4.3-15", "book_page": 225, "summary": "y_k=g_{k+1}-g_k，s_k=x^{k+1}-x^k", "kp": "N4.3.K3"},
+    {"type": "式", "no": "4.3-14'", "book_page": 225, "summary": "B_{k+1}y_k=s_k", "kp": "N4.3.K3"},
+    {"type": "式", "no": "4.3-16", "book_page": 225, "summary": "ΔB_k y_k=s_k-B_k y_k", "kp": "N4.3.K3"},
+    {"type": "式", "no": "4.3-17", "book_page": 225, "summary": "秩一更新的表示 ΔB=s v^T-B y w^T", "kp": "N4.3.K3"},
+    {"type": "式", "no": "4.3-18", "book_page": 225, "summary": "代入更新形式后的约束", "kp": "N4.3.K3"},
+    {"type": "式", "no": "4.3-19", "book_page": 225, "summary": "使更新矩阵对称的 v,w 参数式", "kp": "N4.3.K3"},
+    {"type": "式", "no": "4.3-20", "book_page": 226, "summary": "DFP 逆 Hesse 更新式", "kp": "N4.3.K4"},
+    {"type": "算法", "no": "", "book_page": 226, "summary": "DFP 算法含线搜索、重启与 B 更新", "kp": "N4.3.K4"},
+    {"type": "例", "no": "2", "book_page": 226, "summary": "DFP 优化二次函数，从 [-2,4] 两次到 [1,1] 附近", "kp": "N4.3.K4"},
+    {"type": "式", "no": "4.3-21", "book_page": 227, "summary": "BFGS 逆 Hesse 更新式", "kp": "N4.3.K5"},
+    {"type": "算法", "no": "", "book_page": 227, "summary": "BFGS 算法步骤与失效时回退", "kp": "N4.3.K5"},
+    {"type": "例", "no": "3", "book_page": 228, "summary": "BFGS 求 x1²+4x2²，两次到原点", "kp": "N4.3.K5"}
+  ],
   "errata": [],
   "exercises": [
-    {
-      "set": "习题 4.3",
-      "no": 3,
-      "kp": [
-        "N4.3.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 4.3",
-      "no": 6,
-      "kp": [
-        "N4.3.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 4.3",
-      "no": 9,
-      "kp": [
-        "N4.3.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    }
+    {"set": "习题 4", "no": "9", "kp": ["N4.3.K2"], "method": "在 [0,2] 计算梯度、Hesse、Newton 方向，按下降准则取步长，迭代二次；说明解为局部极小且目标全局无下界"},
+    {"set": "习题 4", "no": "10", "kp": ["N4.3.K4", "N4.3.K5"], "method": "B0=I，从 [0,2] 做两步精确线搜索的 DFP、BFGS；首步均到局部极小，第二步梯度为零"}
   ],
   "verify_script": ".work/kp/verify/N4.3.py"
 }

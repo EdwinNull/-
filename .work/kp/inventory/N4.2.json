@@ -1,44 +1,42 @@
 {
   "id": "N4.2",
   "title": "Newton 迭代法及其变形",
-  "read_book_pages": [
-    217,
-    221
-  ],
-  "read_pdf_pages": [
-    228,
-    232
-  ],
+  "read_book_pages": [217, 221],
+  "read_pdf_pages": [228, 232],
   "hires_pdf_pages": [],
   "extra_pages_consulted": [],
-  "notation": [],
-  "items": [],
-  "errata": [],
+  "notation": [
+    {"symbol": "Df", "latex": "D\\boldsymbol f", "meaning": "f 的 Jacobi 矩阵", "book_page": 217},
+    {"symbol": "ω_k", "latex": "\\omega_k", "meaning": "Newton 下山法的松弛因子", "book_page": 220}
+  ],
+  "items": [
+    {"type": "式", "no": "4.2-1", "book_page": 217, "summary": "在当前点把 f 线性化", "kp": "N4.2.K1"},
+    {"type": "式", "no": "4.2-2", "book_page": 217, "summary": "Newton 迭代 x^{k+1}=x^k-[Df]^{-1}f", "kp": "N4.2.K1"},
+    {"type": "式", "no": "4.2-3", "book_page": 217, "summary": "实用形式：解 Df Δx=-f，再加回去", "kp": "N4.2.K1"},
+    {"type": "式", "no": "4.2-4", "book_page": 218, "summary": "一元 Newton 公式", "kp": "N4.2.K1"},
+    {"type": "式", "no": "4.2-5", "book_page": 218, "summary": "迭代函数 φ=x-f/f'", "kp": "N4.2.K1"},
+    {"type": "例", "no": "1", "book_page": 218, "summary": "x e^x-1=0，三次后已有八位", "kp": "N4.2.K1"},
+    {"type": "表", "no": "4.2-1", "book_page": 218, "summary": "例 1 的四次迭代", "kp": "N4.2.K1"},
+    {"type": "式", "no": "4.2-6", "book_page": 218, "summary": "已知重数 m 时改为减去 m f/f'，恢复二阶", "kp": "N4.2.K2"},
+    {"type": "式", "no": "4.2-7", "book_page": 219, "summary": "对 μ=f/f' 做 Newton，不必知道重数", "kp": "N4.2.K2"},
+    {"type": "例", "no": "2", "book_page": 219, "summary": "√2 为二重根；普通 Newton 只一阶，两种修改都到 10^{-9}", "kp": "N4.2.K2"},
+    {"type": "表", "no": "4.2-2", "book_page": 219, "summary": "例 2 三种方法三次迭代", "kp": "N4.2.K2"},
+    {"type": "定理", "no": "4.2-1", "book_page": 219, "summary": "Df(x*) 可逆且 f 二次连续可微时局部二阶收敛", "kp": "N4.2.K3"},
+    {"type": "式", "no": "4.2-8", "book_page": 219, "summary": "证明中的 Taylor 余项估计", "kp": "N4.2.K3"},
+    {"type": "例", "no": "3", "book_page": 220, "summary": "方程组 Newton，四步后约 [1.4880, 0.75598]", "kp": "N4.2.K3"},
+    {"type": "表", "no": "4.2-3", "book_page": 220, "summary": "例 3 的迭代", "kp": "N4.2.K3"},
+    {"type": "式", "no": "4.2-9", "book_page": 220, "summary": "Newton 下山：右端乘 ω_k", "kp": "N4.2.K4"},
+    {"type": "式", "no": "4.2-10", "book_page": 220, "summary": "要求 ||f(x^{k+1})||<||f(x^k)||", "kp": "N4.2.K4"},
+    {"type": "例", "no": "4", "book_page": 221, "summary": "全步使无穷范数变大；ω=0.25 使范数下降", "kp": "N4.2.K4"},
+    {"type": "算法", "no": "", "book_page": 221, "summary": "以 ||f|| 或相对步长停机，失败则报 N_max", "kp": "N4.2.K5"}
+  ],
+  "errata": [
+    {"book_page": 221, "item": "例 4", "printed": "全步后 f2(x^{(1)})=-1.288234453", "corrected": "按 f2=x1 x2^3-x2-4，在 [4.68421053, 1.63157895] 处约为 14.714。无穷范数仍由 f1≈99.118 决定，大于 4.5，结论不变", "action": "讲解按可复核的 f2 书写并括注印出值"}
+  ],
   "exercises": [
-    {
-      "set": "习题 4.2",
-      "no": 2,
-      "kp": [
-        "N4.2.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 4.2",
-      "no": 5,
-      "kp": [
-        "N4.2.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 4.2",
-      "no": 8,
-      "kp": [
-        "N4.2.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    }
+    {"set": "习题 4", "no": "6", "kp": ["N4.2.K1"], "method": "Newton 用式 (4.2-4)；另一半 Steffensen 用第 4.1 节已有公式，都做到 10^{-4}"},
+    {"set": "习题 4", "no": "7", "kp": ["N4.2.K1"], "method": "复变量上用式 (4.2-4)，初值 2.5+4.4i"},
+    {"set": "习题 4", "no": "8", "kp": ["N4.2.K3"], "method": "由二阶展开证明相邻差之比的极限是 -f''/(2f')"}
   ],
   "verify_script": ".work/kp/verify/N4.2.py"
 }

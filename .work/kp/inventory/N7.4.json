@@ -1,36 +1,38 @@
 {
   "id": "N7.4",
   "title": "预估-校正公式",
-  "read_book_pages": [
-    314,
-    316
+  "read_book_pages": [314, 316],
+  "read_pdf_pages": [325, 327],
+  "hires_pdf_pages": [325, 326, 327],
+  "extra_pages_consulted": [
+    {"book_page": 310, "why": "式 (7.3-3)、(7.3-5) 的误差常数 251/720、-19/720"},
+    {"book_page": 312, "why": "Milne、Hamming 公式 (7.3-10)、(7.3-12) 及误差 (7.3-11)、(7.3-13)，核对 (7.4-7)"},
+    {"book_page": 314, "why": "Milne-Hamming 公式 (7.3-14)，核对 (7.4-7) 的校正式"}
   ],
-  "read_pdf_pages": [
-    325,
-    327
+  "notation": [
+    {"symbol": "p_{i+1}", "latex": "p_{i+1}", "meaning": "x_{i+1} 处的预估值", "book_page": 314},
+    {"symbol": "c_{i+1}", "latex": "c_{i+1}", "meaning": "x_{i+1} 处的校正值", "book_page": 314},
+    {"symbol": "m_{i+1}", "latex": "m_{i+1}", "meaning": "修正后的预估值，代入校正公式", "book_page": 315}
   ],
-  "hires_pdf_pages": [],
-  "extra_pages_consulted": [],
-  "notation": [],
-  "items": [],
-  "errata": [],
+  "items": [
+    {"type": "注", "no": "", "book_page": 314, "summary": "预估-校正格式的回顾：显式预估、同阶隐式校正；(7.3-14)、(7.3-6) 是最直接的格式", "kp": "N7.4.K1"},
+    {"type": "式", "no": "7.4-1", "book_page": 314, "summary": "y(x_{i+1})-p_{i+1}=251/720 h⁵y⁽⁵⁾+O(h⁶)", "kp": "N7.4.K2"},
+    {"type": "式", "no": "7.4-2", "book_page": 314, "summary": "y(x_{i+1})-c_{i+1}=-19/720 h⁵y⁽⁵⁾+O(h⁶)", "kp": "N7.4.K2"},
+    {"type": "式", "no": "7.4-3", "book_page": 315, "summary": "h⁵y⁽⁵⁾=720/270 (c-p)+O(h⁶)", "kp": "N7.4.K2"},
+    {"type": "式", "no": "7.4-4", "book_page": 315, "summary": "p+251/270(c-p) 的误差 O(h⁶)", "kp": "N7.4.K2"},
+    {"type": "式", "no": "7.4-5", "book_page": 315, "summary": "c-19/270(c-p) 的误差 O(h⁶)", "kp": "N7.4.K2"},
+    {"type": "式", "no": "7.4-6", "book_page": 315, "summary": "带误差补偿的 Adams 预估-校正公式（用 c_i-p_i 修正预估）", "kp": "N7.4.K3"},
+    {"type": "式", "no": "7.4-7", "book_page": 315, "summary": "带误差补偿的 Milne-Hamming 公式，系数 112/121、9/121；校正式印误", "kp": "N7.4.K4"},
+    {"type": "例", "no": "1", "book_page": 315, "summary": "用 (7.4-6) 解 y'=y-2x/y，h=0.1，表 7.4-1", "kp": "N7.4.K5"},
+    {"type": "表", "no": "7.4-1", "book_page": 316, "summary": "例 1 结果；第 4 行 p、m、c 与 y5 印误", "kp": "N7.4.K5"}
+  ],
+  "errata": [
+    {"book_page": 315, "text": "式 (7.4-7) 校正式印作 c_{i+1}=1/8(9y_i-y_{i-3})+3/8(f(x_{i+1},m_{i+1})+2f_i-f_{i-1})，与 Hamming 公式 (7.3-12)、(7.3-14) 对照，应为 1/8(9y_i-y_{i-2})+3/8 h(…)：y_{i-3} 应为 y_{i-2}，且漏了因子 h"},
+    {"book_page": 316, "text": "表 7.4-1 第 4 行印 p5=1.414039、m5=1.414123、c5=1.414204，y5=1.414192。按 (7.4-6) 与同表前几行 6 位复算为 1.414157、1.414241、1.414211，y5=1.414207（准确值 √2=1.414214）。错误始于 p5"}
+  ],
   "exercises": [
-    {
-      "set": "习题 7.4",
-      "no": 4,
-      "kp": [
-        "N7.4.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 7.4",
-      "no": 9,
-      "kp": [
-        "N7.4.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    }
+    {"set": "习题 7", "no": "8", "kp": ["N7.4.K2", "N7.4.K3"], "method": "Euler 两步预估误差 h³y'''/3，梯形校正 -h³y'''/12；c-p≈5/12 h³y'''，得预估补偿 4/5(c_i-p_i)、校正补偿 -1/5(c_{i+1}-p_{i+1})"},
+    {"set": "习题 7", "no": "6", "kp": ["N7.4.K1"], "method": "第 (2) 问用 (7.3-6)，即不带误差补偿的预估-校正（主属第 7.3 节）"}
   ],
   "verify_script": ".work/kp/verify/N7.4.py"
 }

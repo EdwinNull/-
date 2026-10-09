@@ -9,27 +9,186 @@
     327,
     331
   ],
-  "hires_pdf_pages": [],
-  "extra_pages_consulted": [],
-  "notation": [],
-  "items": [],
-  "errata": [],
-  "exercises": [
+  "hires_pdf_pages": [
+    327,
+    328,
+    329,
+    330,
+    331
+  ],
+  "extra_pages_consulted": [
     {
-      "set": "习题 7.5",
-      "no": 5,
-      "kp": [
-        "N7.5.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
+      "book_page": 299,
+      "why": "章首三类边界条件的定义"
     },
     {
-      "set": "习题 7.5",
-      "no": 10,
+      "book_page": 293,
+      "why": "三点数值微分公式 (6.6-8)、(6.6-9)，式 (7.5-2)、(7.5-9) 引用"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "q_i, f_i",
+      "latex": "q_i=q(x_i),\\ f_i=f(x_i)",
+      "meaning": "节点处的系数与右端",
+      "book_page": 317
+    },
+    {
+      "symbol": "M_4",
+      "latex": "M_4=\\max_{a\\leqslant x\\leqslant b}\\lvert y^{(4)}(x)\\rvert",
+      "meaning": "误差估计中的四阶导数界",
+      "book_page": 317
+    },
+    {
+      "symbol": "gamma, mu, alpha, beta",
+      "latex": "\\gamma,\\ \\mu,\\ \\alpha,\\ \\beta",
+      "meaning": "第三边值条件中的常数",
+      "book_page": 318
+    },
+    {
+      "symbol": "y_{-1}, y_{N+1}",
+      "latex": "y_{-1},\\ y_{N+1}",
+      "meaning": "虚设节点 x_{-1}=a-h、x_{N+1}=b+h 上的虚设值",
+      "book_page": 319
+    }
+  ],
+  "items": [
+    {
+      "type": "注",
+      "no": "",
+      "book_page": 316,
+      "summary": "差分法的基本思想与主要问题",
+      "kp": "N7.5.K1"
+    },
+    {
+      "type": "式",
+      "no": "7.5-1",
+      "book_page": 316,
+      "summary": "第一边值问题 -y''+qy=f，q≥0",
+      "kp": "N7.5.K2"
+    },
+    {
+      "type": "式",
+      "no": "7.5-2",
+      "book_page": 316,
+      "summary": "代入中心差商的准确关系，误差 O(h²)",
+      "kp": "N7.5.K2"
+    },
+    {
+      "type": "式",
+      "no": "7.5-3",
+      "book_page": 317,
+      "summary": "内节点差分方程",
+      "kp": "N7.5.K2"
+    },
+    {
+      "type": "式",
+      "no": "7.5-4",
+      "book_page": 317,
+      "summary": "差分方程组 -y_{i-1}+(2+h²q_i)y_i-y_{i+1}=h²f_i 与边界值",
+      "kp": "N7.5.K2"
+    },
+    {
+      "type": "式",
+      "no": "7.5-5",
+      "book_page": 317,
+      "summary": "矩阵形式",
+      "kp": "N7.5.K2"
+    },
+    {
+      "type": "式",
+      "no": "7.5-6",
+      "book_page": 317,
+      "summary": "误差估计 |y(x_i)-y_i|≤M4(b-a)²h²/96",
+      "kp": "N7.5.K3"
+    },
+    {
+      "type": "式",
+      "no": "7.5-5'",
+      "book_page": 317,
+      "summary": "对角占优三对角方程组，可用追赶法",
+      "kp": "N7.5.K2"
+    },
+    {
+      "type": "例",
+      "no": "1",
+      "book_page": 317,
+      "summary": "y''-y=x，y(0)=0，y(1)=1，h=0.1，表 7.5-1",
+      "kp": "N7.5.K4"
+    },
+    {
+      "type": "表",
+      "no": "7.5-1",
+      "book_page": 318,
+      "summary": "例 1 数值解与准确解",
+      "kp": "N7.5.K4"
+    },
+    {
+      "type": "式",
+      "no": "7.5-7",
+      "book_page": 318,
+      "summary": "第三边值问题 y''+py'+qy=f",
+      "kp": "N7.5.K5"
+    },
+    {
+      "type": "式",
+      "no": "7.5-8",
+      "book_page": 318,
+      "summary": "内节点差分方程；第一项分母印作 2h",
+      "kp": "N7.5.K5"
+    },
+    {
+      "type": "式",
+      "no": "7.5-9",
+      "book_page": 319,
+      "summary": "边界条件用三点公式离散",
+      "kp": "N7.5.K5"
+    },
+    {
+      "type": "式",
+      "no": "7.5-10",
+      "book_page": 319,
+      "summary": "虚设节点下的边界差分方程",
+      "kp": "N7.5.K6"
+    },
+    {
+      "type": "例",
+      "no": "2",
+      "book_page": 319,
+      "summary": "混合边值问题 h=0.2 虚设节点法；解的下标印误",
+      "kp": "N7.5.K6"
+    },
+    {
+      "type": "注",
+      "no": "",
+      "book_page": 320,
+      "summary": "非线性边值问题的差分方程组与迭代格式",
+      "kp": "N7.5.K7"
+    }
+  ],
+  "errata": [
+    {
+      "book_page": 318,
+      "text": "式 (7.5-8) 第一项印作 (y_{i+1}-2y_i+y_{i-1})/(2h)，应为 /h²（二阶中心差商，与同页上方 y''(x_i) 的近似一致）"
+    },
+    {
+      "book_page": 320,
+      "text": "例 2 的解印作 y0=1.0132, y1=1.0167, y2=1.0693, y4=1.2188, y5=1.5130。未知量是 y0,…,y4（y5=2 为边界值），按印出方程组求解，后两个应为 y3=1.2188、y4=1.5130"
+    },
+    {
+      "book_page": 317,
+      "text": "表 7.5-1 的准确解列称“舍入到 7 位”，复算后末位与准确值相差不超过 1×10⁻⁷（舍入、截断混用，0.07046741 印作 0.0704673），不影响比较"
+    }
+  ],
+  "exercises": [
+    {
+      "set": "习题 7",
+      "no": "9",
       "kp": [
-        "N7.5.K1"
+        "N7.5.K5",
+        "N7.5.K6"
       ],
-      "method": "按本节讲解流程处理并核对条件"
+      "method": "内节点中心差商；y(0)=1 直接给出 y0；右端 y'(1)+2y(1)=0 用 (7.5-9) 三点公式或 (7.5-10) 虚设节点；注意 q=-(1+x²)<0，系数矩阵不是对角占优"
     }
   ],
   "verify_script": ".work/kp/verify/N7.5.py"

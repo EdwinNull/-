@@ -1,36 +1,51 @@
 {
   "id": "N7.2",
   "title": "Runge-Kutta 方法",
-  "read_book_pages": [
-    304,
-    309
+  "read_book_pages": [304, 309],
+  "read_pdf_pages": [315, 320],
+  "hires_pdf_pages": [315, 316, 317, 318, 319, 320],
+  "extra_pages_consulted": [
+    {"book_page": 300, "why": "改进 Euler 公式 (7.1-5)，二阶 RK 取 a2=1 时与之相同"},
+    {"book_page": 302, "why": "定理 7.1-1 与一步显式形式 (7.1-6)，RK 公式的阶由局部截断误差判定"},
+    {"book_page": 279, "why": "式 (6.3-1)–(6.3-3) Richardson 外推，式 (7.2-9)–(7.2-13) 同理"},
+    {"book_page": 312, "why": "7.3 节例 1 用同一方程以 RK4 起步，表 7.3-1 的 y(0.1)、y(0.2) 用于核对本节例 2"}
   ],
-  "read_pdf_pages": [
-    315,
-    320
+  "notation": [
+    {"symbol": "K_xi", "latex": "K_\\xi=f(\\xi,y(\\xi))", "meaning": "[x_i,x_{i+1}] 上的平均斜率", "book_page": 305},
+    {"symbol": "K_j", "latex": "K_j", "meaning": "在 x_i+a_jh 处的斜率预测值", "book_page": 305},
+    {"symbol": "a_j,b_jk,c_j", "latex": "a_j,\\ b_{jk},\\ c_j", "meaning": "Runge-Kutta 公式的常数", "book_page": 305},
+    {"symbol": "y^(h)", "latex": "y_{i+1}^{(h)}", "meaning": "以步长 h 从 x_i 算到 x_{i+1} 的数值解", "book_page": 308},
+    {"symbol": "sigma", "latex": "\\sigma=\\frac{1}{2^p-1}\\lvert y_{i+1}^{(h/2)}-y_{i+1}^{(h)}\\rvert", "meaning": "变步长判别量", "book_page": 308}
   ],
-  "hires_pdf_pages": [],
-  "extra_pages_consulted": [],
-  "notation": [],
-  "items": [],
-  "errata": [],
+  "items": [
+    {"type": "式", "no": "7.2-1", "book_page": 305, "summary": "p 阶 Taylor 方法", "kp": "N7.2.K1"},
+    {"type": "式", "no": "7.2-2", "book_page": 305, "summary": "2 阶 Taylor 方法，局部误差 h³y'''/6", "kp": "N7.2.K1"},
+    {"type": "式", "no": "7.2-3", "book_page": 305, "summary": "积分中值定理与平均斜率 K_ξ", "kp": "N7.2.K2"},
+    {"type": "式", "no": "7.2-4", "book_page": 305, "summary": "一般显式 Runge-Kutta 公式", "kp": "N7.2.K3"},
+    {"type": "式", "no": "7.2-5", "book_page": 306, "summary": "二阶 Runge-Kutta 公式的一般形式", "kp": "N7.2.K4"},
+    {"type": "式", "no": "7.2-6", "book_page": 306, "summary": "c1+c2=1，c2a2=1/2，b21/a2=1", "kp": "N7.2.K4"},
+    {"type": "式", "no": "7.2-7", "book_page": 306, "summary": "中点公式", "kp": "N7.2.K4"},
+    {"type": "式", "no": "7.2-8", "book_page": 307, "summary": "标准 4 阶 Runge-Kutta 公式", "kp": "N7.2.K5"},
+    {"type": "例", "no": "1", "book_page": 307, "summary": "RK4 解 y'=x+y，h=0.2，表 7.2-1", "kp": "N7.2.K5"},
+    {"type": "表", "no": "7.2-1", "book_page": 307, "summary": "例 1 计算结果", "kp": "N7.2.K5"},
+    {"type": "式", "no": "7.2-9", "book_page": 308, "summary": "步长 h 的整体误差渐近式 Mh^p", "kp": "N7.2.K6"},
+    {"type": "式", "no": "7.2-10", "book_page": 308, "summary": "步长 h/2 的整体误差", "kp": "N7.2.K6"},
+    {"type": "式", "no": "7.2-11", "book_page": 308, "summary": "外推值误差 O(h^{p+1})", "kp": "N7.2.K6"},
+    {"type": "式", "no": "7.2-12", "book_page": 308, "summary": "y^{(h/2)} 误差 ≈ (y^{(h/2)}-y^{(h)})/(2^p-1)", "kp": "N7.2.K6"},
+    {"type": "式", "no": "7.2-13", "book_page": 308, "summary": "y^{(h)} 误差 ≈ 2^p(y^{(h/2)}-y^{(h)})/(2^p-1)", "kp": "N7.2.K6"},
+    {"type": "例", "no": "2", "book_page": 308, "summary": "变步长 RK4 解 y'=sh(0.5y+x)/1.5+0.5y；印出 y^{(0.05)}、y_2^{(0.1)} 末位有误", "kp": "N7.2.K7"},
+    {"type": "算法", "no": "", "book_page": 309, "summary": "标准四阶 Runge-Kutta 方法的算法 6 步", "kp": "N7.2.K8"}
+  ],
+  "errata": [
+    {"book_page": 309, "text": "例 2 中 K3 印作 0.034738，按书中代入值计算为 0.034737；y1^{(0.05)} 印作 0.003432，复算为 0.003431；y2^{(0.1)} 印作 0.014158，复算为 0.014156（与 7.3 节表 7.3-1 的 y(0.2)=0.014156 一致）。结论不变"},
+    {"book_page": 309, "text": "例 2 用 σ<(1/15)×0.5×10⁻⁵ 判定步长偏小，按同页准则 (3) 应比较 ε/2^p=ε/16；本例 σ 远小于二者，结论不受影响"},
+    {"book_page": 309, "text": "RK4 算法步 3 写“若 i>N 则停机”。步 2 先输出、步 6 再加 1，按此会多算并输出 x_{N+1}；应为“若 i=N（或 i≥N）则停机”"}
+  ],
   "exercises": [
-    {
-      "set": "习题 7.2",
-      "no": 2,
-      "kp": [
-        "N7.2.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 7.2",
-      "no": 7,
-      "kp": [
-        "N7.2.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    }
+    {"set": "习题 7", "no": "2", "kp": ["N7.2.K5"], "method": "f=√(x+y)，h=0.1 逐步 RK4，y(1)≈2.446306"},
+    {"set": "习题 7", "no": "3", "kp": ["N7.2.K3", "N7.2.K4"], "method": "K2、K3 二元 Taylor 展开到 h²，与 y(x_{i+1}) 展开比较到 h³ 项，局部误差 O(h⁴)，3 阶"},
+    {"set": "习题 7", "no": "7", "kp": ["N7.2.K5"], "method": "u=y，v=y'；向量 RK4，K_j 两个分量同步计算"},
+    {"set": "习题 7", "no": "10", "kp": ["N7.2.K6"], "method": "Euler p=1，逐次外推分母依次 1、3、7；用 (7.2-12) 型估计判断精度"}
   ],
   "verify_script": ".work/kp/verify/N7.2.py"
 }

@@ -1,36 +1,53 @@
 {
   "id": "N7.3",
   "title": "线性多步法",
-  "read_book_pages": [
-    309,
-    314
+  "read_book_pages": [309, 314],
+  "read_pdf_pages": [320, 325],
+  "hires_pdf_pages": [320, 321, 322, 323, 324, 325],
+  "extra_pages_consulted": [
+    {"book_page": 308, "why": "7.2 节例 2 与本节例 1 是同一方程，核对 y(0.1)、y(0.2)"},
+    {"book_page": 315, "why": "7.4 节式 (7.4-1)、(7.4-2) 引用本节 (7.3-3)、(7.3-5)"}
   ],
-  "read_pdf_pages": [
-    320,
-    325
+  "notation": [
+    {"symbol": "a_k, b_k", "latex": "a_k,\\ b_k", "meaning": "线性多步法 (7.3-1) 的系数，b_{-1} 对应 y'_{i+1}", "book_page": 310},
+    {"symbol": "y'_k", "latex": "y'_k=f(x_k,y_k)", "meaning": "数值解处的斜率", "book_page": 310},
+    {"symbol": "f_k", "latex": "f_k=f(x_k,y_k)", "meaning": "同上，Adams 公式中的写法", "book_page": 310},
+    {"symbol": "p, m", "latex": "p,\\ m", "meaning": "p+1 为步数，m 为要求的阶", "book_page": 311},
+    {"symbol": "Y_j, F_j", "latex": "Y_j,\\ F_j", "meaning": "Milne-Hamming 算法中保存的最近四个 y 值与三个 f 值", "book_page": 314}
   ],
-  "hires_pdf_pages": [],
-  "extra_pages_consulted": [],
-  "notation": [],
-  "items": [],
-  "errata": [],
+  "items": [
+    {"type": "式", "no": "7.3-1", "book_page": 310, "summary": "线性多步法一般形式；b_{-1}=0 显式，≠0 隐式", "kp": "N7.3.K1"},
+    {"type": "式", "no": "7.3-2", "book_page": 310, "summary": "4 阶 Adams 显式公式", "kp": "N7.3.K2"},
+    {"type": "式", "no": "7.3-3", "book_page": 310, "summary": "Adams 显式局部截断误差 251/720 h⁵y⁽⁵⁾", "kp": "N7.3.K2"},
+    {"type": "式", "no": "7.3-2'", "book_page": 310, "summary": "Adams 显式的 y' 写法", "kp": "N7.3.K2"},
+    {"type": "式", "no": "7.3-4", "book_page": 310, "summary": "4 阶 Adams 隐式公式", "kp": "N7.3.K3"},
+    {"type": "式", "no": "7.3-4'", "book_page": 310, "summary": "Adams 隐式的 y' 写法", "kp": "N7.3.K3"},
+    {"type": "式", "no": "7.3-5", "book_page": 310, "summary": "Adams 隐式局部截断误差 -19/720 h⁵y⁽⁵⁾", "kp": "N7.3.K3"},
+    {"type": "式", "no": "7.3-6", "book_page": 311, "summary": "Adams 显式预估、隐式校正的简单预估-校正公式", "kp": "N7.3.K4"},
+    {"type": "式", "no": "7.3-7", "book_page": 311, "summary": "代入 Taylor 级数后的整理式", "kp": "N7.3.K5"},
+    {"type": "式", "no": "7.3-8", "book_page": 311, "summary": "m 阶条件的线性方程组", "kp": "N7.3.K5"},
+    {"type": "式", "no": "7.3-9", "book_page": 311, "summary": "局部截断误差主项公式", "kp": "N7.3.K5"},
+    {"type": "式", "no": "7.3-10", "book_page": 312, "summary": "Milne 公式", "kp": "N7.3.K6"},
+    {"type": "式", "no": "7.3-11", "book_page": 312, "summary": "Milne 局部截断误差 14/45 h⁵y⁽⁵⁾", "kp": "N7.3.K6"},
+    {"type": "式", "no": "7.3-12", "book_page": 312, "summary": "Hamming 公式（隐式）", "kp": "N7.3.K6"},
+    {"type": "式", "no": "7.3-13", "book_page": 312, "summary": "Hamming 局部截断误差 -1/40 h⁵y⁽⁵⁾", "kp": "N7.3.K6"},
+    {"type": "例", "no": "1", "book_page": 312, "summary": "4 阶 Adams 显式解 y'=sh(0.5y+x)/1.5+0.5y，h=0.05，表 7.3-1", "kp": "N7.3.K7"},
+    {"type": "表", "no": "7.3-1", "book_page": 313, "summary": "例 1 结果；后几位与按所述方法的复算有 10⁻⁶ 量级差异", "kp": "N7.3.K7"},
+    {"type": "例", "no": "2", "book_page": 312, "summary": "预估-校正 (7.3-6) 解 y'=0.25y²+x²，h=0.1，表 7.3-2", "kp": "N7.3.K4"},
+    {"type": "表", "no": "7.3-2", "book_page": 313, "summary": "例 2 结果", "kp": "N7.3.K4"},
+    {"type": "例", "no": "3", "book_page": 313, "summary": "Euler 两步公式局部截断误差 h³y'''/3，2 阶", "kp": "N7.3.K5"},
+    {"type": "式", "no": "7.3-14", "book_page": 314, "summary": "Milne-Hamming 预估-校正公式", "kp": "N7.3.K8"},
+    {"type": "算法", "no": "", "book_page": 314, "summary": "Milne-Hamming 公式的算法 7 步", "kp": "N7.3.K8"}
+  ],
+  "errata": [
+    {"book_page": 313, "text": "表 7.3-1：按例中所述（RK4 起步、式 (7.3-2) 推进、6 位舍入）复算，y5…y10 为 0.022484, 0.032933, 0.045624, 0.060694, 0.078294, 0.098593，印出值依次大 1–7×10⁻⁶（印出值反而更接近高精度解 0.0985969）；f1 印 0.03404，复算 0.03405。无法复现印出值，结论不受影响"},
+    {"book_page": 314, "text": "Milne-Hamming 算法步 2 写“若 k>N 则停机”，k 从 3 起、每轮算 y_{k+1}，按此会算出 y_{N+1}；应为“若 k≥N 则停机”"}
+  ],
   "exercises": [
-    {
-      "set": "习题 7.3",
-      "no": 3,
-      "kp": [
-        "N7.3.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 7.3",
-      "no": 8,
-      "kp": [
-        "N7.3.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    }
+    {"set": "习题 7", "no": "4", "kp": ["N7.3.K5"], "method": "按式 (7.3-8) 列条件；题面 y'_i+y'_{i-2} 下条件矛盾（README 勘误），按 y'_{i+1}+y'_{i-2} 得 a=27/13、b=6/13"},
+    {"set": "习题 7", "no": "5", "kp": ["N7.3.K5"], "method": "p=2、b_{-1}=0、m=3，4 个方程 6 个未知数，两参数族；a1=a2=0 得 3 阶 Adams 显式"},
+    {"set": "习题 7", "no": "6", "kp": ["N7.3.K2", "N7.3.K4"], "method": "已给 y1,y2,y3（自带约 3×10⁻⁴ 误差），用 (7.3-2) 与 (7.3-6) 推进到 x=2"},
+    {"set": "习题 7", "no": "8", "kp": ["N7.3.K5"], "method": "Euler 两步公式局部误差 h³y'''/3（例 3），梯形公式 -h³y'''/12（主属第 7.4 节）"}
   ],
   "verify_script": ".work/kp/verify/N7.3.py"
 }

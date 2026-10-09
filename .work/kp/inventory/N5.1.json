@@ -11,42 +11,60 @@
   ],
   "hires_pdf_pages": [],
   "extra_pages_consulted": [],
-  "notation": [],
-  "items": [],
+  "notation": [
+    {"symbol": "x_i", "latex": "x_i", "meaning": "第 i 个互异插值节点", "book_page": 231},
+    {"symbol": "l_i", "latex": "l_i(x)", "meaning": "Lagrange 基函数，满足 l_i(x_j)=delta_ij", "book_page": 232},
+    {"symbol": "omega", "latex": "\\omega_{n+1}(x)", "meaning": "节点乘积多项式 product (x-x_i)", "book_page": 233},
+    {"symbol": "dd", "latex": "f[x_0,\\ldots,x_k]", "meaning": "k 阶差商", "book_page": 234},
+    {"symbol": "R_n", "latex": "R_n(x)", "meaning": "次数不超过 n 的插值余项 f(x)-p_n(x)", "book_page": 236},
+    {"symbol": "m_i", "latex": "m_i", "meaning": "Hermite 插值在节点 x_i 的重复重数", "book_page": 239}
+  ],
+  "items": [
+    {"type": "注", "no": "", "book_page": 230, "summary": "函数逼近、一致逼近、平方逼近、插值和数据拟合的区别", "kp": "N5.1.K1"},
+    {"type": "式", "no": "5.1-1", "book_page": 231, "summary": "插值条件 p_n(x_i)=f_i", "kp": "N5.1.K2"},
+    {"type": "定理", "no": "5.1-1", "book_page": 231, "summary": "互异节点存在唯一的次数不超过 n 的插值多项式", "kp": "N5.1.K2"},
+    {"type": "式", "no": "5.1-2", "book_page": 231, "summary": "幂基表示 p_n(x)=a_0+...+a_n x^n", "kp": "N5.1.K2"},
+    {"type": "式", "no": "5.1-3", "book_page": 231, "summary": "Vandermonde 线性方程组", "kp": "N5.1.K2"},
+    {"type": "式", "no": "5.1-4", "book_page": 232, "summary": "Lagrange 基函数在节点上的 Kronecker 值", "kp": "N5.1.K3"},
+    {"type": "式", "no": "5.1-5", "book_page": 232, "summary": "Lagrange 基函数乘积公式", "kp": "N5.1.K3"},
+    {"type": "式", "no": "5.1-6", "book_page": 233, "summary": "节点乘积多项式 omega_{n+1}", "kp": "N5.1.K3"},
+    {"type": "式", "no": "5.1-7", "book_page": 233, "summary": "用 omega 表示 Lagrange 基函数", "kp": "N5.1.K3"},
+    {"type": "式", "no": "5.1-8", "book_page": 233, "summary": "Lagrange 插值多项式线性组合", "kp": "N5.1.K3"},
+    {"type": "例", "no": "1", "book_page": 232, "summary": "四节点幂基插值多项式", "kp": "N5.1.K2"},
+    {"type": "例", "no": "2", "book_page": 233, "summary": "线性与二次 Lagrange 插值比较", "kp": "N5.1.K3"},
+    {"type": "式", "no": "5.1-9", "book_page": 234, "summary": "Newton 基函数递推", "kp": "N5.1.K4"},
+    {"type": "式", "no": "5.1-10", "book_page": 234, "summary": "Newton 插值基函数表示", "kp": "N5.1.K4"},
+    {"type": "式", "no": "5.1-11", "book_page": 234, "summary": "Newton 差商插值多项式", "kp": "N5.1.K4"},
+    {"type": "表", "no": "5.1-1", "book_page": 235, "summary": "差商表及 Newton 系数位置", "kp": "N5.1.K4"},
+    {"type": "例", "no": "3", "book_page": 235, "summary": "数据差商表和 Newton 插值更新", "kp": "N5.1.K4"},
+    {"type": "表", "no": "5.1-2", "book_page": 235, "summary": "例 3 差商表", "kp": "N5.1.K4"},
+    {"type": "定理", "no": "5.1-2", "book_page": 236, "summary": "插值余项 f^(n+1)(xi) omega/(n+1)!", "kp": "N5.1.K5"},
+    {"type": "式", "no": "5.1-12", "book_page": 236, "summary": "插值余项表达式", "kp": "N5.1.K5"},
+    {"type": "式", "no": "5.1-13", "book_page": 236, "summary": "余项写成 K(x) omega", "kp": "N5.1.K5"},
+    {"type": "式", "no": "5.1-14", "book_page": 236, "summary": "点态余项绝对值上界", "kp": "N5.1.K5"},
+    {"type": "式", "no": "5.1-15", "book_page": 236, "summary": "区间最大余项上界", "kp": "N5.1.K5"},
+    {"type": "式", "no": "5.1-16", "book_page": 238, "summary": "后验误差估计和 Richardson 型修正", "kp": "N5.1.K5"},
+    {"type": "式", "no": "5.1-17", "book_page": 238, "summary": "Newton 余项的差商表示", "kp": "N5.1.K5"},
+    {"type": "式", "no": "5.1-18", "book_page": 238, "summary": "重复节点差商与高阶导数", "kp": "N5.1.K5"},
+    {"type": "式", "no": "5.1-19", "book_page": 238, "summary": "重节点差商公式 f^(k)(x)/k!", "kp": "N5.1.K5"},
+    {"type": "例", "no": "4", "book_page": 237, "summary": "指数函数线性插值误差和节点数", "kp": "N5.1.K5"},
+    {"type": "例", "no": "5", "book_page": 239, "summary": "含函数值和导数条件的 Hermite 插值", "kp": "N5.1.K6"},
+    {"type": "表", "no": "5.1-3", "book_page": 239, "summary": "例 5 重节点差商表", "kp": "N5.1.K6"},
+    {"type": "式", "no": "5.1-20", "book_page": 239, "summary": "Hermite 插值条件", "kp": "N5.1.K6"},
+    {"type": "式", "no": "5.1-21", "book_page": 239, "summary": "Hermite 插值余项", "kp": "N5.1.K6"},
+    {"type": "例", "no": "6", "book_page": 239, "summary": "对数表线性插值中的截断和舍入误差", "kp": "N5.1.K7"}
+  ],
   "errata": [],
   "exercises": [
-    {
-      "set": "习题 5.1",
-      "no": 1,
-      "kp": [
-        "N5.1.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 5.1",
-      "no": 6,
-      "kp": [
-        "N5.1.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 5.1",
-      "no": 11,
-      "kp": [
-        "N5.1.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 5.1",
-      "no": 16,
-      "kp": [
-        "N5.1.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    }
+    {"set": "习题 5", "no": "1", "kp": ["N5.1.K2", "N5.1.K3"], "method": "互异节点唯一插值；用 Lagrange 基函数写出次数不超过二的多项式"},
+    {"set": "习题 5", "no": "2", "kp": ["N5.1.K3", "N5.1.K4"], "method": "对照 Lagrange 显式基函数与 Newton 差商表，同一多项式在指定点取值"},
+    {"set": "习题 5", "no": "3", "kp": ["N5.1.K4", "N5.1.K5"], "method": "用线性和二次插值近似指数值，并由插值余项估计截断误差"},
+    {"set": "习题 5", "no": "4", "kp": ["N5.1.K3"], "method": "反插值：将节点纵坐标作为新自变量，以对应横坐标插值并在目标函数值处求根近似"},
+    {"set": "习题 5", "no": "5", "kp": ["N5.1.K3"], "method": "用数据构造反函数的二次插值，在 y=0.45 求根近似"},
+    {"set": "习题 5", "no": "6", "kp": ["N5.1.K3"], "method": "由 Lagrange 插值重现次数不超过 n 的多项式，再用二项式展开证明恒等式"},
+    {"set": "习题 5", "no": "7", "kp": ["N5.1.K4", "N5.1.K6"], "method": "重节点差商构造 Hermite 插值多项式，并用 Hermite 余项近似 f(0.15)"},
+    {"set": "习题 5", "no": "8", "kp": ["N5.1.K5", "N5.1.K7"], "method": "用线性插值余项限制对数表步长与截断误差，并估计表值舍入误差的传播"},
+    {"set": "习题 5", "no": "9", "kp": ["N5.1.K3", "N5.1.K7"], "method": "在等距三节点二次 Lagrange 公式中估计节点数据舍入误差影响"}
   ],
   "verify_script": ".work/kp/verify/N5.1.py"
 }

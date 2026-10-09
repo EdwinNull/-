@@ -1,44 +1,68 @@
 {
   "id": "N5.4",
   "title": "函数的最佳平方逼近",
-  "read_book_pages": [
-    251,
-    262
-  ],
-  "read_pdf_pages": [
-    262,
-    273
-  ],
+  "read_book_pages": [251, 262],
+  "read_pdf_pages": [262, 273],
   "hires_pdf_pages": [],
-  "extra_pages_consulted": [],
-  "notation": [],
-  "items": [],
-  "errata": [],
-  "exercises": [
+  "extra_pages_consulted": [282, 283],
+  "notation": [
+    {"symbol": "rho", "latex": "\\rho(x)", "meaning": "权函数，非负", "book_page": 252},
+    {"symbol": "inner", "latex": "\\langle f,g\\rangle", "meaning": "带权积分内积", "book_page": 252},
+    {"symbol": "Gram", "latex": "G(\\varphi_0,\\ldots,\\varphi_n)", "meaning": "基函数的 Gram 矩阵", "book_page": 252},
+    {"symbol": "H", "latex": "H_{n+1}", "meaning": "[0,1] 上幂基的 Hilbert 矩阵", "book_page": 254},
+    {"symbol": "T", "latex": "T_n(x)", "meaning": "Chebyshev 第一类多项式", "book_page": 260}
+  ],
+  "items": [
+    {"type": "式", "no": "5.4-1", "book_page": 252, "summary": "最佳平方逼近的积分泛函", "kp": "N5.4.K1"},
+    {"type": "式", "no": "5.4-2", "book_page": 252, "summary": "法方程的积分形式", "kp": "N5.4.K1"},
+    {"type": "式", "no": "5.4-2'", "book_page": 252, "summary": "法方程的内积形式", "kp": "N5.4.K1"},
+    {"type": "式", "no": "5.4-3", "book_page": 252, "summary": "Gram 矩阵正规方程", "kp": "N5.4.K1"},
+    {"type": "式", "no": "5.4-4", "book_page": 252, "summary": "最佳逼近误差的 2-范数", "kp": "N5.4.K1"},
+    {"type": "例", "no": "1", "book_page": 252, "summary": "e^x 在 [0,1] 上的二次最佳平方逼近", "kp": "N5.4.K2"},
+    {"type": "例", "no": "2", "book_page": 253, "summary": "sin(pi x) 的二次最佳平方逼近", "kp": "N5.4.K2"},
+    {"type": "图", "no": "5.4-1", "book_page": 254, "summary": "sin(pi x) 与二次逼近的图形", "kp": "N5.4.K2"},
+    {"type": "式", "no": "5.4-5", "book_page": 254, "summary": "正交基底下的系数公式", "kp": "N5.4.K3"},
+    {"type": "式", "no": "5.4-6", "book_page": 254, "summary": "正交基底下的误差范数", "kp": "N5.4.K3"},
+    {"type": "式", "no": "5.4-7", "book_page": 254, "summary": "首一正交多项式的三项递推", "kp": "N5.4.K3"},
+    {"type": "式", "no": "5.4-8", "book_page": 255, "summary": "递推系数 alpha、beta", "kp": "N5.4.K3"},
+    {"type": "式", "no": "5.4-9", "book_page": 255, "summary": "phi_{i+1}-x phi_i 的低次展开", "kp": "N5.4.K3"},
+    {"type": "式", "no": "5.4-10", "book_page": 255, "summary": "递推式乘 phi_i 后的积分", "kp": "N5.4.K3"},
+    {"type": "式", "no": "5.4-11", "book_page": 256, "summary": "递推式乘 phi_{i-1} 后的积分", "kp": "N5.4.K3"},
+    {"type": "式", "no": "5.4-12", "book_page": 256, "summary": "beta 的内积比", "kp": "N5.4.K3"},
+    {"type": "式", "no": "5.4-13", "book_page": 257, "summary": "与低次多项式正交的充要条件", "kp": "N5.4.K3"},
+    {"type": "定理", "no": "5.4-1", "book_page": 256, "summary": "次数递增的多项式系正交的充要条件", "kp": "N5.4.K3"},
+    {"type": "例", "no": "3", "book_page": 257, "summary": "权 1+x^2 的首一正交多项式", "kp": "N5.4.K4"},
+    {"type": "例", "no": "4", "book_page": 258, "summary": "Schmidt 正交化得到权 x 的正交多项式", "kp": "N5.4.K4"},
+    {"type": "表", "no": "5.4-1", "book_page": 258, "summary": "经典正交多项式的区间、权和记号", "kp": "N5.4.K4"},
+    {"type": "式", "no": "5.4-14", "book_page": 259, "summary": "Legendre 正交关系", "kp": "N5.4.K5"},
+    {"type": "式", "no": "5.4-15", "book_page": 259, "summary": "Legendre 证明中的分部积分", "kp": "N5.4.K5"},
+    {"type": "式", "no": "5.4-16", "book_page": 259, "summary": "Laguerre 正交关系", "kp": "N5.4.K5"},
+    {"type": "式", "no": "5.4-17", "book_page": 260, "summary": "Hermite 正交关系", "kp": "N5.4.K5"},
+    {"type": "式", "no": "5.4-18", "book_page": 260, "summary": "Chebyshev 第一类正交关系", "kp": "N5.4.K5"},
+    {"type": "式", "no": "5.4-19", "book_page": 260, "summary": "Chebyshev 第二类正交关系", "kp": "N5.4.K5"},
+    {"type": "例", "no": "5", "book_page": 261, "summary": "用 Legendre 多项式重算 e^x 的二次逼近", "kp": "N5.4.K6"},
+    {"type": "例", "no": "6", "book_page": 262, "summary": "e^x 的 Chebyshev 展开", "kp": "N5.4.K6"},
+    {"type": "表", "no": "5.4-2", "book_page": 262, "summary": "e^x 的 Chebyshev 系数", "kp": "N5.4.K6"}
+  ],
+  "errata": [
     {
-      "set": "习题 5.4",
-      "no": 4,
-      "kp": [
-        "N5.4.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
+      "book_page": 253,
+      "printed": "例 1 误差 2-范数约 0.6168e-2",
+      "corrected": "约 0.005276",
+      "note": "印出的平方根来自 0.5(e^2-1)-3.19449。精确内积和是 3.194500214，与 0.5(e^2-1) 的差开方后约为 0.005276。系数 1.01299、0.85112、0.83918 与精确解一致"
     },
     {
-      "set": "习题 5.4",
-      "no": 9,
-      "kp": [
-        "N5.4.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 5.4",
-      "no": 14,
-      "kp": [
-        "N5.4.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
+      "book_page": 254,
+      "printed": "Cond_inf(H_6)=2.9e6",
+      "corrected": "29070279",
+      "note": "Cond_inf(H_3)=748 与精确计算一致。H_6 的无穷范数条件数是 29070279，印出值少一个数量级"
     }
+  ],
+  "exercises": [
+    {"set": "习题 5", "no": "11", "kp": ["N5.4.K3"], "method": "由正交关系推出线性组合为零时每个系数为零"},
+    {"set": "习题 5", "no": "12", "kp": ["N5.4.K5"], "method": "用 T_n=cos(n arccos x) 证明复合与倍角恒等式"},
+    {"set": "习题 5", "no": "13", "kp": ["N5.4.K1", "N5.4.K2"], "method": "在 [0,1] 上对 x e^x 组装二次幂基正规方程，并用式 (5.4-4) 算 2-范数"},
+    {"set": "习题 5", "no": "14", "kp": ["N5.4.K5", "N5.4.K6"], "method": "把 sin(pi x/2) 按 Legendre 系展开到三次"}
   ],
   "verify_script": ".work/kp/verify/N5.4.py"
 }

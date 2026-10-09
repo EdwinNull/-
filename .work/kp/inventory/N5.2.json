@@ -1,44 +1,48 @@
 {
   "id": "N5.2",
   "title": "样条插值",
-  "read_book_pages": [
-    241,
-    247
-  ],
-  "read_pdf_pages": [
-    252,
-    258
-  ],
+  "read_book_pages": [241, 247],
+  "read_pdf_pages": [252, 258],
   "hires_pdf_pages": [],
-  "extra_pages_consulted": [],
-  "notation": [],
-  "items": [],
-  "errata": [],
-  "exercises": [
+  "extra_pages_consulted": [247],
+  "notation": [
+    {"symbol": "S", "latex": "S(x)", "meaning": "三次样条函数", "book_page": 242},
+    {"symbol": "h_i", "latex": "h_i", "meaning": "第 i 个小区间步长 x_{i+1}-x_i", "book_page": 242},
+    {"symbol": "M_i", "latex": "M_i", "meaning": "样条在节点 x_i 的二阶导数 S''(x_i)", "book_page": 242},
+    {"symbol": "lambda_mu", "latex": "\\lambda_i,\\mu_i", "meaning": "步长权，lambda_i=h_i/(h_{i-1}+h_i)，mu_i=1-lambda_i", "book_page": 243},
+    {"symbol": "m_end", "latex": "m_0,m_n", "meaning": "给定的端点一阶导数 S'(x_0), S'(x_n)", "book_page": 243},
+    {"symbol": "beta", "latex": "\\beta", "meaning": "分划比 max h/h_i", "book_page": 246}
+  ],
+  "items": [
+    {"type": "图", "no": "5.2-1", "book_page": 241, "summary": "Runge 例中 f 与 p_10 的图形", "kp": "N5.2.K1"},
+    {"type": "注", "no": "", "book_page": 241, "summary": "1/(1+x^2) 等距高次插值的 Runge 现象及 n=10 的数值", "kp": "N5.2.K1"},
+    {"type": "式", "no": "5.2-1", "book_page": 242, "summary": "小区间上二阶导数的线性表示", "kp": "N5.2.K2"},
+    {"type": "式", "no": "5.2-2", "book_page": 242, "summary": "由端点函数值和二阶导数确定的分段三次式", "kp": "N5.2.K2"},
+    {"type": "式", "no": "5.2-3", "book_page": 242, "summary": "小区间内部的一阶导数", "kp": "N5.2.K2"},
+    {"type": "注", "no": "脚注", "book_page": 242, "summary": "二阶导数左右极限相等不能代替一阶导数连续", "kp": "N5.2.K2"},
+    {"type": "式", "no": "5.2-4", "book_page": 243, "summary": "一阶导数连续得到的三弯矩型方程", "kp": "N5.2.K3"},
+    {"type": "式", "no": "5.2-5", "book_page": 243, "summary": "用 lambda、mu 和二阶差商表示的内部方程", "kp": "N5.2.K3"},
+    {"type": "式", "no": "5.2-6", "book_page": 243, "summary": "已知端点二阶导数时的三对角方程组", "kp": "N5.2.K4"},
+    {"type": "式", "no": "5.2-7", "book_page": 244, "summary": "已知端点一阶导数时的两个端点方程", "kp": "N5.2.K4"},
+    {"type": "式", "no": "5.2-8", "book_page": 244, "summary": "已知端点斜率时关于全部 M_i 的三对角方程组", "kp": "N5.2.K4"},
+    {"type": "式", "no": "5.2-9", "book_page": 244, "summary": "周期样条的循环方程组", "kp": "N5.2.K4"},
+    {"type": "表", "no": "5.2-1", "book_page": 245, "summary": "例 1 的差商表", "kp": "N5.2.K5"},
+    {"type": "例", "no": "1", "book_page": 245, "summary": "自然边界样条及 S(3)=4.25", "kp": "N5.2.K5"},
+    {"type": "表", "no": "5.2-2", "book_page": 246, "summary": "例 2 的差商表", "kp": "N5.2.K5"},
+    {"type": "例", "no": "2", "book_page": 245, "summary": "给定端点斜率的等距三次样条", "kp": "N5.2.K5"},
+    {"type": "定理", "no": "5.2-1", "book_page": 246, "summary": "第一、二种边界下样条及其导数的误差阶", "kp": "N5.2.K5"},
+    {"type": "式", "no": "5.2-10", "book_page": 246, "summary": "误差估计 O(h^{4-k})", "kp": "N5.2.K5"}
+  ],
+  "errata": [
     {
-      "set": "习题 5.2",
-      "no": 2,
-      "kp": [
-        "N5.2.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 5.2",
-      "no": 7,
-      "kp": [
-        "N5.2.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 5.2",
-      "no": 12,
-      "kp": [
-        "N5.2.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
+      "book_page": 246,
+      "printed": "Introduction to nurmerical crnalysis",
+      "corrected": "Introduction to Numerical Analysis",
+      "note": "定理 5.2-1 的参考文献书名排印错误；作者与年份按 J. Stoer, R. Bulirsch, Springer-Verlag, 1980 理解"
     }
+  ],
+  "exercises": [
+    {"set": "习题 5", "no": "10", "kp": ["N5.2.K2", "N5.2.K3", "N5.2.K4", "N5.2.K5"], "method": "第(1)问按已知端点二阶导数移项，第(2)问按已知端点斜率组装式 (5.2-8)；两组都回代节点值与端点条件"}
   ],
   "verify_script": ".work/kp/verify/N5.2.py"
 }

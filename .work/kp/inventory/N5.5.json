@@ -1,44 +1,30 @@
 {
   "id": "N5.5",
   "title": "二元插值",
-  "read_book_pages": [
-    262,
-    264
-  ],
-  "read_pdf_pages": [
-    273,
-    275
-  ],
+  "read_book_pages": [262, 264],
+  "read_pdf_pages": [273, 275],
   "hires_pdf_pages": [],
-  "extra_pages_consulted": [],
-  "notation": [],
-  "items": [],
-  "errata": [],
-  "exercises": [
+  "extra_pages_consulted": [264],
+  "notation": [
+    {"symbol": "h", "latex": "h", "meaning": "矩形剖分的网格尺寸，两个方向最大步长的较大者", "book_page": 263},
+    {"symbol": "M_i", "latex": "M_i(x)", "meaning": "x 方向 Lagrange 基", "book_page": 263},
+    {"symbol": "N_j", "latex": "N_j(y)", "meaning": "y 方向 Lagrange 基", "book_page": 263},
+    {"symbol": "L", "latex": "L(x,y)", "meaning": "二元 Lagrange 插值多项式", "book_page": 263}
+  ],
+  "items": [
+    {"type": "式", "no": "5.5-1", "book_page": 263, "summary": "矩形剖分的网格尺寸", "kp": "N5.5.K1"},
+    {"type": "式", "no": "5.5-2", "book_page": 263, "summary": "乘积型二元 Lagrange 公式", "kp": "N5.5.K2"},
+    {"type": "例", "no": "1", "book_page": 263, "summary": "用小矩形网格近似 f(1.6,0.33)", "kp": "N5.5.K2"},
+    {"type": "图", "no": "5.5-1", "book_page": 264, "summary": "三角形单元及其三个顶点", "kp": "N5.5.K3"}
+  ],
+  "errata": [
     {
-      "set": "习题 5.5",
-      "no": 5,
-      "kp": [
-        "N5.5.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 5.5",
-      "no": 10,
-      "kp": [
-        "N5.5.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 5.5",
-      "no": 15,
-      "kp": [
-        "N5.5.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
+      "book_page": 263,
+      "printed": "(1.5,0.3) 印作 1.624；(2.5,0.3) 印作 3.380",
+      "corrected": "1.524 与 3.800",
+      "note": "按 f=e^x sin y + y - 0.1 三位舍入。用印出的 1.624 作例 1 结点时 L(1.6,0.33)=1.9149，不是书上的 1.841；用 1.524 得到 1.84065，与 1.841 一致"
     }
   ],
+  "exercises": [],
   "verify_script": ".work/kp/verify/N5.5.py"
 }

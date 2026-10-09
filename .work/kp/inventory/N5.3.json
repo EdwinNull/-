@@ -1,44 +1,50 @@
 {
   "id": "N5.3",
   "title": "数据的最小二乘拟合",
-  "read_book_pages": [
-    247,
-    251
-  ],
-  "read_pdf_pages": [
-    258,
-    262
-  ],
+  "read_book_pages": [247, 251],
+  "read_pdf_pages": [258, 262],
   "hires_pdf_pages": [],
-  "extra_pages_consulted": [],
-  "notation": [],
-  "items": [],
-  "errata": [],
-  "exercises": [
+  "extra_pages_consulted": [251],
+  "notation": [
+    {"symbol": "Phi", "latex": "\\Phi", "meaning": "拟合函数类 Span(phi_0,...,phi_n)", "book_page": 247},
+    {"symbol": "delta", "latex": "\\delta^2", "meaning": "节点残差平方和", "book_page": 247},
+    {"symbol": "G", "latex": "\\boldsymbol G", "meaning": "基函数在数据点上的采样矩阵", "book_page": 247},
+    {"symbol": "W", "latex": "\\boldsymbol W", "meaning": "权的对角矩阵", "book_page": 247},
+    {"symbol": "R", "latex": "\\boldsymbol R", "meaning": "G 的 QR 分解中的上三角因子", "book_page": 251}
+  ],
+  "items": [
+    {"type": "式", "no": "5.3-1", "book_page": 247, "summary": "无权残差平方和", "kp": "N5.3.K1"},
+    {"type": "式", "no": "5.3-1'", "book_page": 247, "summary": "加权残差平方和", "kp": "N5.3.K1"},
+    {"type": "式", "no": "5.3-2", "book_page": 247, "summary": "平方和的矩阵写法", "kp": "N5.3.K2"},
+    {"type": "式", "no": "5.3-2'", "book_page": 247, "summary": "加权平方和的矩阵写法", "kp": "N5.3.K2"},
+    {"type": "式", "no": "5.3-3", "book_page": 247, "summary": "正规方程 G^T G a = G^T y", "kp": "N5.3.K2"},
+    {"type": "式", "no": "5.3-3'", "book_page": 248, "summary": "加权正规方程", "kp": "N5.3.K2"},
+    {"type": "图", "no": "5.3-1", "book_page": 248, "summary": "例 1 直线拟合散点", "kp": "N5.3.K3"},
+    {"type": "例", "no": "1", "book_page": 248, "summary": "五点直线拟合，截距印误", "kp": "N5.3.K3"},
+    {"type": "图", "no": "5.3-2", "book_page": 249, "summary": "例 2 双曲线型散点", "kp": "N5.3.K4"},
+    {"type": "例", "no": "2", "book_page": 248, "summary": "双曲线与指数两种拟合及平方和比较", "kp": "N5.3.K4"},
+    {"type": "图", "no": "5.3-3", "book_page": 250, "summary": "例 3 幂函数散点", "kp": "N5.3.K4"},
+    {"type": "例", "no": "3", "book_page": 250, "summary": "幂函数对数线性化", "kp": "N5.3.K4"},
+    {"type": "表", "no": "5.3-1", "book_page": 250, "summary": "例 3 拟合值与残差", "kp": "N5.3.K4"},
+    {"type": "式", "no": "5.3-4", "book_page": 251, "summary": "由 QR 回代最小二乘系数", "kp": "N5.3.K5"}
+  ],
+  "errata": [
     {
-      "set": "习题 5.3",
-      "no": 3,
-      "kp": [
-        "N5.3.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
+      "book_page": 248,
+      "printed": "phi(x)=1.04+4x",
+      "corrected": "phi(x)=1.02+4x",
+      "note": "正规方程解出 a0=1.02、a1=4。1.04 不满足第一行 5 a0+2 a1=13.1"
     },
     {
-      "set": "习题 5.3",
-      "no": 8,
-      "kp": [
-        "N5.3.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 5.3",
-      "no": 13,
-      "kp": [
-        "N5.3.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
+      "book_page": 249,
+      "printed": "双曲线拟合 delta^2=0.5169",
+      "corrected": "约 0.4613",
+      "note": "0.5169 是把并不满足精确正规方程的印出系数代入恒等式、并用舍入右端 194.052 得到的。印出系数的真实残差平方和约为 0.461331，精确最小二乘平方和约为 0.461304"
     }
+  ],
+  "exercises": [
+    {"set": "习题 5", "no": "15", "kp": ["N5.3.K2", "N5.3.K3"], "method": "模型 a+bx^2，第二式右端用 sum x_i^2 y_i，再算均方误差"},
+    {"set": "习题 5", "no": "16", "kp": ["N5.3.K4"], "method": "y=ax^b 取对数线性化。首个横坐标是 1.8，不是例 3 的 1.2"}
   ],
   "verify_script": ".work/kp/verify/N5.3.py"
 }

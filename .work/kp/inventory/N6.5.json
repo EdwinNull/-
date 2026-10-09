@@ -1,36 +1,33 @@
 {
   "id": "N6.5",
   "title": "二重积分的计算方法",
-  "read_book_pages": [
-    289,
-    291
+  "read_book_pages": [289, 291],
+  "read_pdf_pages": [300, 302],
+  "hires_pdf_pages": [301, 302],
+  "extra_pages_consulted": [
+    {"book_page": 275, "why": "复化 Simpson 公式 (6.2-7) 的写法与 h、中点记号，式 (6.5-3) 由它推出"},
+    {"book_page": 286, "why": "表 6.4-1 的 n=2 节点与系数，例 1 的 3×3 Gauss 计算用"}
   ],
-  "read_pdf_pages": [
-    300,
-    302
+  "notation": [
+    {"symbol": "phi, psi", "latex": "\\varphi(x),\\ \\psi(x)", "meaning": "积分区域的下、上边界曲线", "book_page": 289},
+    {"symbol": "g(x)", "latex": "g(x)=\\int_{\\varphi(x)}^{\\psi(x)}f(x,y)\\,\\mathrm dy", "meaning": "内层积分", "book_page": 289},
+    {"symbol": "B_ij", "latex": "B_{ij}", "meaning": "与区间 [φ(x_i),ψ(x_i)] 有关的内层求积系数", "book_page": 290},
+    {"symbol": "h, k", "latex": "h=\\frac{b-a}{n},\\ k=\\frac{d-c}{m}", "meaning": "x、y 方向的子区间长度", "book_page": 290}
   ],
-  "hires_pdf_pages": [],
-  "extra_pages_consulted": [],
-  "notation": [],
-  "items": [],
-  "errata": [],
+  "items": [
+    {"type": "图", "no": "6.5-1", "book_page": 289, "summary": "由 y=φ(x)、y=ψ(x)、x=a、x=b 围成的区域", "kp": "N6.5.K1"},
+    {"type": "式", "no": "6.5-1", "book_page": 290, "summary": "外层对 g(x) 用单积分公式", "kp": "N6.5.K1"},
+    {"type": "式", "no": "6.5-2", "book_page": 290, "summary": "乘积型求积公式 ΣΣ A_i B_ij f(x_i,y_j)", "kp": "N6.5.K1"},
+    {"type": "式", "no": "6.5-3", "book_page": 290, "summary": "矩形区域上的复化 Simpson 公式，权 1、4、16", "kp": "N6.5.K2"},
+    {"type": "式", "no": "6.5-4", "book_page": 290, "summary": "[-1,1]² 上的 Gauss-Legendre 乘积公式", "kp": "N6.5.K3"},
+    {"type": "例", "no": "1", "book_page": 290, "summary": "ln(x+2y) 在 [1.4,2]×[1,1.5] 上：Simpson 15 点 0.42955244，Gauss 9 点 0.42955453；被积函数多印因子 40/3", "kp": "N6.5.K4"}
+  ],
+  "errata": [
+    {"book_page": 290, "text": "例 1 被积函数印作 (40/3)ln(x+2y)，而给出的准确值 0.429554526 及两个近似值都是 ∫∫ln(x+2y) 的值；带因子 40/3 时准确值为 5.7273937。另一方面，变换后的 ∫∫_G ln(0.3u+0.5v+4.2)dudv 恰与带 40/3 的积分相等（雅可比 0.075=3/40），与印出数值不符。应理解为：I=∫∫_D ln(x+2y)=0.075∫∫_G ln(0.3u+0.5v+4.2)dudv"}
+  ],
   "exercises": [
-    {
-      "set": "习题 6.5",
-      "no": 5,
-      "kp": [
-        "N6.5.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 6.5",
-      "no": 11,
-      "kp": [
-        "N6.5.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    }
+    {"set": "习题 6", "no": "13", "kp": ["N6.5.K2"], "method": "被积函数可分离 e^y·e^{-x}，两方向分别 Simpson；先单个 Simpson（每向 3 点），再每向 2 个子区间的复化 Simpson（每向 5 点）"},
+    {"set": "习题 6", "no": "14", "kp": ["N6.5.K1", "N6.5.K2"], "method": "两方向复化梯形相乘：角点 1/4、边点 1/2、内点 1，乘 h²；余项由两个方向的一维余项相加，主项 -h²/12∬(f_xx+f_yy)"}
   ],
   "verify_script": ".work/kp/verify/N6.5.py"
 }

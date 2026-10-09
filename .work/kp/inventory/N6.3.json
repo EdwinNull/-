@@ -1,44 +1,47 @@
 {
   "id": "N6.3",
   "title": "Richardson 外推法和数值积分的 Romberg 算法",
-  "read_book_pages": [
-    279,
-    282
+  "read_book_pages": [279, 282],
+  "read_pdf_pages": [290, 293],
+  "hires_pdf_pages": [290, 291, 292, 293],
+  "extra_pages_consulted": [
+    {"book_page": 274, "why": "核对式 (6.2-3)、式 (6.2-4)，Romberg 算法步 2)–5) 即二分递推"},
+    {"book_page": 275, "why": "核对式 (6.2-5)，式 (6.3-5) 由它而来"},
+    {"book_page": 277, "why": "核对式 (6.2-9)、式 (6.2-10)，即一次外推"},
+    {"book_page": 278, "why": "核对式 (6.2-11) 与 6.2 节例 4 的 S_n 值，表 6.3-2 第二列引用"},
+    {"book_page": 276, "why": "核对 6.2 节例 1 的函数表，例 2 引用"}
   ],
-  "read_pdf_pages": [
-    290,
-    293
+  "notation": [
+    {"symbol": "I_1(h)", "latex": "I_1(h)", "meaning": "步长为 h 的原始近似值；Romberg 算法中即 T_n", "book_page": 279},
+    {"symbol": "a_k^(m)", "latex": "a_k^{(m)}", "meaning": "第 m 次外推后误差展开中 h^{p_k} 的系数", "book_page": 279},
+    {"symbol": "p_k", "latex": "p_k", "meaning": "误差展开中的递增幂次 0<p_1<p_2<…", "book_page": 279},
+    {"symbol": "I_m(h)", "latex": "I_m(h)", "meaning": "外推 m-1 次后的近似值，误差阶 h^{p_m}", "book_page": 280},
+    {"symbol": "S(h)", "latex": "S(h)", "meaning": "例 1 中单位圆内接正 n 边形面积，h=2/n", "book_page": 280},
+    {"symbol": "I_j^(1), I_j^(2)", "latex": "I_j^{(1)},I_j^{(2)}", "meaning": "Romberg 算法中第 j 列的上一行值与当前行值", "book_page": 282}
   ],
-  "hires_pdf_pages": [],
-  "extra_pages_consulted": [],
-  "notation": [],
-  "items": [],
-  "errata": [],
+  "items": [
+    {"type": "式", "no": "6.3-1", "book_page": 279, "summary": "I-I_1(h)=Σ a_k^(1) h^{p_k}，0<p_1<p_2<…", "kp": "N6.3.K1"},
+    {"type": "式", "no": "6.3-2", "book_page": 279, "summary": "一次外推后误差从 h^{p_2} 开始；a_k^(2) 的表达式漏乘 a_k^(1)", "kp": "N6.3.K1"},
+    {"type": "式", "no": "6.3-3", "book_page": 280, "summary": "I_2(h)=I_1(h/2)+[I_1(h/2)-I_1(h)]/(2^{p_1}-1)", "kp": "N6.3.K1"},
+    {"type": "式", "no": "6.3-4", "book_page": 280, "summary": "I_{m+1}(h)=I_m(h/2)+[I_m(h/2)-I_m(h)]/(2^{p_m}-1)，Richardson 外推法", "kp": "N6.3.K2"},
+    {"type": "例", "no": "1", "book_page": 280, "summary": "单位圆内接正 n 边形面积外推求 π；印出 3.141591373，复算 3.141590393", "kp": "N6.3.K3"},
+    {"type": "式", "no": "6.3-5", "book_page": 280, "summary": "I-T_n=a_2h²+a_4h⁴+a_6h⁶+…，系数含端点奇数阶导数之差", "kp": "N6.3.K4"},
+    {"type": "表", "no": "6.3-1", "book_page": 281, "summary": "Romberg 计算流程三角表；第 3 行第 1 列印作 I_1(h/2²)，应为 I_1(h/2³)", "kp": "N6.3.K5"},
+    {"type": "例", "no": "2", "book_page": 281, "summary": "sin x/x 的 Romberg 表，I_4(1)=0.9460831", "kp": "N6.3.K5"},
+    {"type": "表", "no": "6.3-2", "book_page": 281, "summary": "例 2 的 Romberg 表数值", "kp": "N6.3.K5"},
+    {"type": "注", "no": "", "book_page": 281, "summary": "脚注：I_2(h)=S_n 的证明见本章习题第 6 题", "kp": "N6.3.K5"},
+    {"type": "性质", "no": "", "book_page": 282, "summary": "外推一般到 m=3 或 4；I_3 是复化 Cotes 公式，I_4 是复化 Romberg 公式；f 不光滑时 (6.3-5) 不存在", "kp": "N6.3.K6"},
+    {"type": "算法", "no": "", "book_page": 282, "summary": "Romberg 算法 15 步，停止准则 |I_4^(2)-I_4^(1)|≤ε", "kp": "N6.3.K7"}
+  ],
+  "errata": [
+    {"book_page": 279, "text": "式 (6.3-2) 下方 a_k^(2)=[(1/2)^{p_k-p_1}-1]/(2^{p_1}-1) 漏乘 a_k^(1)。由上一行推导，应为 a_k^(2)=[(1/2)^{p_k-p_1}-1]a_k^(1)/(2^{p_1}-1)"},
+    {"book_page": 280, "text": "例 1 印出外推两次得 3.141591373。按 h=1/4,1/8,1/16、p_1=2、p_2=4 复算为 3.141590393（误差 2.26×10⁻⁶）；试过其他取法也得不到印出值"},
+    {"book_page": 281, "text": "表 6.3-1 第 k=3 行第一列印作 I_1(h/2²)，按列标题 I_1(h/2^k) 应为 I_1(h/2³)"},
+    {"book_page": 281, "text": "例 2 的“复化梯度公式”是“复化梯形公式”的笔误"}
+  ],
   "exercises": [
-    {
-      "set": "习题 6.3",
-      "no": 3,
-      "kp": [
-        "N6.3.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 6.3",
-      "no": 9,
-      "kp": [
-        "N6.3.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 6.3",
-      "no": 15,
-      "kp": [
-        "N6.3.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    }
+    {"set": "习题 6", "no": "6", "kp": ["N6.3.K5"], "method": "S_n=(4T_2n-T_n)/3 与 C_n=(16S_2n-S_n)/15 逐个子区间比较系数；即 I_2、I_3 两列的含义"},
+    {"set": "习题 6", "no": "7", "kp": ["N6.3.K5", "N6.3.K7"], "method": "e^{-x²} 的 Romberg 表；现有解答用 R_{k,j} 记号，R_{k,j} 对应本书 I_{j+1}(h/2^{k-j})"}
   ],
   "verify_script": ".work/kp/verify/N6.3.py"
 }

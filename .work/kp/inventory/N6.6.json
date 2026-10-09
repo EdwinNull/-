@@ -1,36 +1,46 @@
 {
   "id": "N6.6",
   "title": "数值微分",
-  "read_book_pages": [
-    291,
-    295
+  "read_book_pages": [291, 295],
+  "read_pdf_pages": [302, 306],
+  "hires_pdf_pages": [302, 303, 304, 305, 306],
+  "extra_pages_consulted": [
+    {"book_page": 234, "why": "式 (5.1-11) Newton 差商插值多项式，式 (6.6-4) 由它代入得到"},
+    {"book_page": 242, "why": "式 (5.2-2)、式 (5.2-3) 三次样条及其导数，样条求导公式引用"},
+    {"book_page": 279, "why": "式 (6.3-1) 与 Richardson 外推，书页 294 引用"}
   ],
-  "read_pdf_pages": [
-    302,
-    306
+  "notation": [
+    {"symbol": "Delta f_i", "latex": "\\Delta f_i=f(x_{i+1})-f(x_i)", "meaning": "一阶向前差分", "book_page": 291},
+    {"symbol": "Delta^k f_i", "latex": "\\Delta^kf_i=\\Delta^{k-1}f_{i+1}-\\Delta^{k-1}f_i", "meaning": "k 阶向前差分", "book_page": 292},
+    {"symbol": "C_t^i", "latex": "C_t^i=\\frac{t(t-1)\\cdots(t-i+1)}{i!}", "meaning": "t 的 i 次多项式（广义组合数）", "book_page": 292},
+    {"symbol": "f_i', f_i''", "latex": "f_i',\\ f_i''", "meaning": "f'(x_i)、f''(x_i) 的近似值记号", "book_page": 292},
+    {"symbol": "I_1(h)", "latex": "I_1(h)=\\frac{1}{2h}[f(x_1+h)-f(x_1-h)]", "meaning": "中心差商，外推的起点", "book_page": 294}
   ],
-  "hires_pdf_pages": [],
-  "extra_pages_consulted": [],
-  "notation": [],
-  "items": [],
-  "errata": [],
+  "items": [
+    {"type": "式", "no": "6.6-1", "book_page": 291, "summary": "插值余项求 k 次导", "kp": "N6.6.K1"},
+    {"type": "式", "no": "6.6-2", "book_page": 291, "summary": "f^{(k)}(x)≈p_n^{(k)}(x)", "kp": "N6.6.K1"},
+    {"type": "定义", "no": "", "book_page": 291, "summary": "一阶、二阶、k 阶向前差分", "kp": "N6.6.K2"},
+    {"type": "式", "no": "6.6-3", "book_page": 292, "summary": "f[x_i,…,x_{i+k}]=Δ^k f_i/(k! h^k)，归纳证明", "kp": "N6.6.K2"},
+    {"type": "式", "no": "6.6-4", "book_page": 292, "summary": "Newton 向前差分插值公式", "kp": "N6.6.K3"},
+    {"type": "式", "no": "6.6-5", "book_page": 292, "summary": "向前差分插值余项", "kp": "N6.6.K3"},
+    {"type": "式", "no": "6.6-6", "book_page": 292, "summary": "f^{(k)}≈h^{-k}Σ_{i≥k}(d^k C_t^i/dt^k)Δ^i f_0", "kp": "N6.6.K3"},
+    {"type": "式", "no": "6.6-7", "book_page": 292, "summary": "两点公式及余项 ∓(h/2)f''", "kp": "N6.6.K4"},
+    {"type": "式", "no": "6.6-8", "book_page": 293, "summary": "三点一阶导数公式及余项 h²/3、-h²/6、h²/3", "kp": "N6.6.K4"},
+    {"type": "式", "no": "6.6-9", "book_page": 293, "summary": "三点二阶导数公式及余项，中点 -h²/12 f⁽⁴⁾", "kp": "N6.6.K4"},
+    {"type": "例", "no": "1", "book_page": 293, "summary": "J_0 表求 y'(1)、y''(1)：-0.4400275、-0.325250，五点 -0.4400488", "kp": "N6.6.K4"},
+    {"type": "例", "no": "2", "book_page": 293, "summary": "Taylor 展开求中心差商截断误差", "kp": "N6.6.K5"},
+    {"type": "式", "no": "6.6-10", "book_page": 294, "summary": "中心差商误差的 h 升幂展开", "kp": "N6.6.K5"},
+    {"type": "式", "no": "6.6-11", "book_page": 294, "summary": "f'-(f2-f0)/2h=-h²f'''(ξ)/3!", "kp": "N6.6.K5"},
+    {"type": "性质", "no": "", "book_page": 294, "summary": "外推得 I_2(h)=(f0-8f_{1/2}+8f_{3/2}-f2)/(6h)，h⁴ 阶；I_3 为 h⁶ 阶九点公式", "kp": "N6.6.K6"},
+    {"type": "式", "no": "6.6-12", "book_page": 295, "summary": "截断误差与舍入误差合成的总误差界", "kp": "N6.6.K7"},
+    {"type": "性质", "no": "", "book_page": 295, "summary": "三次样条求一、二阶导数的公式", "kp": "N6.6.K8"}
+  ],
+  "errata": [
+    {"book_page": 295, "text": "“S'(x)、S''(x) 分别一致收敛于 f'(x) 与\"(x)”漏印 f，应为 f''(x)"}
+  ],
   "exercises": [
-    {
-      "set": "习题 6.6",
-      "no": 6,
-      "kp": [
-        "N6.6.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 6.6",
-      "no": 12,
-      "kp": [
-        "N6.6.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    }
+    {"set": "习题 6", "no": "15", "kp": ["N6.6.K4"], "method": "内点用中心三点公式；f'(1.1)≈-0.2170，f'(1.3)≈-0.1650，f''(1.2)≈0.2600"},
+    {"set": "习题 6", "no": "16", "kp": ["N6.6.K5", "N6.6.K6"], "method": "Taylor 展开得 f''-D(h)=-h²f⁽⁴⁾/12-h⁴f⁽⁶⁾/360-…；分母 3 外推得五点公式 (−f_{-1}+16f_{-1/2}−30f_0+16f_{1/2}−f_1)/(3h²)。现有解答第二步与答案中三点公式误差的符号写反"}
   ],
   "verify_script": ".work/kp/verify/N6.6.py"
 }

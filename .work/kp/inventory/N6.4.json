@@ -9,35 +9,259 @@
     293,
     300
   ],
-  "hires_pdf_pages": [],
-  "extra_pages_consulted": [],
-  "notation": [],
-  "items": [],
-  "errata": [],
+  "hires_pdf_pages": [
+    297,
+    298,
+    299
+  ],
+  "extra_pages_consulted": [
+    {
+      "book_page": 259,
+      "why": "例 4 引用式 (5.4-16)：Laguerre 多项式正交关系与 ∫e^{-x}U_n²=(n!)²；核对 Legendre 多项式定义式 (5.4-14)"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "rho(x)",
+      "latex": "\\rho(x)",
+      "meaning": "权函数，积分可为收敛的广义积分",
+      "book_page": 283
+    },
+    {
+      "symbol": "omega_{n+1}",
+      "latex": "\\omega_{n+1}(x)=(x-x_0)\\cdots(x-x_n)",
+      "meaning": "以节点为零点的首一多项式",
+      "book_page": 284
+    },
+    {
+      "symbol": "P_n[x]",
+      "latex": "P_n[x]",
+      "meaning": "次数不超过 n 的多项式全体",
+      "book_page": 284
+    },
+    {
+      "symbol": "L_{n+1}",
+      "latex": "L_{n+1}(x)",
+      "meaning": "n+1 次 Legendre 多项式",
+      "book_page": 285
+    },
+    {
+      "symbol": "U_{n+1}",
+      "latex": "U_{n+1}(x)",
+      "meaning": "n+1 次 Laguerre 多项式",
+      "book_page": 287
+    },
+    {
+      "symbol": "H_{n+1}",
+      "latex": "H_{n+1}(x)",
+      "meaning": "n+1 次 Hermite 正交多项式；定理 6.4-2 证明中的 H(x) 则是 Hermite 插值多项式，二者不同",
+      "book_page": 288
+    },
+    {
+      "symbol": "T_{n+1}",
+      "latex": "T_{n+1}(x)=\\cos((n+1)\\arccos x)",
+      "meaning": "第一类 Чебышев 多项式",
+      "book_page": 288
+    }
+  ],
+  "items": [
+    {
+      "type": "例",
+      "no": "1",
+      "book_page": 283,
+      "summary": "[0,1] 上两点公式，x=(1∓1/√3)/2，A=1/2，具有 3 次代数精度",
+      "kp": "N6.4.K1"
+    },
+    {
+      "type": "式",
+      "no": "6.4-1",
+      "book_page": 283,
+      "summary": "例 1 的四个矩方程",
+      "kp": "N6.4.K1"
+    },
+    {
+      "type": "式",
+      "no": "6.4-2",
+      "book_page": 283,
+      "summary": "带权插值型求积公式 ∫ρf≈ΣA_i f(x_i)",
+      "kp": "N6.4.K2"
+    },
+    {
+      "type": "式",
+      "no": "6.4-3",
+      "book_page": 284,
+      "summary": "A_i=∫ρ l_i",
+      "kp": "N6.4.K2"
+    },
+    {
+      "type": "式",
+      "no": "6.4-4",
+      "book_page": 284,
+      "summary": "余项 ∫ f^{(n+1)}(ξ)/(n+1)! ρ ω_{n+1}",
+      "kp": "N6.4.K2"
+    },
+    {
+      "type": "定义",
+      "no": "6.4-1",
+      "book_page": 284,
+      "summary": "具有最高 2n+1 次代数精度的插值型公式为 Gauss 型，节点为 Gauss 点",
+      "kp": "N6.4.K3"
+    },
+    {
+      "type": "定理",
+      "no": "6.4-1",
+      "book_page": 284,
+      "summary": "节点为 Gauss 点 ⇔ ω_{n+1} 与 P_n 带权 ρ 正交",
+      "kp": "N6.4.K3"
+    },
+    {
+      "type": "定理",
+      "no": "6.4-2",
+      "book_page": 285,
+      "summary": "f∈C^{2n+2} 时余项 f^{(2n+2)}(η)/(2n+2)! ∫ρω²",
+      "kp": "N6.4.K4"
+    },
+    {
+      "type": "式",
+      "no": "6.4-5",
+      "book_page": 285,
+      "summary": "Gauss 型公式余项",
+      "kp": "N6.4.K4"
+    },
+    {
+      "type": "性质",
+      "no": "",
+      "book_page": 285,
+      "summary": "ΣA_i=∫ρ>0，A_k=∫ρ l_k²>0，舍入误差不超过 ε∫ρ，数值稳定",
+      "kp": "N6.4.K4"
+    },
+    {
+      "type": "表",
+      "no": "6.4-1",
+      "book_page": 286,
+      "summary": "Gauss-Legendre n=0..7 节点与系数；n=3 的 0.861136116 漏印一位",
+      "kp": "N6.4.K5"
+    },
+    {
+      "type": "例",
+      "no": "2",
+      "book_page": 286,
+      "summary": "∫_{-1}^{1}√(1+x)：Simpson 1.804738，三点 Gauss 1.892727，准确 1.885618",
+      "kp": "N6.4.K5"
+    },
+    {
+      "type": "例",
+      "no": "3",
+      "book_page": 286,
+      "summary": "∫_0^π e^x cos x，2/4/6 点 Gauss-Legendre，准确 -12.0703463",
+      "kp": "N6.4.K5"
+    },
+    {
+      "type": "表",
+      "no": "6.4-2",
+      "book_page": 287,
+      "summary": "Gauss-Laguerre n=0..5；n=5 有两处印误",
+      "kp": "N6.4.K6"
+    },
+    {
+      "type": "例",
+      "no": "4",
+      "book_page": 287,
+      "summary": "∫x^7 e^{-x}：3 点得 4139.9，余项 252η；4 点得 5039.97",
+      "kp": "N6.4.K6"
+    },
+    {
+      "type": "表",
+      "no": "6.4-3",
+      "book_page": 288,
+      "summary": "Gauss-Hermite n=0..7；n=0 与 n=7 各有一处印误",
+      "kp": "N6.4.K7"
+    },
+    {
+      "type": "例",
+      "no": "5",
+      "book_page": 289,
+      "summary": "∫e^x/√(1-x²)，由式 (6.4-6) 取 n=4，结果 3.977463",
+      "kp": "N6.4.K8"
+    },
+    {
+      "type": "式",
+      "no": "6.4-6",
+      "book_page": 289,
+      "summary": "2πe/(2^{2n+2}(2n+2)!)≤10⁻⁶",
+      "kp": "N6.4.K8"
+    },
+    {
+      "type": "性质",
+      "no": "",
+      "book_page": 289,
+      "summary": "Gauss 公式求法：由定理 6.4-1 或待定系数；优点为稳定、可算广义积分；缺点为节点系数计算麻烦",
+      "kp": "N6.4.K9"
+    }
+  ],
+  "errata": [
+    {
+      "book_page": 286,
+      "text": "表 6.4-1 n=3 的节点印作 ±0.861136116，正确值 ±0.8611363116（漏印一位 3）"
+    },
+    {
+      "book_page": 287,
+      "text": "表 6.4-2 n=5 的节点印作 9.8374674148，应为 9.8374674184；对应系数印作 0.0000008981，应为 0.0000008985"
+    },
+    {
+      "book_page": 288,
+      "text": "表 6.4-3 n=0 的系数印作 1.7724538500，应为 √π=1.7724538509；n=7 节点 ±1.1571937124 的系数印作 0.078023258，应为 0.2078023258（漏印首位 2，否则系数和不等于 √π）"
+    }
+  ],
   "exercises": [
     {
-      "set": "习题 6.4",
-      "no": 4,
+      "set": "习题 6",
+      "no": "2",
       "kp": [
         "N6.4.K1"
       ],
-      "method": "按本节讲解流程处理并核对条件"
+      "method": "按矩方程定节点与系数；(1) 得 Simpson 公式，3 次；(2) 两个自由节点，2 次"
     },
     {
-      "set": "习题 6.4",
-      "no": 10,
+      "set": "习题 6",
+      "no": "8",
       "kp": [
-        "N6.4.K1"
+        "N6.4.K3"
       ],
-      "method": "按本节讲解流程处理并核对条件"
+      "method": "两点带权 Gauss 公式：先求与 1、x 带权正交的二次多项式，其零点为节点，再定系数"
     },
     {
-      "set": "习题 6.4",
-      "no": 16,
+      "set": "习题 6",
+      "no": "9",
       "kp": [
+        "N6.4.K5"
+      ],
+      "method": "[0,1] 先变换到 [-1,1]，三点 Gauss-Legendre 与 Simpson 比较"
+    },
+    {
+      "set": "习题 6",
+      "no": "10",
+      "kp": [
+        "N6.4.K6"
+      ],
+      "method": "5 个节点即表 6.4-2 的 n=4；√x 在 0 处不光滑，误差较大"
+    },
+    {
+      "set": "习题 6",
+      "no": "11",
+      "kp": [
+        "N6.4.K8"
+      ],
+      "method": "x=(1+t)/6 化为 Чебышев 权，g(t) 为一次多项式，结果精确"
+    },
+    {
+      "set": "习题 6",
+      "no": "12",
+      "kp": [
+        "N6.4.K7",
         "N6.4.K1"
       ],
-      "method": "按本节讲解流程处理并核对条件"
+      "method": "逐个检验 x^k 的 Hermite 权矩，k≤5 精确、k=6 不精确"
     }
   ],
   "verify_script": ".work/kp/verify/N6.4.py"

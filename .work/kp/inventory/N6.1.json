@@ -1,44 +1,43 @@
 {
   "id": "N6.1",
   "title": "Newton-Cotes 求积公式",
-  "read_book_pages": [
-    267,
-    274
-  ],
-  "read_pdf_pages": [
-    278,
-    285
-  ],
+  "read_book_pages": [267, 274],
+  "read_pdf_pages": [278, 285],
   "hires_pdf_pages": [],
-  "extra_pages_consulted": [],
-  "notation": [],
-  "items": [],
+  "extra_pages_consulted": [274],
+  "notation": [
+    {"symbol": "A_i", "latex": "A_i", "meaning": "求积系数，只与结点有关", "book_page": 267},
+    {"symbol": "R_n", "latex": "R_n(f)", "meaning": "求积余项或截断误差", "book_page": 267},
+    {"symbol": "C", "latex": "C_i^{(n)}", "meaning": "n 阶 Newton-Cotes 公式的 Cotes 系数", "book_page": 269}
+  ],
+  "items": [
+    {"type": "注", "no": "", "book_page": 267, "summary": "章首式 6.0-1 至 6.0-4 与定义 6.0-1。工具把 6.0 解析成不存在的节，正文用中文连接号书写同一编号", "kp": "N6.1.K1"},
+    {"type": "正文例", "no": "1", "book_page": 268, "summary": "章首梯形公式具有 1 次精度", "kp": "N6.1.K1"},
+    {"type": "正文例", "no": "2", "book_page": 268, "summary": "章首三点公式具有 3 次精度", "kp": "N6.1.K1"},
+    {"type": "式", "no": "6.1-1", "book_page": 269, "summary": "插值型求积公式", "kp": "N6.1.K2"},
+    {"type": "式", "no": "6.1-2", "book_page": 269, "summary": "求积系数等于 Lagrange 基的积分", "kp": "N6.1.K2"},
+    {"type": "式", "no": "6.1-3", "book_page": 269, "summary": "插值型求积余项", "kp": "N6.1.K2"},
+    {"type": "式", "no": "6.1-4", "book_page": 269, "summary": "Cotes 系数积分公式", "kp": "N6.1.K2"},
+    {"type": "式", "no": "6.1-5", "book_page": 269, "summary": "n 阶 Newton-Cotes 公式", "kp": "N6.1.K2"},
+    {"type": "定理", "no": "6.1-1", "book_page": 269, "summary": "n+1 个结点的插值型求积至少 n 次精度", "kp": "N6.1.K2"},
+    {"type": "式", "no": "6.1-6", "book_page": 270, "summary": "梯形公式", "kp": "N6.1.K3"},
+    {"type": "式", "no": "6.1-7", "book_page": 270, "summary": "Simpson 公式", "kp": "N6.1.K3"},
+    {"type": "式", "no": "6.1-8", "book_page": 270, "summary": "n=4 的 Cotes 公式", "kp": "N6.1.K3"},
+    {"type": "表", "no": "6.1-1", "book_page": 270, "summary": "n=1 到 8 的 Cotes 系数", "kp": "N6.1.K3"},
+    {"type": "例", "no": "1", "book_page": 270, "summary": "三个公式计算 1/(1+x^2)", "kp": "N6.1.K3"},
+    {"type": "定理", "no": "6.1-2", "book_page": 271, "summary": "偶数 n 的 Newton-Cotes 至少 n+1 次精度", "kp": "N6.1.K4"},
+    {"type": "式", "no": "6.1-9", "book_page": 271, "summary": "积分第二中值定理形式的引理", "kp": "N6.1.K4"},
+    {"type": "引理", "no": "", "book_page": 271, "summary": "权不变号时的积分中值等式", "kp": "N6.1.K4"},
+    {"type": "式", "no": "6.1-10", "book_page": 272, "summary": "差商形式的求积余项", "kp": "N6.1.K5"},
+    {"type": "式", "no": "6.1-11", "book_page": 272, "summary": "梯形公式余项", "kp": "N6.1.K5"},
+    {"type": "式", "no": "6.1-12", "book_page": 272, "summary": "Simpson 余项的差商积分形式", "kp": "N6.1.K5"},
+    {"type": "式", "no": "6.1-13", "book_page": 272, "summary": "Simpson 公式余项", "kp": "N6.1.K5"},
+    {"type": "例", "no": "2", "book_page": 272, "summary": "梯形与 Simpson 计算 e^{1/x} 并估计误差", "kp": "N6.1.K5"}
+  ],
   "errata": [],
   "exercises": [
-    {
-      "set": "习题 6.1",
-      "no": 1,
-      "kp": [
-        "N6.1.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 6.1",
-      "no": 7,
-      "kp": [
-        "N6.1.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 6.1",
-      "no": 13,
-      "kp": [
-        "N6.1.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
-    }
+    {"set": "习题 6", "no": "1", "kp": ["N6.1.K1", "N6.1.K2"], "method": "三个内点构造开型插值求积，并用幂函数条件判断代数精度"},
+    {"set": "习题 6", "no": "5", "kp": ["N6.1.K2", "N6.1.K5"], "method": "由 Hermite 插值导出带导数的求积公式并给出余项"}
   ],
   "verify_script": ".work/kp/verify/N6.1.py"
 }

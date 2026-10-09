@@ -9,35 +9,235 @@
     285,
     290
   ],
-  "hires_pdf_pages": [],
-  "extra_pages_consulted": [],
-  "notation": [],
-  "items": [],
-  "errata": [],
+  "hires_pdf_pages": [
+    287,
+    288,
+    289,
+    290
+  ],
+  "extra_pages_consulted": [
+    {
+      "book_page": 273,
+      "why": "核对 6.1 节例 2 的 max|f^(4)|≈198.4346，例 3 引用"
+    },
+    {
+      "book_page": 242,
+      "why": "核对式 (5.2-2) 的三弯矩样条表达式，式 (6.2-12) 由它积分得到"
+    },
+    {
+      "book_page": 280,
+      "why": "核对 6.3 节如何引用式 (6.2-3) 与式 (6.2-9)–(6.2-11)"
+    }
+  ],
+  "notation": [
+    {
+      "symbol": "h",
+      "latex": "h=\\frac{b-a}{n}",
+      "meaning": "步长，子区间长度；复化 Simpson 中也指子区间长度，中点步长为 h/2",
+      "book_page": 274
+    },
+    {
+      "symbol": "T_n",
+      "latex": "T_n",
+      "meaning": "n 等分的复化梯形值",
+      "book_page": 274
+    },
+    {
+      "symbol": "H_n",
+      "latex": "H_n",
+      "meaning": "n 个新中点处函数值之和乘 h",
+      "book_page": 274
+    },
+    {
+      "symbol": "S_n",
+      "latex": "S_n",
+      "meaning": "n 个子区间、每个子区间用一次 Simpson 公式的复化值，共 2n+1 个节点",
+      "book_page": 275
+    },
+    {
+      "symbol": "x_{i+1/2}",
+      "latex": "x_{i+\\frac12}",
+      "meaning": "子区间 [x_i,x_{i+1}] 的中点",
+      "book_page": 275
+    },
+    {
+      "symbol": "I(h)",
+      "latex": "I(h)",
+      "meaning": "步长为 h 的复化求积值",
+      "book_page": 275
+    },
+    {
+      "symbol": "M_i",
+      "latex": "M_i",
+      "meaning": "样条在节点 x_i 处的二阶导数（弯矩）",
+      "book_page": 279
+    }
+  ],
+  "items": [
+    {
+      "type": "式",
+      "no": "6.2-1",
+      "book_page": 274,
+      "summary": "复化梯形公式的推导",
+      "kp": "N6.2.K1"
+    },
+    {
+      "type": "式",
+      "no": "6.2-2",
+      "book_page": 274,
+      "summary": "T_n 的定义",
+      "kp": "N6.2.K1"
+    },
+    {
+      "type": "式",
+      "no": "6.2-3",
+      "book_page": 274,
+      "summary": "T_2n=(T_n+H_n)/2",
+      "kp": "N6.2.K2"
+    },
+    {
+      "type": "式",
+      "no": "6.2-4",
+      "book_page": 274,
+      "summary": "H_n 为新中点函数值和乘 h",
+      "kp": "N6.2.K2"
+    },
+    {
+      "type": "式",
+      "no": "6.2-5",
+      "book_page": 275,
+      "summary": "I-T_n=-(b-a)h²f''(η)/12",
+      "kp": "N6.2.K3"
+    },
+    {
+      "type": "式",
+      "no": "6.2-6",
+      "book_page": 275,
+      "summary": "复化 Simpson 公式的推导",
+      "kp": "N6.2.K4"
+    },
+    {
+      "type": "式",
+      "no": "6.2-7",
+      "book_page": 275,
+      "summary": "S_n 的定义，系数 (b-a)/(6n)",
+      "kp": "N6.2.K4"
+    },
+    {
+      "type": "式",
+      "no": "6.2-8",
+      "book_page": 275,
+      "summary": "I-S_n=-(b-a)(h/2)⁴f⁽⁴⁾(η)/180",
+      "kp": "N6.2.K4"
+    },
+    {
+      "type": "定义",
+      "no": "6.2-1",
+      "book_page": 275,
+      "summary": "p 阶收敛：(I-I(h))/h^p→C≠0",
+      "kp": "N6.2.K5"
+    },
+    {
+      "type": "例",
+      "no": "1",
+      "book_page": 276,
+      "summary": "sin x/x 的 T_8 与 S_4；函数表 f(0.125) 印作 0.9973987",
+      "kp": "N6.2.K4"
+    },
+    {
+      "type": "例",
+      "no": "2",
+      "book_page": 276,
+      "summary": "由余项定 h≤0.1342，取 8 等分；同节点 Simpson 误差界 0.271×10⁻⁶",
+      "kp": "N6.2.K6"
+    },
+    {
+      "type": "例",
+      "no": "3",
+      "book_page": 276,
+      "summary": "e^{1/x} 在 [1,2] 上复化 Simpson，h<0.2919，取 4 等分 9 个节点；区间印作 [0,1]",
+      "kp": "N6.2.K6"
+    },
+    {
+      "type": "式",
+      "no": "6.2-9",
+      "book_page": 277,
+      "summary": "I-T_2n≈(T_2n-T_n)/3",
+      "kp": "N6.2.K7"
+    },
+    {
+      "type": "式",
+      "no": "6.2-10",
+      "book_page": 277,
+      "summary": "I≈T_2n+(T_2n-T_n)/3",
+      "kp": "N6.2.K7"
+    },
+    {
+      "type": "式",
+      "no": "6.2-11",
+      "book_page": 278,
+      "summary": "I-S_2n≈(S_2n-S_n)/15",
+      "kp": "N6.2.K7"
+    },
+    {
+      "type": "例",
+      "no": "4",
+      "book_page": 278,
+      "summary": "S_1,S_2,S_4 的事后估计；第一个比值印作 0.394×10⁻⁴",
+      "kp": "N6.2.K7"
+    },
+    {
+      "type": "算法",
+      "no": "",
+      "book_page": 278,
+      "summary": "自动选取步长的复化梯形求积算法，8 步",
+      "kp": "N6.2.K8"
+    },
+    {
+      "type": "式",
+      "no": "6.2-12",
+      "book_page": 279,
+      "summary": "三次样条积分的求积公式",
+      "kp": "N6.2.K9"
+    }
+  ],
+  "errata": [
+    {
+      "book_page": 276,
+      "text": "例 1 函数表 f(0.125) 印作 0.9973987；sin(0.125)/0.125=0.99739787，按表中其他各数的截断方式应为 0.9973978。T_8=0.9456909 与正确表值一致"
+    },
+    {
+      "book_page": 277,
+      "text": "例 3 的积分区间是 [1,2]，结论处却印作“将区间[0,1]4等分”。应为 [1,2]"
+    },
+    {
+      "book_page": 278,
+      "text": "例 4 印作 (1/15)|S_2-S_1|=0.394×10⁻⁴。按同页 S_1、S_2 计算为 0.0000591/15=0.394×10⁻⁵。结论（大于 0.5×10⁻⁶）不变"
+    },
+    {
+      "book_page": 279,
+      "text": "式 (6.2-12) 后写 h_i=x_{i+1}-x_i(i=0,1,…,n)，求和只到 n-1，i 的范围应为 0,…,n-1"
+    }
+  ],
   "exercises": [
     {
-      "set": "习题 6.2",
-      "no": 2,
+      "set": "习题 6",
+      "no": "3",
       "kp": [
-        "N6.2.K1"
+        "N6.2.K1",
+        "N6.2.K4"
       ],
-      "method": "按本节讲解流程处理并核对条件"
+      "method": "9 个节点：复化梯形取 n=8；复化 Simpson 按式 (6.2-7) 是 S_4（现有解答按 h=0.125 的写法记作 S_8，数值相同）"
     },
     {
-      "set": "习题 6.2",
-      "no": 8,
+      "set": "习题 6",
+      "no": "4",
       "kp": [
-        "N6.2.K1"
+        "N6.2.K3",
+        "N6.2.K4",
+        "N6.2.K6"
       ],
-      "method": "按本节讲解流程处理并核对条件"
-    },
-    {
-      "set": "习题 6.2",
-      "no": 14,
-      "kp": [
-        "N6.2.K1"
-      ],
-      "method": "按本节讲解流程处理并核对条件"
+      "method": "用式 (6.2-5)、(6.2-8) 反解 h；梯形 n≥41 即 42 个节点，Simpson n≥4 即 9 个节点"
     }
   ],
   "verify_script": ".work/kp/verify/N6.2.py"
